@@ -291,7 +291,7 @@ def get_freshdesk_tickets() -> str:
             total   = data.get('total', len(tickets))
 
         CLOSED_STATUSES = {4, 5}  # Resolved, Closed
-        status_map   = {2: 'Open', 3: 'Pending', 4: 'Resolved', 5: 'Closed'}
+        status_map   = {2: 'Open', 3: 'Pending', 4: 'Resolved', 5: 'Closed', 9: 'Active'}
         priority_map = {1: '🔴 Urgent', 2: '🟠 High', 3: '🟡 Medium', 4: '⚪ Low'}
 
         active = [t for t in tickets if t.get('status') not in CLOSED_STATUSES]
@@ -301,7 +301,7 @@ def get_freshdesk_tickets() -> str:
         lines = [f"- Active assigned: {len(active)} ticket(s)"]
         for t in sorted(active, key=lambda x: x.get('priority', 4)):
             p = priority_map.get(t['priority'], f"P{t['priority']}")
-            s = status_map.get(t['status'], f"Status:{t['status']}")
+            s = status_map.get(t['status'], 'Active')
             lines.append(f"  - #{t['id']} {p} [{s}] {t['subject'][:70]}")
         return "\n".join(lines)
 
