@@ -302,7 +302,9 @@ def get_freshdesk_tickets() -> str:
             return f"- ✅ No active tickets assigned ({total} total checked)"
 
         def classify(subject):
-            if subject.startswith('|Escalation|'):
+            if 'PRIVACY REQUEST' in subject.upper():
+                return 'privacy', subject
+            elif subject.startswith('|Escalation|'):
                 return 'internal', subject.replace('|Escalation|', '').strip(' -')
             elif subject.startswith('***'):
                 return 'customer', subject.lstrip('*').strip()
@@ -329,11 +331,24 @@ def get_freshdesk_tickets() -> str:
             except Exception:
                 return '', ''
 
-        regular    = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'ticket']
-        customer   = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'customer']
-        escalation = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'internal']
+        from datetime import timezone
+        now = datetime.utcnow().replace(tzinfo=timezone.utc)
+
+        classified = [(t, classify(t['subject'])) for t in active]
+        privacy    = [(t, c) for t, c in classified if c[0] == 'privacy']
+        regular    = [(t, c) for t, c in classified if c[0] == 'ticket']
+        customer   = [(t, c) for t, c in classified if c[0] == 'customer']
+        escalation = [(t, c) for t, c in classified if c[0] == 'internal']
 
         lines = [f"- Active assigned: {len(active)} ticket(s)"]
+
+        # Privacy requests — count + age only, no subject (PII)
+        if privacy:
+            lines.append(f"  🔐 **PII Deletion Requests (24hr SLA): {len(privacy)} pending**")
+            for t, _ in sorted(privacy, key=lambda x: x[0].get('created_at', '')):
+                created = t.get('created_at', '')[:10]
+                ticket_id = t['id']
+                lines.append(f"    - #{ticket_id} — received {created} ⚠️ COMPLETE WITHIN 24hrs OF RECEIPT")
 
         if regular:
             lines.append("  **Tickets:**")
