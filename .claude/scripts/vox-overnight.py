@@ -279,7 +279,8 @@ def get_freshdesk_tickets() -> str:
         creds   = base64.b64encode(f'{api_key}:X'.encode()).decode()
         headers = {'Authorization': f'Basic {creds}'}
 
-        query   = f'agent_id:{agent_id} AND (status:2 OR status:3)'
+        # Get all tickets assigned to agent — filter out Resolved(4) and Closed(5) client-side
+        query   = f'agent_id:{agent_id}'
         encoded = urllib.parse.quote(query)
         url     = f'https://{domain}/api/v2/search/tickets?query="{encoded}"'
         req     = urllib.request.Request(url, headers=headers)
@@ -289,17 +290,18 @@ def get_freshdesk_tickets() -> str:
             tickets = data.get('results', [])
             total   = data.get('total', len(tickets))
 
-        status_map   = {2: 'Open', 3: 'Pending', 6: 'WaitingCust'}
+        CLOSED_STATUSES = {4, 5}  # Resolved, Closed
+        status_map   = {2: 'Open', 3: 'Pending', 4: 'Resolved', 5: 'Closed'}
         priority_map = {1: '🔴 Urgent', 2: '🟠 High', 3: '🟡 Medium', 4: '⚪ Low'}
 
-        open_tickets = [t for t in tickets if t.get('status') in (2, 3, 6)]
-        if not open_tickets:
-            return f"- ✅ No open tickets assigned (total checked: {total})"
+        active = [t for t in tickets if t.get('status') not in CLOSED_STATUSES]
+        if not active:
+            return f"- ✅ No active tickets assigned ({total} total checked)"
 
-        lines = [f"- Total assigned open: {len(open_tickets)}"]
-        for t in sorted(open_tickets, key=lambda x: x.get('priority', 4)):
-            p = priority_map.get(t['priority'], str(t['priority']))
-            s = status_map.get(t['status'], str(t['status']))
+        lines = [f"- Active assigned: {len(active)} ticket(s)"]
+        for t in sorted(active, key=lambda x: x.get('priority', 4)):
+            p = priority_map.get(t['priority'], f"P{t['priority']}")
+            s = status_map.get(t['status'], f"Status:{t['status']}")
             lines.append(f"  - #{t['id']} {p} [{s}] {t['subject'][:70]}")
         return "\n".join(lines)
 
