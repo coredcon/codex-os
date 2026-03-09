@@ -26,6 +26,7 @@ SESSION_BRIEF = VAULT_ROOT / ".claude" / "session-brief.md"
 VAULT_INDEX   = VAULT_ROOT / "VAULT-INDEX.md"
 HONEY_DO      = VAULT_ROOT / "04 Home" / "Honey-Do" / "honey-do.md"
 VOX_ARCANUM   = Path(r"C:\Users\aspor\Documents\Vox Arcanum")
+FRESHDESK_ENV = VAULT_ROOT / ".claude" / "config" / "freshdesk.env"
 
 
 # ---------------------------------------------------------------------------
@@ -259,6 +260,74 @@ def count_vox_arcanum() -> int:
     return len([f for f in VOX_ARCANUM.iterdir() if f.is_file()])
 
 
+def get_freshdesk_tickets() -> str:
+    """Pull open/pending tickets assigned to Corey from Freshdesk."""
+    if not FRESHDESK_ENV.exists():
+        return "- (freshdesk.env not found)"
+    try:
+        import urllib.request, urllib.error, base64, json, urllib.parse
+        config = {}
+        for line in FRESHDESK_ENV.read_text().splitlines():
+            if '=' in line and not line.startswith('#'):
+                k, v = line.split('=', 1)
+                config[k.strip()] = v.strip()
+
+        domain    = config.get('FRESHDESK_DOMAIN', '')
+        api_key   = config.get('FRESHDESK_API_KEY', '')
+        agent_id  = config.get('FRESHDESK_AGENT_ID', '')
+
+        creds   = base64.b64encode(f'{api_key}:X'.encode()).decode()
+        headers = {'Authorization': f'Basic {creds}'}
+
+        query   = f'agent_id:{agent_id} AND (status:2 OR status:3 OR status:6)'
+        encoded = urllib.parse.quote(f'"{query}"')
+        url     = f'https://{domain}/api/v2/search/tickets?query={encoded}'
+        req     = urllib.request.Request(url, headers=headers)
+
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data    = json.loads(resp.read())
+            tickets = data.get('results', [])
+            total   = data.get('total', len(tickets))
+
+        status_map   = {2: 'Open', 3: 'Pending', 6: 'WaitingCust'}
+        priority_map = {1: '🔴 Urgent', 2: '🟠 High', 3: '🟡 Medium', 4: '⚪ Low'}
+
+        open_tickets = [t for t in tickets if t.get('status') in (2, 3, 6)]
+        if not open_tickets:
+            return f"- ✅ No open tickets assigned (total checked: {total})"
+
+        lines = [f"- Total assigned open: {len(open_tickets)}"]
+        for t in sorted(open_tickets, key=lambda x: x.get('priority', 4)):
+            p = priority_map.get(t['priority'], str(t['priority']))
+            s = status_map.get(t['status'], str(t['status']))
+            lines.append(f"  - #{t['id']} {p} [{s}] {t['subject'][:70]}")
+        return "\n".join(lines)
+
+    except Exception as e:
+        log(f"Freshdesk error: {e}")
+        return f"- (error fetching tickets: {e})"
+
+
+def git_backup():
+    """Stage all changes and push to GitHub."""
+    import subprocess
+    vault = str(VAULT_ROOT)
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    try:
+        subprocess.run(["git", "-C", vault, "add", "."], check=True, capture_output=True)
+        result = subprocess.run(
+            ["git", "-C", vault, "commit", "-m", f"nightly backup {date_str}"],
+            capture_output=True, text=True
+        )
+        if "nothing to commit" in result.stdout:
+            log("Git: nothing to commit")
+            return
+        subprocess.run(["git", "-C", vault, "push"], check=True, capture_output=True)
+        log(f"Git: backup pushed for {date_str}")
+    except subprocess.CalledProcessError as e:
+        log(f"Git backup error: {e.stderr or e}")
+
+
 def generate_session_brief(today: date, tomorrow: date, tasks: list, events: list):
     """Write .claude/session-brief.md — pre-digested context for Vox startup."""
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -282,6 +351,8 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
     # Vox Arcanum
     arcanum_md = f"Count: {arcanum_count}" + (" — ⚠️ FILES WAITING — read and act at session start" if arcanum_count > 0 else " — clear")
 
+    freshdesk = get_freshdesk_tickets()
+
     content = f"""# Vox Session Brief — {tomorrow.strftime('%Y-%m-%d')}
 > Generated: {generated_at} by vox-overnight.py
 > ⚠️ Live data still needed at startup: personal calendar (asporkable@gmail.com) + work freeBusy (cconley@crunchtime.com)
@@ -294,6 +365,9 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
 
 ## Inbox
 {vi["inbox"]}
+
+## Work — Freshdesk Tickets (assigned to me)
+{freshdesk}
 
 ## Carried Tasks (from {today.strftime('%Y-%m-%d')})
 {tasks_md}
@@ -351,6 +425,9 @@ def main():
 
     append_reflection(summary)
     log(summary)
+
+    # 3. Git backup
+    git_backup()
 
 
 if __name__ == "__main__":

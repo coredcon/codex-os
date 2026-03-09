@@ -1,5 +1,6 @@
 # Secrets / credentials — never commit
 .claude/config/govee.env
+.claude/config/freshdesk.env
 
 # Vox / Claude transient state — regenerates each session
 .claude/WORKING.md
