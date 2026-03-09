@@ -301,11 +301,35 @@ def get_freshdesk_tickets() -> str:
         if not active:
             return f"- ✅ No active tickets assigned ({total} total checked)"
 
+        def classify(subject):
+            if subject.startswith('|Escalation|'):
+                return 'internal', subject.replace('|Escalation|', '').strip(' -')
+            elif subject.startswith('***'):
+                return 'customer', subject.lstrip('*').strip()
+            else:
+                return 'ticket', subject
+
+        regular    = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'ticket']
+        customer   = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'customer']
+        escalation = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'internal']
+
         lines = [f"- Active assigned: {len(active)} ticket(s)"]
-        for t in sorted(active, key=lambda x: x.get('priority', 4)):
-            p = priority_map.get(t['priority'], f"P{t['priority']}")
-            s = status_map.get(t['status'], 'Active')
-            lines.append(f"  - #{t['id']} {p} [{s}] {t['subject'][:70]}")
+
+        if regular:
+            lines.append("  **Tickets:**")
+            for t, (_, subj) in regular:
+                lines.append(f"    - #{t['id']} {subj[:70]}")
+
+        if customer:
+            lines.append("  **Customer-facing (escalated):**")
+            for t, (_, subj) in customer:
+                lines.append(f"    - #{t['id']} {subj[:70]}")
+
+        if escalation:
+            lines.append("  **Internal escalation tracking:**")
+            for t, (_, subj) in escalation:
+                lines.append(f"    - #{t['id']} {subj[:70]}")
+
         return "\n".join(lines)
 
     except Exception as e:
