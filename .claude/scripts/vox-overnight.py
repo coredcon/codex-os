@@ -309,6 +309,26 @@ def get_freshdesk_tickets() -> str:
             else:
                 return 'ticket', subject
 
+        def last_touch(ticket_id):
+            """Return (flag, date) — flag is ⏳ if customer is waiting, else blank."""
+            try:
+                url = f'https://{domain}/api/v2/tickets/{ticket_id}/conversations'
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=8) as resp:
+                    convos = json.loads(resp.read())
+                if not convos:
+                    return '', ''
+                last = convos[-1]
+                date = last.get('created_at', '')[:10]
+                if last.get('incoming', False):
+                    return '⏳', date
+                elif last.get('private', False):
+                    return '', date
+                else:
+                    return '', date
+            except Exception:
+                return '', ''
+
         regular    = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'ticket']
         customer   = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'customer']
         escalation = [(t, classify(t['subject'])) for t in active if classify(t['subject'])[0] == 'internal']
@@ -318,17 +338,23 @@ def get_freshdesk_tickets() -> str:
         if regular:
             lines.append("  **Tickets:**")
             for t, (_, subj) in regular:
-                lines.append(f"    - #{t['id']} {subj[:70]}")
+                flag, date = last_touch(t['id'])
+                waiting = ' ← NEEDS RESPONSE' if flag else ''
+                lines.append(f"    - #{t['id']} {subj[:65]}{waiting} ({date})")
 
         if customer:
             lines.append("  **Customer-facing (escalated):**")
             for t, (_, subj) in customer:
-                lines.append(f"    - #{t['id']} {subj[:70]}")
+                flag, date = last_touch(t['id'])
+                waiting = ' ← NEEDS RESPONSE' if flag else ''
+                lines.append(f"    - #{t['id']} {subj[:65]}{waiting} ({date})")
 
         if escalation:
             lines.append("  **Internal escalation tracking:**")
             for t, (_, subj) in escalation:
-                lines.append(f"    - #{t['id']} {subj[:70]}")
+                flag, date = last_touch(t['id'])
+                waiting = ' ← NEEDS RESPONSE' if flag else ''
+                lines.append(f"    - #{t['id']} {subj[:65]}{waiting} ({date})")
 
         return "\n".join(lines)
 
