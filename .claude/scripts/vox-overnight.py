@@ -279,9 +279,9 @@ def get_freshdesk_tickets() -> str:
         creds   = base64.b64encode(f'{api_key}:X'.encode()).decode()
         headers = {'Authorization': f'Basic {creds}'}
 
-        query   = f'agent_id:{agent_id} AND (status:2 OR status:3 OR status:6)'
-        encoded = urllib.parse.quote(f'"{query}"')
-        url     = f'https://{domain}/api/v2/search/tickets?query={encoded}'
+        query   = f'agent_id:{agent_id} AND (status:2 OR status:3)'
+        encoded = urllib.parse.quote(query)
+        url     = f'https://{domain}/api/v2/search/tickets?query="{encoded}"'
         req     = urllib.request.Request(url, headers=headers)
 
         with urllib.request.urlopen(req, timeout=10) as resp:
