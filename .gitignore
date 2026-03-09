@@ -1,0 +1,25 @@
+# Secrets / credentials — never commit
+.claude/config/govee.env
+
+# Vox / Claude transient state — regenerates each session
+.claude/WORKING.md
+.claude/pending-reflection.md
+.claude/session-brief.md
+.claude/scripts/*.log
+
+# Work calendar — contains meeting names/data
+06 Resources/Work/work-calendar.ics
+
+# Obsidian workspace state — changes constantly, not useful in history
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache
+
+# Temp files Obsidian creates during saves
+*.tmp.*
+
+# Google Drive temp files
+desktop.ini
+Thumbs.db

@@ -1,0 +1,279 @@
+/* ============================================================
+   CODEX.OS — Dark Academia Theme
+   Layer this on top of AnuPpuccin
+   ============================================================ */
+
+/* ── FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cinzel:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── COLOR PALETTE ── */
+:root {
+  --da-bg-primary:      #1a1814;   /* near-black warm */
+  --da-bg-secondary:    #211e1a;   /* card/sidebar bg */
+  --da-bg-tertiary:     #2a2520;   /* hover states */
+  --da-border:          #3d3530;   /* subtle dividers */
+  --da-amber:           #c8963e;   /* gold accent */
+  --da-amber-dim:       #9a7030;   /* dimmed gold */
+  --da-parchment:       #e8dcc8;   /* main text */
+  --da-parchment-dim:   #a89880;   /* muted text */
+  --da-green:           #4a7c59;   /* success / done */
+  --da-red:             #8b3a3a;   /* warning / urgent */
+  --da-ink:             #6b8cba;   /* links / highlights */
+}
+
+/* ── BASE ── */
+.theme-dark {
+  --background-primary:          var(--da-bg-primary);
+  --background-primary-alt:      var(--da-bg-secondary);
+  --background-secondary:        var(--da-bg-secondary);
+  --background-secondary-alt:    var(--da-bg-tertiary);
+  --background-modifier-border:  var(--da-border);
+  --text-normal:                 var(--da-parchment);
+  --text-muted:                  var(--da-parchment-dim);
+  --text-faint:                  #6b6055;
+  --text-accent:                 var(--da-amber);
+  --text-accent-hover:           #e8b055;
+  --interactive-accent:          var(--da-amber);
+  --interactive-accent-hover:    #e8b055;
+}
+
+/* ── TYPOGRAPHY ── */
+.markdown-rendered,
+.markdown-source-view,
+.cm-content {
+  font-family: 'EB Garamond', 'Palatino Linotype', Georgia, serif !important;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: var(--da-parchment);
+}
+
+/* ── HEADINGS ── */
+.markdown-rendered h1,
+.HyperMD-header-1 .cm-header-1 {
+  font-family: 'Cinzel', 'Trajan Pro', serif !important;
+  font-size: 1.9em !important;
+  font-weight: 600 !important;
+  color: var(--da-amber) !important;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--da-border);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+.markdown-rendered h2,
+.HyperMD-header-2 .cm-header-2 {
+  font-family: 'Cinzel', serif !important;
+  font-size: 1.4em !important;
+  color: #d4a855 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em;
+  margin-top: 1.5em;
+}
+
+.markdown-rendered h3,
+.HyperMD-header-3 .cm-header-3 {
+  font-family: 'EB Garamond', serif !important;
+  font-size: 1.2em !important;
+  color: var(--da-parchment) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+}
+
+.markdown-rendered h4,
+.HyperMD-header-4 .cm-header-4 {
+  font-family: 'EB Garamond', serif !important;
+  font-size: 1.05em !important;
+  color: var(--da-parchment-dim) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500 !important;
+}
+
+/* ── LINKS ── */
+.markdown-rendered a,
+.cm-link {
+  color: var(--da-ink) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.markdown-rendered a:hover {
+  color: #8aadd4 !important;
+  border-bottom-color: var(--da-ink);
+}
+
+/* ── BLOCKQUOTES ── */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--da-amber-dim) !important;
+  background: rgba(200, 150, 62, 0.05) !important;
+  padding: 0.8em 1.2em !important;
+  margin: 1em 0 !important;
+  font-style: italic;
+  color: var(--da-parchment-dim) !important;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ── INLINE CODE ── */
+.markdown-rendered code {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.82em !important;
+  background: rgba(200, 150, 62, 0.08) !important;
+  color: #d4a855 !important;
+  padding: 0.1em 0.4em !important;
+  border-radius: 3px !important;
+  border: 1px solid rgba(200, 150, 62, 0.15) !important;
+}
+
+/* ── CODE BLOCKS ── */
+.markdown-rendered pre {
+  background: #141210 !important;
+  border: 1px solid var(--da-border) !important;
+  border-radius: 6px !important;
+}
+
+.markdown-rendered pre code {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.85em !important;
+  background: transparent !important;
+  border: none !important;
+  color: var(--da-parchment) !important;
+}
+
+/* ── HORIZONTAL RULE ── */
+.markdown-rendered hr {
+  border: none !important;
+  border-top: 1px solid var(--da-border) !important;
+  margin: 2em 0 !important;
+  position: relative;
+}
+
+.markdown-rendered hr::after {
+  content: '⁕';
+  position: absolute;
+  left: 50%;
+  top: -0.7em;
+  transform: translateX(-50%);
+  background: var(--da-bg-primary);
+  padding: 0 0.5em;
+  color: var(--da-amber-dim);
+  font-size: 1em;
+}
+
+/* ── CHECKBOXES ── */
+.markdown-rendered .task-list-item-checkbox {
+  appearance: none !important;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid var(--da-amber-dim) !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.markdown-rendered .task-list-item-checkbox:checked {
+  background: var(--da-green) !important;
+  border-color: var(--da-green) !important;
+}
+
+.markdown-rendered .task-list-item-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  left: 1px;
+  top: -1px;
+}
+
+.markdown-rendered li.task-list-item[data-task="x"] > p,
+.markdown-rendered li.task-list-item[data-task="x"] {
+  color: var(--da-parchment-dim) !important;
+  text-decoration: line-through !important;
+}
+
+/* ── TABLES ── */
+.markdown-rendered table {
+  border-collapse: collapse !important;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.markdown-rendered th {
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.8em !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--da-amber) !important;
+  background: rgba(200, 150, 62, 0.06) !important;
+  border-bottom: 2px solid var(--da-border) !important;
+  padding: 0.6em 1em !important;
+  text-align: left;
+}
+
+.markdown-rendered td {
+  padding: 0.5em 1em !important;
+  border-bottom: 1px solid var(--da-border) !important;
+  color: var(--da-parchment);
+}
+
+.markdown-rendered tr:hover td {
+  background: rgba(200, 150, 62, 0.03) !important;
+}
+
+/* ── SIDEBAR ── */
+.nav-folder-title,
+.nav-file-title {
+  font-family: 'EB Garamond', serif !important;
+  font-size: 0.95em !important;
+}
+
+.nav-folder-title-content {
+  color: var(--da-parchment-dim) !important;
+}
+
+.nav-file-title.is-active {
+  color: var(--da-amber) !important;
+  background: rgba(200, 150, 62, 0.08) !important;
+}
+
+/* ── TAGS ── */
+.markdown-rendered .tag {
+  background: rgba(200, 150, 62, 0.1) !important;
+  color: var(--da-amber-dim) !important;
+  border: 1px solid rgba(200, 150, 62, 0.2) !important;
+  border-radius: 3px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.78em !important;
+  padding: 0.1em 0.5em !important;
+}
+
+/* ── BOLD & ITALIC ── */
+.markdown-rendered strong {
+  color: var(--da-amber) !important;
+  font-weight: 600;
+}
+
+.markdown-rendered em {
+  color: #c8b89a !important;
+  font-style: italic;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--da-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--da-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--da-amber-dim);
+}

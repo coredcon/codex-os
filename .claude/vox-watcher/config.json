@@ -1,0 +1,22 @@
+{
+  "watched_dirs": [
+    "F:\\My Drive\\Obsidian\\Codex.os",
+    "C:/Users/aspor/Documents/Vox Arcanum",
+    "F:/My Drive/Echoes of the Forgotten Gods"
+  ],
+  "ignore_patterns": [
+    ".git",
+    ".obsidian",
+    "__pycache__",
+    "vox-watcher",
+    ".claude"
+  ],
+  "ignore_extensions": [
+    ".tmp",
+    ".bak",
+    ".swp"
+  ],
+  "qmd_enabled": true,
+  "paused": false,
+  "debounce_seconds": 5
+}
