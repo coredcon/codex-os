@@ -279,10 +279,13 @@ def get_freshdesk_tickets() -> str:
         creds   = base64.b64encode(f'{api_key}:X'.encode()).decode()
         headers = {'Authorization': f'Basic {creds}'}
 
-        # Get all tickets assigned to agent — filter out Resolved(4) and Closed(5) client-side
-        query   = f'agent_id:{agent_id}'
-        encoded = urllib.parse.quote(query)
-        url     = f'https://{domain}/api/v2/search/tickets?query="{encoded}"'
+        # Query all non-resolved/closed statuses explicitly — Freshdesk has many custom status IDs
+        # Valid active statuses (all except Resolved=4 and Closed=5)
+        active_statuses = [9,27,18,44,2,3,39,37,30,53,52,54,26,20,55,49,50,51,19,33,35,22,29,28,56,57,59,25,58]
+        status_q = ' OR '.join(f'status:{s}' for s in active_statuses)
+        query    = f'agent_id:{agent_id} AND ({status_q})'
+        encoded  = urllib.parse.quote(query)
+        url      = f'https://{domain}/api/v2/search/tickets?query="{encoded}"'
         req     = urllib.request.Request(url, headers=headers)
 
         with urllib.request.urlopen(req, timeout=10) as resp:
