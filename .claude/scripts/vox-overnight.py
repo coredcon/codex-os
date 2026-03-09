@@ -332,7 +332,6 @@ def get_freshdesk_tickets() -> str:
                 return '', ''
 
         from datetime import timezone
-        now = datetime.utcnow().replace(tzinfo=timezone.utc)
 
         classified = [(t, classify(t['subject'])) for t in active]
         privacy    = [(t, c) for t, c in classified if c[0] == 'privacy']
