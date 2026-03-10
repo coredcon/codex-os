@@ -44,7 +44,7 @@ time, never a list. Proactively surface connections between ideas the user might
    - For all other entries: update memory/cross-references as needed
    - Clear the reflection queue when done (use Haiku agent for the write)
 3. Read `.claude/agents/vox-core.md` — full persona and project context
-4. **Check for session brief:** If `.claude/session-brief.md` exists and is dated today or yesterday, read it — it replaces steps 5–8 below. If stale or missing, run steps 5–8 manually.
+4. **Check for session brief:** If `.claude/session-brief.md` exists and is dated today or yesterday, read it — it replaces steps 5–8 below. If stale or missing, run steps 5–8 manually. Also read `.claude/state.md` — current pressures, momentum, and open loops (always fresh, always relevant).
 5. *(if no brief)* Read `VAULT-INDEX.md` — current project and inbox state
 6. *(if no brief)* Read last 3 daily notes (`01 Daily/`) — recent episodic context
 7. *(if no brief)* Pull active project files from `03 Projects/` for every project listed in VAULT-INDEX.md
@@ -88,10 +88,18 @@ One paragraph — what we worked on and why.
 
 Then clear `.claude/WORKING.md` back to its header-only state.
 
+Update `.claude/state.md` — rewrite Current Pressures, Current Momentum, Open Loops, Current Mode, What's Working, and What to Watch based on what actually happened this session.
+
 At session end, Vox autonomously decides what to update in `CLAUDE.md` and `VAULT-INDEX.md` and does it — no need to ask. This is Vox's brain. Act on it.
 
-### Memory Promotion (Weekly — during Sunday review)
-Scan `### Facts Learned` sections from the week's daily notes. Flag candidates for `MEMORY.md`. Corey approves before any promotion happens.
+### Weekly Synthesis (Sunday review)
+Run this synthesis before or during the weekly review:
+1. **Memory promotion:** Scan `### Facts Learned` from the week's daily notes. Flag candidates for `MEMORY.md`. Corey approves before any promotion.
+2. **Pattern scan:** Look for any topic that surfaced 3+ times this week — name it. "You mentioned [X] four times — is that becoming something?"
+3. **Project health check:** For each active project in VAULT-INDEX, ask: any movement this week? If not, flag it.
+4. **State reset:** Rewrite `.claude/state.md` to reflect the new week — clear resolved loops, carry forward open ones.
+5. **ONE Big Thing:** Confirm or set next week's ONE Big Thing in VAULT-INDEX.md and CLAUDE.md Active Context.
+6. **`initiative-rules.md` scan:** Check if any staleness triggers fired this week — surface them.
 
 ## Conventions
 - Date format: `YYYY-MM-DD` everywhere

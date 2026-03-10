@@ -1,15 +1,10 @@
 #!/bin/bash
-# Vox UserPromptSubmit Hook — Session Briefing
-# Fires on first prompt only, using a temp flag file.
+# Vox UserPromptSubmit Hook — Session Briefing + Familiar Bridge
+# Banner: fires once per session
+# Familiar state: fires on every prompt
 
+FAMILIAR_URL="http://192.168.5.50:3000/api/state"
 FLAG="/tmp/vox-session-started.flag"
-
-# Only run once per session
-if [ -f "$FLAG" ]; then
-  exit 0
-fi
-touch "$FLAG"
-
 VAULT="F:/My Drive/Obsidian/Codex.os"
 
 # ANSI colors
@@ -23,7 +18,60 @@ DIM='\033[2m'
 BOLD='\033[1m'
 RESET='\033[0m'
 
-# Use explicit path to date from Git Bash
+# ---------------------------------------------------------------------------
+# FAMILIAR STATE — runs every prompt (keeps Vox aware of current context)
+# ---------------------------------------------------------------------------
+FAMILIAR_JSON=$(curl -s --max-time 2 "$FAMILIAR_URL" 2>/dev/null)
+if [ -n "$FAMILIAR_JSON" ]; then
+  python3 - "$FAMILIAR_JSON" <<'PYEOF'
+import sys, json
+
+data = json.loads(sys.argv[1])
+creature = data.get("creature", {})
+affect   = creature.get("affect", {})
+thought  = creature.get("thought", "")
+symbol   = creature.get("symbol", "")
+
+energy    = affect.get("energy", 0)
+warmth    = affect.get("warmth", 0)
+stability = affect.get("stability", 0)
+attention = affect.get("attention", 0)
+
+def arrow(v):
+    if v >= 0.7: return "^"
+    if v <= 0.35: return "v"
+    return "-"
+
+app_cat  = data.get("appCategory", "")
+period   = data.get("period", "")
+temp     = data.get("temperature", "")
+cond     = data.get("condition", "")
+desktop  = "connected" if data.get("desktopConnected") else "disconnected"
+
+# Build timeline hint (what's active)
+timeline = data.get("timeline", [])
+activity = timeline[0].get("label", "") if timeline else ""
+
+parts = []
+if app_cat: parts.append(app_cat)
+if activity and activity != "now": parts.append(activity)
+context = ", ".join(parts) if parts else "idle"
+
+sym_str = f" {symbol}" if symbol else ""
+thought_str = f' "{thought}"' if thought else ""
+
+print(f'\033[2m[Familiar{sym_str} | e{arrow(energy)} w{arrow(warmth)} s{arrow(stability)} a{arrow(attention)} | {context} | {temp}F {cond}{thought_str}]\033[0m')
+PYEOF
+fi
+
+# ---------------------------------------------------------------------------
+# SESSION BANNER — runs once per session only
+# ---------------------------------------------------------------------------
+if [ -f "$FLAG" ]; then
+  exit 0
+fi
+touch "$FLAG"
+
 TODAY=$(/usr/bin/date +%Y-%m-%d)
 DAY_NAME=$(/usr/bin/date +%A)
 TIME_NOW=$(/usr/bin/date +%H:%M)
@@ -88,7 +136,9 @@ RESET  = '\033[0m'
 try:
     import icalendar, recurring_ical_events
     from datetime import date, datetime, timezone, timedelta
+    from zoneinfo import ZoneInfo
 
+    eastern = ZoneInfo("America/New_York")
     vault = "F:/My Drive/Obsidian/Codex.os"
     ics_path = f"{vault}/06 Resources/Work/work-calendar.ics"
 
@@ -108,8 +158,10 @@ try:
         summary  = str(e.get('SUMMARY', 'No title')).strip()
         dtstart  = e.get('DTSTART').dt
         if isinstance(dtstart, datetime):
+            if dtstart.tzinfo is not None:
+                dtstart = dtstart.astimezone(eastern)
             dt_date  = dtstart.date()
-            time_str = dtstart.astimezone().strftime('%I:%M %p').lstrip('0')
+            time_str = dtstart.strftime('%I:%M %p').lstrip('0')
         else:
             dt_date  = dtstart
             time_str = 'All day'

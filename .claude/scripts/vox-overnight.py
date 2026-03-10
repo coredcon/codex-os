@@ -27,6 +27,7 @@ VAULT_INDEX   = VAULT_ROOT / "VAULT-INDEX.md"
 HONEY_DO      = VAULT_ROOT / "04 Home" / "Honey-Do" / "honey-do.md"
 VOX_ARCANUM   = Path(r"C:\Users\aspor\Documents\Vox Arcanum")
 FRESHDESK_ENV = VAULT_ROOT / ".claude" / "config" / "freshdesk.env"
+STATE_FILE    = VAULT_ROOT / ".claude" / "state.md"
 
 
 # ---------------------------------------------------------------------------
@@ -69,11 +70,17 @@ def get_work_events(target: date) -> list:
         end_dt   = datetime(target.year, target.month, target.day, 23, 59, 59)
         events   = recurring_ical_events.of(cal).between(start_dt, end_dt)
 
+        from zoneinfo import ZoneInfo
+        eastern = ZoneInfo("America/New_York")
+
         results = []
         for ev in events:
             summary = str(ev.get("SUMMARY", "Unknown"))
             dtstart = ev.get("DTSTART").dt
             if hasattr(dtstart, "hour"):
+                # Convert to Eastern if the datetime is timezone-aware
+                if dtstart.tzinfo is not None:
+                    dtstart = dtstart.astimezone(eastern)
                 time_str = dtstart.strftime("%I:%M %p").lstrip("0") or "12:00 AM"
                 results.append((dtstart.hour * 60 + dtstart.minute, f"{time_str} — {summary}"))
             else:
@@ -404,6 +411,7 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
     honey_do = extract_honey_do()
     facts = extract_recent_facts(today)
     arcanum_count = count_vox_arcanum()
+    state = STATE_FILE.read_text(encoding="utf-8") if STATE_FILE.exists() else "(state.md not found)"
 
     # Tasks section
     if tasks:
@@ -452,6 +460,9 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
 
 ## Vox Arcanum Drop
 {arcanum_md}
+
+## State of Corey
+{state}
 
 ## Recent Facts Learned (last 3 days)
 {facts}
