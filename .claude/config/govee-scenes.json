@@ -11,7 +11,7 @@
     "campaign": "Candlelight",
     "combat": { "custom": true, "rgb": 13107200, "note": "deep red rgb(200,0,0) — future Foundry automation" },
     "movie": "Movie",
-    "work": "Study"
+    "work": "Warm"
   },
   "scenes": {
     "Dusk":           { "paramId": 1234, "id": 1172 },

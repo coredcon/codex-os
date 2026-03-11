@@ -45,7 +45,9 @@
       "WebFetch(domain:www.printables.com)",
       "mcp__claude_ai_Google_Calendar__gcal_create_event",
       "WebFetch(domain:www.reddit.com)",
-      "WebFetch(domain:old.reddit.com)"
+      "WebFetch(domain:old.reddit.com)",
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:wiki.theripper93.com)"
     ]
   }
 }
