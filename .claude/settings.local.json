@@ -47,7 +47,10 @@
       "WebFetch(domain:www.reddit.com)",
       "WebFetch(domain:old.reddit.com)",
       "WebFetch(domain:www.amazon.com)",
-      "WebFetch(domain:wiki.theripper93.com)"
+      "WebFetch(domain:wiki.theripper93.com)",
+      "WebFetch(domain:www.tomcartos.com)",
+      "WebFetch(domain:2e.aonprd.com)",
+      "WebFetch(domain:help.obsidian.md)"
     ]
   }
 }

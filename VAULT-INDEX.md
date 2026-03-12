@@ -19,7 +19,7 @@
 | Replace Backyard Fence | Planning | Measure footage, find help for physical work |
 | Clean Garage | Backlog | Schedule a work day |
 | Leslie's Book Nook prints | Blocked | Buy new PLA colors |
-| Library Creatures series | Active | Inkfin in Gemini iteration — see `03 Projects/3D-Printing/library-creatures.md` |
+| Library Creatures series | Paused | Deferred — revisit when ready |
 
 ## Home
 | Item | Status | Notes |

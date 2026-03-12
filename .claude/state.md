@@ -21,7 +21,6 @@
 ## Open Loops
 - Resume needs Crunchtime name update + suggested improvements (`D:/Downloads/Corey_Conley_Resume.pdf`)
 - Corey's chipped front tooth appointment not yet booked (noted 2026-03-05)
-- Inkfin Gemini iteration — Library Creatures prompt pending
 - Relationship map (Tier 2 — not started)
 - Stale memory handling (Tier 2 — not started)
 - EotFG prep — needs dedicated session time
