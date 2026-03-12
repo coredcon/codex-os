@@ -37,7 +37,7 @@ codex-os/
 │   └── config/
 │       ├── freshdesk.env.example
 │       ├── govee.env.example
-│       └── familiar.env.example
+│       
 ├── Templates/
 │   ├── Daily-Note.md
 │   ├── Weekly-Review.md
@@ -138,7 +138,7 @@ The 8-folder structure (00 Inbox through 07 Archive) is a convention, not a requ
 
 - **Freshdesk** — configure `config/freshdesk.env` to pull open tickets into the nightly brief
 - **Govee lights** — configure `config/govee.env` for ambient lighting that responds to Vox session state
-- **Desktop Familiar** — a separate Raspberry Pi + Llama project for ambient AI presence; `session-init.sh` pulls its state on every prompt
+
 
 ---
 
