@@ -1,0 +1,201 @@
+#!/bin/bash
+# Vox UserPromptSubmit Hook — Session Banner + Optional Familiar Bridge
+# Banner: fires once per session
+# Familiar state: fires on every prompt (optional — requires Desktop Familiar)
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+# Update these paths for your setup
+VAULT="[YOUR_VAULT_PATH]"
+QMD_PORT=8182
+
+# Optional: Desktop Familiar integration (Raspberry Pi running ambient AI)
+# Set to empty string to disable: FAMILIAR_URL=""
+FAMILIAR_URL="http://[YOUR_FAMILIAR_IP]:3000/api/state"
+
+FLAG="/tmp/vox-session-started.flag"
+
+# ── QMD MCP AUTO-HEAL — ensure daemon is up on the correct port ───────────────
+QMD_CHECK=$(curl -s --max-time 2 "http://localhost:${QMD_PORT}/mcp" 2>/dev/null)
+if [[ "$QMD_CHECK" != *"jsonrpc"* && "$QMD_CHECK" != *"event-stream"* ]]; then
+  qmd mcp stop 2>/dev/null || true
+  qmd mcp --http --port "$QMD_PORT" --daemon 2>/dev/null
+fi
+
+# ANSI colors
+AMBER='\033[38;5;214m'
+GOLD='\033[1;33m'
+CYAN='\033[36m'
+GREEN='\033[32m'
+YELLOW='\033[1;33m'
+RED='\033[31m'
+DIM='\033[2m'
+BOLD='\033[1m'
+RESET='\033[0m'
+
+# ── FAMILIAR STATE — runs every prompt (optional) ─────────────────────────────
+if [ -n "$FAMILIAR_URL" ]; then
+  FAMILIAR_JSON=$(curl -s --max-time 2 "$FAMILIAR_URL" 2>/dev/null)
+  if [ -n "$FAMILIAR_JSON" ]; then
+    python3 - "$FAMILIAR_JSON" <<'PYEOF'
+import sys, json
+
+data = json.loads(sys.argv[1])
+creature = data.get("creature", {})
+affect   = creature.get("affect", {})
+thought  = creature.get("thought", "")
+symbol   = creature.get("symbol", "")
+
+energy    = affect.get("energy", 0)
+warmth    = affect.get("warmth", 0)
+stability = affect.get("stability", 0)
+attention = affect.get("attention", 0)
+
+def arrow(v):
+    if v >= 0.7: return "^"
+    if v <= 0.35: return "v"
+    return "-"
+
+app_cat  = data.get("appCategory", "")
+period   = data.get("period", "")
+temp     = data.get("temperature", "")
+cond     = data.get("condition", "")
+
+timeline = data.get("timeline", [])
+activity = timeline[0].get("label", "") if timeline else ""
+
+parts = []
+if app_cat: parts.append(app_cat)
+if activity and activity != "now": parts.append(activity)
+context = ", ".join(parts) if parts else "idle"
+
+sym_str = f" {symbol}" if symbol else ""
+thought_str = f' "{thought}"' if thought else ""
+
+print(f'\033[2m[Familiar{sym_str} | e{arrow(energy)} w{arrow(warmth)} s{arrow(stability)} a{arrow(attention)} | {context} | {temp}F {cond}{thought_str}]\033[0m')
+PYEOF
+  fi
+fi
+
+# ── SESSION BANNER — runs once per session only ───────────────────────────────
+if [ -f "$FLAG" ]; then
+  exit 0
+fi
+touch "$FLAG"
+
+TODAY=$(/usr/bin/date +%Y-%m-%d)
+DAY_NAME=$(/usr/bin/date +%A)
+TIME_NOW=$(/usr/bin/date +%H:%M)
+MONTH=$(/usr/bin/date +%m)
+YEAR=$(/usr/bin/date +%Y)
+WEEKNUM=$(/usr/bin/date +%V)
+WEEK_LABEL="${YEAR}-W${WEEKNUM}"
+
+DAILY_NOTE="${VAULT}/01 Daily/${YEAR}/${MONTH}/${TODAY}.md"
+WEEKLY_NOTE="${VAULT}/02 Weekly/${WEEK_LABEL}.md"
+
+INBOX_COUNT=$(find "${VAULT}/00 Inbox" -name "*.md" 2>/dev/null | wc -l)
+HONEY_DO_COUNT=$(find "${VAULT}/04 Home/Honey-Do" -name "*.md" -not -name "README.md" 2>/dev/null | wc -l)
+
+printf "${AMBER}╔══════════════════════════════════════╗${RESET}\n"
+printf "${AMBER}  VOX ONLINE${RESET} ${DIM}—${RESET} ${BOLD}${DAY_NAME}, ${TODAY}${RESET} ${DIM}${TIME_NOW}${RESET}\n"
+printf "${AMBER}╚══════════════════════════════════════╝${RESET}\n"
+printf "\n"
+
+# Daily note status
+if [ ! -f "$DAILY_NOTE" ]; then
+  printf "  ${YELLOW}⚠  No daily note for today yet${RESET}\n"
+else
+  printf "  ${GREEN}✓${RESET}  Daily note ready\n"
+fi
+
+# Weekly note status
+[ ! -f "$WEEKLY_NOTE" ] && printf "  ${DIM}○  No weekly review for ${WEEK_LABEL} yet${RESET}\n"
+
+# Inbox
+[ "$INBOX_COUNT" -gt 0 ] && printf "  ${YELLOW}📥 INBOX: ${INBOX_COUNT} item(s) need processing${RESET}\n"
+
+# Honey-do
+[ "$HONEY_DO_COUNT" -gt 0 ] && printf "  ${DIM}🏠 HONEY-DO: ${HONEY_DO_COUNT} item(s)${RESET}\n"
+
+# ONE Big Thing
+if [ -f "${VAULT}/VAULT-INDEX.md" ]; then
+  ONE_BIG=$(grep -A 3 "ONE Big Thing" "${VAULT}/VAULT-INDEX.md" | grep -v "ONE Big Thing" | grep -v "^>" | grep -v "^$" | grep -v "^-" | head -1 | sed 's/^[[:space:]]*//')
+  if [ -n "$ONE_BIG" ] && [ "$ONE_BIG" != "—" ]; then
+    printf "\n  ${AMBER}★  ${BOLD}${ONE_BIG}${RESET}\n"
+  fi
+fi
+
+# Office day reminder — customize DAY_NAME check for your schedule
+# [ "$DAY_NAME" = "Wednesday" ] && printf "\n  ${YELLOW}${BOLD}⚡ OFFICE DAY — Don't forget you're in today.${RESET}\n"
+
+# Work calendar from ICS (optional — requires icalendar + recurring-ical-events packages)
+WORK_CAL="${VAULT}/06 Resources/Work/work-calendar.ics"
+if [ -f "$WORK_CAL" ]; then
+  python3 - <<PYEOF
+import sys, os
+sys.stdout.reconfigure(encoding='utf-8')
+
+AMBER  = '\033[38;5;214m'
+CYAN   = '\033[36m'
+GREEN  = '\033[32m'
+YELLOW = '\033[1;33m'
+DIM    = '\033[2m'
+BOLD   = '\033[1m'
+RESET  = '\033[0m'
+
+try:
+    import icalendar, recurring_ical_events
+    from datetime import date, datetime, timezone, timedelta
+    from zoneinfo import ZoneInfo
+
+    # Update timezone to match your location
+    local_tz = ZoneInfo("America/New_York")
+    ics_path = "${WORK_CAL}"
+
+    with open(ics_path, 'rb') as f:
+        cal = icalendar.Calendar.from_ical(f.read())
+
+    today = date.today()
+    tomorrow = today + timedelta(days=1)
+    window_start = datetime(today.year, today.month, today.day, 0, 0, tzinfo=timezone.utc)
+    window_end   = datetime(tomorrow.year, tomorrow.month, tomorrow.day, 23, 59, tzinfo=timezone.utc)
+
+    events = recurring_ical_events.of(cal).between(window_start, window_end)
+
+    seen = set()
+    results = []
+    for e in events:
+        summary  = str(e.get('SUMMARY', 'No title')).strip()
+        dtstart  = e.get('DTSTART').dt
+        if isinstance(dtstart, datetime):
+            if dtstart.tzinfo is not None:
+                dtstart = dtstart.astimezone(local_tz)
+            dt_date  = dtstart.date()
+            time_str = dtstart.strftime('%I:%M %p').lstrip('0')
+        else:
+            dt_date  = dtstart
+            time_str = 'All day'
+        key = (dt_date, summary)
+        if key not in seen:
+            seen.add(key)
+            label = 'TODAY' if dt_date == today else 'TMW'
+            results.append((dt_date, label, time_str, summary))
+
+    results.sort()
+    if results:
+        print(f'\n  {AMBER}WORK CALENDAR{RESET}')
+        for _, label, t, s in results:
+            color = GREEN if label == 'TODAY' else CYAN
+            print(f'  {color}[{label}]{RESET} {t} {DIM}—{RESET} {s}')
+    else:
+        print(f'\n  {DIM}WORK: No meetings today or tomorrow{RESET}')
+except ImportError:
+    print(f'\n  \033[31mWORK CAL: pip install icalendar recurring-ical-events\033[0m')
+except Exception:
+    pass
+PYEOF
+else
+  printf "\n  ${DIM}WORK CALENDAR: Drop ICS → 06 Resources/Work/work-calendar.ics${RESET}\n"
+fi
+
+printf "\n"

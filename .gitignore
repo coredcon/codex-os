@@ -1,0 +1,35 @@
+# Personal vault content — never commit
+01 Daily/
+02 Weekly/
+03 Projects/
+04 Home/
+05 Areas/
+06 Resources/
+07 Archive/
+00 Inbox/
+
+# Runtime state files — personal data, regenerated each session
+.claude/session-brief.md
+.claude/WORKING.md
+.claude/pending-reflection.md
+.claude/state.md
+
+# Actual secrets — never commit
+.claude/config/*.env
+!.claude/config/*.env.example
+
+# Logs
+.claude/scripts/*.log
+
+# Claude worktrees — internal
+.claude/worktrees/
+
+# Obsidian app config — personal preferences
+.obsidian/
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# macOS
+.DS_Store

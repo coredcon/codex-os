@@ -1,0 +1,20 @@
+{
+  "watched_dirs": [
+    "[YOUR_VAULT_PATH]"
+  ],
+  "ignore_patterns": [
+    ".git",
+    ".obsidian",
+    "__pycache__",
+    "vox-watcher",
+    ".claude"
+  ],
+  "ignore_extensions": [
+    ".tmp",
+    ".bak",
+    ".swp"
+  ],
+  "qmd_enabled": true,
+  "paused": false,
+  "debounce_seconds": 5
+}
