@@ -27,6 +27,24 @@ tags: [ttrpg, pf2e, campaign]
 |---|---|
 | Abomination Vaults | ✅ Completed 2026-03-01 |
 
+## Prep Status (as of 2026-03-12)
+
+| Item | Status |
+|---|---|
+| Cradle 1 — Hall of a Thousand Faces | ✅ Complete |
+| Cradle 2 — Citadel of the Alchemist | 🔧 Partial — Layer 3 (Anharzet) + Echo Vision in planning |
+| Cradle 3 — Scion of Stars | 🔧 Partial — Bone Garden + floating entrance done; Layer 2/3 in planning |
+| Cradles 4–14 | 📋 Stubs only |
+| Batch 1 Travel Encounters (Garundi South, L12) | ✅ Complete with stat block notes |
+| Batch 2+ Travel Encounters | ❌ Not started |
+
+## PF2e Creature Notes (Batch 1)
+- **Roc (L13), Purple Worm (L14), Graveknight (L13):** Monster Core — official, no adjustment
+- **Sphinx:** Bestiary 3 (not Monster Core). All variants: Sphinx L8, Elder Sphinx L16. No "Gynosphinx" or "Androsphinx" in PF2e.
+- **Kholo/Gnoll:** Max L4–5 officially. Warchief (L13) and Warriors (L10) require custom build via GMG creature creation
+- **Skeletal Champions substitute:** Specter ×4 (L7, Bestiary 2) for Magewaste Drift encounter
+- **Hollow Spy:** Elite Assassin (~L10) from GMG NPC gallery
+
 ## Bridge Notes
 > Use this folder to capture ideas, session prep, or lore notes that need to be transferred to the campaign vault.
 

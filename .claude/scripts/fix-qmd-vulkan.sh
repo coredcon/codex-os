@@ -50,7 +50,7 @@ fi
 echo "[3/3] Restarting QMD daemon..."
 qmd mcp stop 2>/dev/null || true
 sleep 2
-qmd mcp --http --daemon
+qmd mcp --http --port 8182 --daemon
 sleep 3
 qmd status | grep -E "GPU:|MCP:"
 

@@ -13,9 +13,26 @@ Haiku is ~20x cheaper per token. Use it aggressively for anything that doesn't n
 
 ---
 
+## General Principle
+
+**Default to Haiku for anything that doesn't require multi-file reasoning or judgment.**
+When in doubt: if the task is "do this thing I already specified," it's Haiku.
+If the task is "figure out what to do and do it," it's Sonnet.
+
+Heavy token cost is a signal to stop and ask: can I spec this out and hand it to Haiku?
+
+---
+
 ## Haiku Tasks
 
 These should always be spawned as `Agent(model="haiku", ...)`:
+
+### Bulk File Operations (HIGH TOKEN RISK — always delegate)
+- Creating multiple files from a spec or template (e.g., building a repo, scaffolding a project)
+- Sanitizing/rewriting a known set of files with clear rules
+- Copying, renaming, or restructuring files per a decided plan
+- Any task where the "what to write" is already determined and the job is just execution
+> Example: "Build a sanitized public repo from these files" = read files (Sonnet), write spec, hand bulk writing to Haiku
 
 ### File Writes (no synthesis needed)
 - Clearing / writing `pending-reflection.md`

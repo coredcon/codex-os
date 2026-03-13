@@ -2,7 +2,7 @@
   "mcpServers": {
     "qmd-codex": {
       "type": "http",
-      "url": "http://localhost:8181/mcp"
+      "url": "http://localhost:8182/mcp"
     }
   }
 }

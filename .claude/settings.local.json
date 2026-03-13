@@ -50,7 +50,8 @@
       "WebFetch(domain:wiki.theripper93.com)",
       "WebFetch(domain:www.tomcartos.com)",
       "WebFetch(domain:2e.aonprd.com)",
-      "WebFetch(domain:help.obsidian.md)"
+      "WebFetch(domain:help.obsidian.md)",
+      "mcp__qmd-codex__search"
     ]
   }
 }
