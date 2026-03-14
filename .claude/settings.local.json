@@ -51,7 +51,8 @@
       "WebFetch(domain:www.tomcartos.com)",
       "WebFetch(domain:2e.aonprd.com)",
       "WebFetch(domain:help.obsidian.md)",
-      "mcp__qmd-codex__search"
+      "mcp__qmd-codex__search",
+      "WebFetch(domain:developer.govee.com)"
     ]
   }
 }
