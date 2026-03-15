@@ -7,5 +7,4 @@
 - [ ] Remove trash / junk (backyard / garage area) — added 2026-03-03 — have a big green bag but pickup not paid for; move what fits into garbage cans. Rescheduled: next dry day (rained out 2026-03-07–08)
 ## Completed
 *(move done items here with date)*
-- [x] Unclog kids' bathtub — completed 2026-03-08
 

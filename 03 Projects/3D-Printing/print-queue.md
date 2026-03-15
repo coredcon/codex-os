@@ -9,10 +9,10 @@ tags: [3d-printing]
 *(nothing currently printing)*
 
 ## Up Next
-- [ ] Leslie's book nook — need new PLA colors first (buy supplies)
-- [ ] Home office decor — find/design prints to fill the space
+- [/] Leslie's book nook — need new PLA colors first (buy supplies)
+- [/] Home office decor — find/design prints to fill the space
 
 ## Supplies Needed
-- [ ] New PLA colors for book nook project
+- [/] New PLA colors for book nook project
 
 ## Completed

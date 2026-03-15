@@ -8,14 +8,14 @@
 ## Current Pressures
 - Post-merger job uncertainty — actively monitoring market, open to internal moves
 - Finances tight `[user]`
-- EotFG prep window (~8 weeks) — actively being worked now, pressure easing as sessions happen
-- Freshdesk tickets: 4 flagged NEEDS RESPONSE, some very old — needs attention
+- EotFG prep window (~7 weeks from 2026-03-14) — active creative work happening
+- Freshdesk tickets: 6 flagged NEEDS RESPONSE, some very old — still unaddressed
 
 ## Current Momentum
-- codex-os public repo shipped — system is shareable now
-- EotFG campaign planning is moving — Batch 1 encounters complete, Cradle 2 and 3 both have real structure
+- Vox Workspace app taking shape fast — Task Board, edit mode, drag-and-drop, Discuss with Vox all shipped
+- `familiar-mood.py` shipped — Govee mood lighting bridge for Desktop Familiar is working
+- Broken Halo / Astreval spatial design locked: 6 sextants, 6 bridge-spokes, ring street city layout
 - Codex.os daily habit forming
-- Routing policy updated for token efficiency
 
 ## Open Loops
 - Resume needs Crunchtime name update + suggested improvements (`D:/Downloads/Corey_Conley_Resume.pdf`)
@@ -28,17 +28,19 @@
 - Kholo Warchief custom build — needs GMG creature creation work
 - Batch 2+ encounter tables — only Batch 1 exists
 - Cradle_Index_Final.base has broken folder path — needs fix
-- Broken Halo Midjourney map — try the prompt next session
+- Broken Halo sextant maps — 7 more needed (ring street x6 sextants, bridge, inner courtyard, spire entrance, building interiors)
+- familiar-mood.py — remaining moods (idle, playful, sleepy, alert) not fully vibe-checked
+- Claude Code Remote Control — gated, not available yet; check back on future updates
 
 ## Current Mode
-- Maintenance + creative — lighter session, shipped a thing
+- Creative + building — good energy on EotFG worldbuilding and vibe coding
 
 ## What's Working
-- EotFG vault structure is solid — Bases, frontmatter, and file layout all clean
-- codex-os repo is live and shareable
-- Campaign vault now confirmed accessible — Vox can read it directly
+- familiar-mood.py works cleanly — callable from CLI, moods map to Govee API
+- Broken Halo spatial design feels right — ring city / 6-spoke wheel / sextants
+- Midjourney battle map workflow established: no --sref, consolidated --no, orthographic overhead
 
 ## What to Watch
-- Freshdesk NEEDS RESPONSE tickets — some are very old, flag if not addressed by next session
-- Vault writing proactivity — Corey flagged this directly. Write to vault during session, not just at close.
-- Token budget — bulk file operations burned 47% of period; route to Haiku going forward
+- Freshdesk NEEDS RESPONSE tickets — flagged 3 sessions in a row now, still not addressed
+- EotFG Zone notes are out of date vs. overview map — treat overview map as source of truth
+- Last updated: 2026-03-15

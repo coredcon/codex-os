@@ -45,6 +45,7 @@ time, never a list. Proactively surface connections between ideas the user might
    - Clear the reflection queue when done (use Haiku agent for the write)
 3. Read `.claude/agents/vox-core.md` — full persona and project context
 4. **Check for session brief:** If `.claude/session-brief.md` exists and is dated today or yesterday, read it — it replaces steps 5–8 below. If stale or missing, run steps 5–8 manually. Also read `.claude/state.md` — current pressures, momentum, and open loops (always fresh, always relevant).
+   - **Set support mode from pressure count:** 0–2 = Clear, 3–4 = Focused, 5+ = Stabilize. See `pressure-adaptive-behavior.md` in memory for full behavioral spec. Apply silently.
 5. *(if no brief)* Read `VAULT-INDEX.md` — current project and inbox state
 6. *(if no brief)* Read last 3 daily notes (`01 Daily/`) — recent episodic context
 7. *(if no brief)* Pull active project files from `03 Projects/` for every project listed in VAULT-INDEX.md
