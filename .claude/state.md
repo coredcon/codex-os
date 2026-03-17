@@ -5,6 +5,8 @@
 
 ---
 
+## Last updated: 2026-03-17
+
 ## Current Pressures
 - Post-merger job uncertainty — actively monitoring market, open to internal moves
 - Finances tight `[user]`
@@ -12,35 +14,33 @@
 - Freshdesk tickets: 6 flagged NEEDS RESPONSE, some very old — still unaddressed
 
 ## Current Momentum
-- Vox Workspace app taking shape fast — Task Board, edit mode, drag-and-drop, Discuss with Vox all shipped
-- `familiar-mood.py` shipped — Govee mood lighting bridge for Desktop Familiar is working
-- Broken Halo / Astreval spatial design locked: 6 sextants, 6 bridge-spokes, ring street city layout
+- Vox Workspace Rabbit Holes panel shipped + redesigned — research via Vox terminal, markdown rendering, tabs, accent borders
+- Vox personality spec fully rewritten — mode-aware naming (Corey/Kael/Keeper) now explicit
 - Codex.os daily habit forming
 
 ## Open Loops
 - Resume needs Crunchtime name update + suggested improvements (`D:/Downloads/Corey_Conley_Resume.pdf`)
 - Corey's chipped front tooth appointment not yet booked (noted 2026-03-05)
+- Vox Workspace overall UX still feels "bleh" — more design passes needed
+- Rabbit Holes: seed should be required/warned before Research fires (noted as UX debt)
+- Want to discuss Project Hail Mary without spoilers (Corey is at the Rocky clock scene)
 - Relationship map (Tier 2 — not started)
-- Stale memory handling (Tier 2 — not started)
 - Anharzet encounter mechanics (Cradle 2, Layer 3) — 🚧 In Planning
 - Nyshari Echo Vision (Cradle 2) — 🚧 In Planning
 - Oracanys encounter mechanics (Cradle 3, Layer 3) — 🚧 In Planning
 - Kholo Warchief custom build — needs GMG creature creation work
 - Batch 2+ encounter tables — only Batch 1 exists
-- Cradle_Index_Final.base has broken folder path — needs fix
-- Broken Halo sextant maps — 7 more needed (ring street x6 sextants, bridge, inner courtyard, spire entrance, building interiors)
-- familiar-mood.py — remaining moods (idle, playful, sleepy, alert) not fully vibe-checked
-- Claude Code Remote Control — gated, not available yet; check back on future updates
+- Broken Halo sextant maps — 7 more needed
+- familiar-mood.py — remaining moods not fully vibe-checked
+- Claude Code Remote Control — gated, not available yet
 
 ## Current Mode
-- Creative + building — good energy on EotFG worldbuilding and vibe coding
+- Creative + building — good energy on vibe coding
 
 ## What's Working
-- familiar-mood.py works cleanly — callable from CLI, moods map to Govee API
-- Broken Halo spatial design feels right — ring city / 6-spoke wheel / sextants
-- Midjourney battle map workflow established: no --sref, consolidated --no, orthographic overhead
+- Rabbit Holes research flow works end-to-end — Vox does the research, file watcher auto-reloads card
+- Vox personality/naming spec is now explicit and logged in vox-core.md + memory
 
 ## What to Watch
-- Freshdesk NEEDS RESPONSE tickets — flagged 3 sessions in a row now, still not addressed
-- EotFG Zone notes are out of date vs. overview map — treat overview map as source of truth
-- Last updated: 2026-03-15
+- Freshdesk NEEDS RESPONSE tickets — flagged multiple sessions, still not addressed
+- Vox Workspace needs more UX love — functional but not yet delightful

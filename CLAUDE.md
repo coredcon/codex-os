@@ -119,9 +119,9 @@ Run this synthesis before or during the weekly review:
 ## Active Context
 > Update this section at the end of each weekly review.
 
-- **ONE Big Thing this week:** Use Codex.os daily — let the system prove itself
-- **Current work focus:** Daily habit formation
-- **Last weekly review:** —
+- **ONE Big Thing this week:** Own Wednesday — Chris check-in + clear 3 Freshdesk NEEDS RESPONSE tickets
+- **Current work focus:** Work stability + EotFG prep momentum
+- **Last weekly review:** 2026-03-16 (W12)
 - **Inbox status:** Empty
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)
 - **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`)

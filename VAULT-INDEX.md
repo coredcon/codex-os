@@ -1,6 +1,6 @@
 # Vault Index — Codex.os
 > Vox reads this at the start of every session. Keep it current.
-> Last updated: 2026-03-06
+> Last updated: 2026-03-16
 > Launcher: `Codex_os.bat` (desktop shortcut)
 
 ---
@@ -8,7 +8,7 @@
 ## This Week's ONE Big Thing
 > The single most important thing to move forward this week.
 
-✅ Codex.os setup complete — start using it daily
+Own Wednesday: Chris check-in + clear 3 Freshdesk NEEDS RESPONSE tickets
 
 ## Active Projects
 | Project | Status | Next Action |
@@ -38,7 +38,7 @@
 | Ritual | Last Done | Next |
 |---|---|---|
 | Morning Check-In | 2026-03-03 | Tomorrow |
-| Weekly Review | — | Sunday 2026-03-08 |
+| Weekly Review | 2026-03-16 | Sunday 2026-03-22 |
 | QMD re-index | 2026-03-06 | ✅ Done — 5 new, 6 updated, 37 chunks |
 
 ## Active Areas
@@ -51,7 +51,7 @@
 
 ## Quick Links
 - [[01 Daily/2026/03/2026-03-06|Today's Note]]
-- [[02 Weekly/2026-W09|This Week's Review]]
+- [[02 Weekly/2026-W12|This Week's Review]]
 - [[03 Projects/Work|Work Projects]]
 - [[03 Projects/Vibe-Coding|Vibe Coding]]
 - [[03 Projects/3D-Printing|3D Printing]]
