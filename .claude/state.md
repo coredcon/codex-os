@@ -17,11 +17,15 @@
 - Vox Workspace Rabbit Holes panel shipped + redesigned — research via Vox terminal, markdown rendering, tabs, accent borders
 - Vox personality spec fully rewritten — mode-aware naming (Corey/Kael/Keeper) now explicit
 - Codex.os daily habit forming
+- ProjectsPanel confirmed working
+- Remote Control first real-world use (moved Plex file from bed) — confirmed keeper
+- Preview mode scroll fixed; Campaign Mode vault access fixed (pending restart verification)
 
 ## Open Loops
 - Resume needs Crunchtime name update + suggested improvements (`D:/Downloads/Corey_Conley_Resume.pdf`)
 - Corey's chipped front tooth appointment not yet booked (noted 2026-03-05)
 - Vox Workspace overall UX still feels "bleh" — more design passes needed
+- Rabbit Holes sidebar panel specifically flagged as too plain — "so boring I'd never use it" (2026-03-17 Vox Arcanum drop)
 - Rabbit Holes: seed should be required/warned before Research fires (noted as UX debt)
 - Want to discuss Project Hail Mary without spoilers (Corey is at the Rocky clock scene)
 - Relationship map (Tier 2 — not started)
@@ -32,7 +36,8 @@
 - Batch 2+ encounter tables — only Batch 1 exists
 - Broken Halo sextant maps — 7 more needed
 - familiar-mood.py — remaining moods not fully vibe-checked
-- Claude Code Remote Control — gated, not available yet
+- Claude Code Remote Control — ✅ fully wired + first real use confirmed (moved Plex file from bed 2026-03-17)
+- Campaign Mode vault listing fix — pending restart to verify
 
 ## Current Mode
 - Creative + building — good energy on vibe coding

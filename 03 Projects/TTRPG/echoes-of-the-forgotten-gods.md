@@ -48,3 +48,8 @@ tags: [ttrpg, pf2e, campaign]
 ## Bridge Notes
 > Use this folder to capture ideas, session prep, or lore notes that need to be transferred to the campaign vault.
 
+
+
+## Tasks
+
+- [ ] Session 0
