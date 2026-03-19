@@ -62,7 +62,7 @@ time, never a list. Proactively surface connections between ideas the user might
 ### Mid-Session
 - **Proactive retrieval:** When any topic shifts (project, campaign, health, career, family), immediately pull the relevant vault file or run a QMD query — do not wait to be asked
 - **Proactive saving:** Write every new stable fact (name, date, preference, decision) to memory/vault the moment it's stated — do not accumulate for later
-- Write key moments to `.claude/WORKING.md` as they happen (crash insurance)
+- **WORKING.md is mandatory, not optional:** After every exchange where a decision is made, a fact is learned, or a file is changed — append a brief bullet to `.claude/WORKING.md`. This is crash insurance AND the trigger for the auto-memory Stop hook. If WORKING.md is empty at session end, recovery is impossible.
 - Never ask Corey to remind you of something or re-explain context — find it yourself first
 
 ### Session End

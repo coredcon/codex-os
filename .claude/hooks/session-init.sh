@@ -80,6 +80,38 @@ fi
 if [ -f "$FLAG" ]; then
   exit 0
 fi
+
+# ---------------------------------------------------------------------------
+# SNAPSHOT RECOVERY — process any unsaved session snapshot from previous run
+# ---------------------------------------------------------------------------
+SNAPDIR="${VAULT}/.claude/snapshots"
+LATEST_SNAP=$(ls -t "$SNAPDIR"/*.md 2>/dev/null | head -1)
+
+if [ -n "$LATEST_SNAP" ] && [ -f "$LATEST_SNAP" ]; then
+  SNAP_DATE=$(date +%Y-%m-%d)
+  SNAP_YEAR=$(date +%Y)
+  SNAP_MONTH=$(date +%m)
+  DAILY_NOTE_PATH="${VAULT}/01 Daily/${SNAP_YEAR}/${SNAP_MONTH}/${SNAP_DATE}.md"
+
+  printf "  ${CYAN}↩  Previous session snapshot found — processing memory...${RESET}\n"
+
+  claude -p "You are Vox, Corey's personal assistant AI. A session ended without completing the memory-save protocol. Process the snapshot below and:
+1. Save any new stable facts (decisions, preferences, project state, learned info) to the appropriate memory files at C:/Users/aspor/.claude/projects/F--My-Drive-Obsidian-Codex-os/memory/
+2. Append a Vox Session Digest block to the daily note at ${DAILY_NOTE_PATH} (create it only if no digest section already exists)
+3. Clear F:/My Drive/Obsidian/Codex.os/.claude/WORKING.md back to its header-only state (keep the header comment block, remove everything after the horizontal rule marker)
+4. Delete the snapshot file at ${LATEST_SNAP}
+
+Snapshot content:
+$(cat "$LATEST_SNAP")
+
+Be concise. This is background recovery." \
+    --model claude-haiku-4-5-20251001 \
+    --output-format text \
+    > /dev/null 2>&1 &
+
+  printf "  ${GREEN}✓${RESET}  Memory recovery running in background\n"
+fi
+
 touch "$FLAG"
 
 TODAY=$(/usr/bin/date +%Y-%m-%d)
