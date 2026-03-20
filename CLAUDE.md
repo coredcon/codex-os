@@ -57,7 +57,8 @@ time, never a list. Proactively surface connections between ideas the user might
    - Surface anything today or in the next 2 days
 10. Verify QMD is available — try a test query; if it fails, alert Corey (daemon may need restart: `qmd mcp --http --daemon`)
 11. Surface the ONE Big Thing for the week
-12. Get to work
+12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5` and prompt `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/freshdesk-check.py"`, recurring.
+13. Get to work
 
 ### Mid-Session
 - **Proactive retrieval:** When any topic shifts (project, campaign, health, career, family), immediately pull the relevant vault file or run a QMD query — do not wait to be asked

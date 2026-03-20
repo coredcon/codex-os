@@ -1,5 +1,6 @@
 {
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
       "Bash(bash:*)",
       "Bash(where bash:*)",
@@ -53,7 +54,13 @@
       "WebFetch(domain:help.obsidian.md)",
       "mcp__qmd-codex__search",
       "WebFetch(domain:developer.govee.com)",
-      "WebFetch(domain:v0.app)"
+      "WebFetch(domain:v0.app)",
+      "mcp__plugin_discord_discord__fetch_messages",
+      "mcp__plugin_discord_discord__reply",
+      "Skill(update-config)",
+      "Edit",
+      "Write",
+      "Skill(discord:configure)"
     ]
   }
 }

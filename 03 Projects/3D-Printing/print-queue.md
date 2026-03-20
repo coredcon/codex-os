@@ -13,6 +13,6 @@ tags: [3d-printing]
 - [/] Home office decor — find/design prints to fill the space
 
 ## Supplies Needed
-- [/] New PLA colors for book nook project
+- [x] New PLA colors for book nook project
 
 ## Completed

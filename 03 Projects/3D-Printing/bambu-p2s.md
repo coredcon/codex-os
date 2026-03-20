@@ -5,5 +5,3 @@
 
 ## Tasks
 
-- [ ] Define scope for Bambu P2s
-- [ ] First concrete step
