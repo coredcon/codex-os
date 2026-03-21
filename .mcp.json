@@ -3,6 +3,11 @@
     "qmd-codex": {
       "type": "http",
       "url": "http://localhost:8182/mcp"
+    },
+    "brave-search": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"]
     }
   }
 }

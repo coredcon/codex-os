@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "allow": [
       "Bash(bash:*)",
       "Bash(where bash:*)",
@@ -60,7 +59,10 @@
       "Skill(update-config)",
       "Edit",
       "Write",
-      "Skill(discord:configure)"
-    ]
+      "Skill(discord:configure)",
+      "Skill(discord:access)",
+      "mcp__plugin_discord_discord__react"
+    ],
+    "defaultMode": "bypassPermissions"
   }
 }

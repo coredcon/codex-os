@@ -64,7 +64,10 @@ tags: [3d-printing, wizard-study, decor, wishlist]
 | Item | Source | Link | Notes |
 |---|---|---|---|
 | Apothecary Jars | Printables | [view](https://www.printables.com/model/18577-apothecary-jars) | 5 sizes (25–205mm) — print clear, arrange as a set |
-| RPG Potion Shelf | Printables | [view](https://www.printables.com/model/849345-shelf-for-tabletop-rpg-potions) | Holds 6 bottles — functional display piece |
+| Potion Bottle Blanks (display) | MakerWorld | [view](https://makerworld.com/en/models/1806922-potion-bottle-blanks-display) | Several shapes (round, oval, square, vials) — apothecary/alchemist vibe, good for shelf cluster |
+| Destroyed Potion Bookend | MakerWorld | [view](https://makerworld.com/en/models/507012) | Full-sized bookend with spilled potion design — functional + alchemy aesthetic |
+| Magic Potion Bottles | MakerWorld | [view](https://makerworld.com/en/models/1169446-magic-potion-bottles) | Full display bottles (3"+ each) — more styled than the blanks, wizard/alchemist vibe |
+| Alchemist's Cube (puzzle box) | MakerWorld | [view](https://makerworld.com/en/models/827497-alchemist-s-cube-puzzle-combination-box) | Combination puzzle box with alchemy symbols — functional desk piece, good convo starter |
 
 ---
 
