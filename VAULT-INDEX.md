@@ -8,7 +8,7 @@
 ## This Week's ONE Big Thing
 > The single most important thing to move forward this week.
 
-Own Wednesday: Chris check-in + clear 3 Freshdesk NEEDS RESPONSE tickets
+Raising Canes call Monday + clear 3 NEEDS RESPONSE tickets by Wednesday
 
 ## Active Projects
 | Project | Status | Next Action |

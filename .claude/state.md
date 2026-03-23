@@ -1,47 +1,50 @@
 # State of Corey
 > Dynamic file — updated at session end. Included in session-brief.md.
 > User-stated or session-confirmed only. No inferences.
-> Last updated: 2026-03-12
+> Last updated: 2026-03-22
 
 ---
 
-## Last updated: 2026-03-19
+## Last updated: 2026-03-22
 
 ## Current Pressures
 - Post-merger job uncertainty — actively monitoring market, open to internal moves
-- Finances tight `[user]`
-- EotFG prep window (~6 weeks from 2026-03-19) — active NPC/faction work happening
-- Freshdesk tickets: 5 flagged NEEDS RESPONSE, some very old — still unaddressed
+- Finances tight — can't afford Anthropic API $5 minimum right now `[user]`
+- EotFG prep window (~5 weeks from 2026-03-22) — active prep happening
+- Freshdesk tickets: 5 NEEDS RESPONSE tickets unaddressed going into Monday
 
 ## Current Momentum
-- EotFG NPC biographies getting serious depth — Kural fully built out today
-- Pharasmite Inquisition rank structure canonized
-- Stop hook system built last session — auto-memory save between sessions
+- Radarr + Prowlarr + IPTorrents fully operational — movie automation live
+- Vox can add movies to Radarr by voice ("add X to Radarr")
+- Vox Watcher operational, Spotify ambient context working
+- Canonex World Simulation built — test run still pending
+- Bambu P2S price tracker running nightly
 
 ## Open Loops
-- **Cassira Vale biography** — next session (Corey requested)
-- Resume needs Crunchtime name update + suggested improvements (`D:/Downloads/Corey_Conley_Resume.pdf`)
-- Corey's chipped front tooth appointment not yet booked (noted 2026-03-05)
-- Vox Workspace overall UX still feels "bleh" — more design passes needed
-- Rabbit Holes sidebar panel specifically flagged as too plain — "so boring I'd never use it"
-- Rabbit Holes: seed should be required/warned before Research fires (UX debt)
-- Want to discuss Project Hail Mary without spoilers (Corey is at the Rocky clock scene)
-- Relationship map (Tier 2 — not started)
-- Anharzet encounter mechanics (Cradle 2, Layer 3) — 🚧 In Planning
-- Nyshari Echo Vision (Cradle 2) — 🚧 In Planning
-- Oracanys encounter mechanics (Cradle 3, Layer 3) — 🚧 In Planning
-- Kholo Warchief custom build — needs GMG creature creation work
-- Batch 2+ encounter tables — only Batch 1 exists
+- **Sonarr setup** — installed, configure tomorrow
+- **Test Canonex World Simulation** — run `npm start` in frontend, restart backend, hit /simulation
+- **Cassira Vale biography** — still deferred
+- Resume needs Crunchtime name update (`D:/Downloads/Corey_Conley_Resume.pdf`)
+- Chipped front tooth appointment not booked (noted 2026-03-05)
+- Vox Workspace UX passes — Rabbit Holes panel too plain
+- Rabbit Holes: seed required warning before Research fires
+- Want to discuss Project Hail Mary (at Rocky clock scene, no spoilers)
+- EotFG: Anharzet, Nyshari, Oracanys encounters still in planning
+- Kholo Warchief custom build pending
+- Batch 2+ encounter tables
 - Broken Halo sextant maps — 7 more needed
-- familiar-mood.py — remaining moods not fully vibe-checked
+- familiar-mood.py remaining moods not vibe-checked
+- 2nd printer goal: Bambu P2S Combo ($799 baseline) — price tracker running
 
 ## Current Mode
-- EotFG creative prep — good sustained energy
+- Infrastructure building + media automation
 
 ## What's Working
-- Deep NPC biography format is working well — Kural session produced clean, usable lore
-- World-building corrections being caught and fixed in-session (Echo terminology, Broken Halo timeline)
+- Radarr/Prowlarr stack solid first try
+- Vox → Radarr API integration working
+- Vox Watcher ambient context natural in conversation
 
 ## What to Watch
-- Freshdesk NEEDS RESPONSE tickets — flagged multiple sessions, still not addressed
-- Echo terminology discipline — must stay out of all pre-Astreval content
+- Sonarr setup tomorrow
+- Freshdesk NEEDS RESPONSE — Raising Canes call Monday is ONE Big Thing
+- Canonex World Simulation test still pending

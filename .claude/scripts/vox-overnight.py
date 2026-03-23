@@ -428,6 +428,10 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
     # Vox Arcanum
     arcanum_md = f"Count: {arcanum_count}" + (" — ⚠️ FILES WAITING — read and act at session start" if arcanum_count > 0 else " — clear")
 
+    # Price alerts
+    alert_file = VAULT_ROOT / ".claude" / "data" / "bambu-price-alert.txt"
+    price_alerts = f"⚠️ {alert_file.read_text().strip()}" if alert_file.exists() else "- (no alerts)"
+
     freshdesk = get_freshdesk_tickets()
 
     content = f"""# Vox Session Brief — {tomorrow.strftime('%Y-%m-%d')}
@@ -460,6 +464,9 @@ def generate_session_brief(today: date, tomorrow: date, tasks: list, events: lis
 
 ## Vox Arcanum Drop
 {arcanum_md}
+
+## Price Alerts
+{price_alerts}
 
 ## State of Corey
 {state}
@@ -506,7 +513,16 @@ def main():
     append_reflection(summary)
     log(summary)
 
-    # 3. Git backup
+    # 3. Price tracking
+    try:
+        import subprocess
+        price_script = VAULT_ROOT / ".claude" / "scripts" / "bambu-price-check.py"
+        subprocess.run(["python", str(price_script)], timeout=30, capture_output=True)
+        log("Bambu price check complete")
+    except Exception as e:
+        log(f"Bambu price check error: {e}")
+
+    # 4. Git backup
     git_backup()
 
 

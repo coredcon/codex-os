@@ -14,7 +14,7 @@ Garage cleaned out and organized to a functional, usable state.
 
 ## Steps
 - [x] Sort into keep / donate / trash
-- [/] Remove trash and donation items (+ backyard junk) — dumpster delivered 2026-03-19, doing this weekend
+- [x] Remove trash and donation items (+ backyard junk) — dumpster delivered 2026-03-19, doing this weekend
 - [/] Organize what's left
 - [/] Establish a system to maintain it
 
