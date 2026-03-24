@@ -1,30 +1,33 @@
 # State of Corey
 > Dynamic file — updated at session end. Included in session-brief.md.
 > User-stated or session-confirmed only. No inferences.
-> Last updated: 2026-03-22
+> Last updated: 2026-03-23
 
 ---
 
-## Last updated: 2026-03-22
+## Last updated: 2026-03-23
 
 ## Current Pressures
-- Post-merger job uncertainty — actively monitoring market, open to internal moves
+- Post-merger job uncertainty — actively job searching now (automation live, first application in)
 - Finances tight — can't afford Anthropic API $5 minimum right now `[user]`
 - EotFG prep window (~5 weeks from 2026-03-22) — active prep happening
-- Freshdesk tickets: 5 NEEDS RESPONSE tickets unaddressed going into Monday
+- Freshdesk tickets: 5 NEEDS RESPONSE tickets — Raising Canes call Monday is ONE Big Thing
 
 ## Current Momentum
 - Radarr + Prowlarr + IPTorrents fully operational — movie automation live
-- Vox can add movies to Radarr by voice ("add X to Radarr")
+- **Sonarr fully configured** — root: G:\Plex Media\TV, qBittorrent wired, Prowlarr synced (2026-03-23)
+- **Job search automation live** — job-search.py runs weekdays 9am, results in job-tracker.md
+- **Applied to TAM at Ping Identity** (Greenhouse, cover letter included, 2026-03-23)
+- **Resume finalized** — Crunchtime name, LinkedIn, AI bullet, KDS/Freshdesk skills, at Vox Arcanum
+- **Vox Workspace Career mode** — shipped, auto-opens job-tracker.md + career-overview.md
+- Vox can add movies to Radarr by voice
 - Vox Watcher operational, Spotify ambient context working
 - Canonex World Simulation built — test run still pending
 - Bambu P2S price tracker running nightly
 
 ## Open Loops
-- **Sonarr setup** — installed, configure tomorrow
 - **Test Canonex World Simulation** — run `npm start` in frontend, restart backend, hit /simulation
 - **Cassira Vale biography** — still deferred
-- Resume needs Crunchtime name update (`D:/Downloads/Corey_Conley_Resume.pdf`)
 - Chipped front tooth appointment not booked (noted 2026-03-05)
 - Vox Workspace UX passes — Rabbit Holes panel too plain
 - Rabbit Holes: seed required warning before Research fires
@@ -37,14 +40,15 @@
 - 2nd printer goal: Bambu P2S Combo ($799 baseline) — price tracker running
 
 ## Current Mode
-- Infrastructure building + media automation
+- Job search active + media automation complete
 
 ## What's Working
-- Radarr/Prowlarr stack solid first try
-- Vox → Radarr API integration working
+- Full media stack (Radarr/Sonarr/Prowlarr/qBittorrent) solid
+- Job search automation first run returned 10 listings, applied to top pick same day
+- Vox Workspace Career mode shipping quickly
 - Vox Watcher ambient context natural in conversation
 
 ## What to Watch
-- Sonarr setup tomorrow
+- Ping Identity TAM application — follow up if no response in 1 week
 - Freshdesk NEEDS RESPONSE — Raising Canes call Monday is ONE Big Thing
 - Canonex World Simulation test still pending
