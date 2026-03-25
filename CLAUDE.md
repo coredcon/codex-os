@@ -134,4 +134,4 @@ Run this synthesis before or during the weekly review:
 - **Last weekly review:** 2026-03-16 (W12)
 - **Inbox status:** Empty
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)
-- **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`)
+- **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`). MCP daemon runs on port 8181 (`qmd mcp --http --daemon`).

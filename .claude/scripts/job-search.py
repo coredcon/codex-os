@@ -41,6 +41,15 @@ WWR_FEEDS = [
     ("https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss", "Technical/Engineering"),
 ]
 
+# Indeed RSS searches — (query, label)  fromage=3 = posted in last 3 days
+INDEED_SEARCHES = [
+    ("solutions engineer",           "Solutions Engineer"),
+    ("technical account manager",    "Technical Account Manager"),
+    ("implementation specialist",    "Implementation Specialist"),
+    ("integration specialist",       "Integration Specialist"),
+    ("technical support engineer",   "Technical Support Engineer"),
+]
+
 # Title must contain at least one of these (case-insensitive)
 INCLUDE_TITLE_KEYWORDS = [
     "solutions engineer",
@@ -176,6 +185,48 @@ def search_wwr(feed_url, label):
 
     return jobs, None
 
+def search_indeed(query, label):
+    """Fetch from Indeed RSS feed."""
+    q = urllib.parse.quote(query)
+    url = f"https://www.indeed.com/rss?q={q}&l=remote&sort=date&fromage=3"
+    try:
+        raw = fetch_url(url)
+        root = ET.fromstring(raw)
+    except Exception as e:
+        return [], f"Indeed ({label}): {e}"
+
+    jobs = []
+    channel = root.find("channel")
+    if not channel:
+        return [], None
+
+    for item in channel.findall("item"):
+        raw_title = clean_html(item.findtext("title", ""))
+        # Indeed title format: "Job Title - Company Name" or just "Job Title"
+        company = ""
+        title = raw_title
+        if " - " in raw_title:
+            parts = raw_title.rsplit(" - ", 1)
+            title, company = parts[0].strip(), parts[1].strip()
+        # Also try <source> element
+        source_el = item.find("source")
+        if source_el is not None and source_el.text:
+            company = source_el.text.strip()
+
+        link    = item.findtext("link", "").strip()
+        guid    = item.findtext("guid", link).strip()
+        snippet = clean_html(item.findtext("description", ""))[:200]
+
+        if not is_good_match(title, snippet):
+            continue
+
+        jobs.append({
+            "guid": guid, "title": title, "company": company,
+            "location": "Remote", "link": link, "snippet": snippet,
+        })
+
+    return jobs, None
+
 # ── Tracker ───────────────────────────────────────────────────────────────────
 
 def ensure_tracker():
@@ -231,6 +282,17 @@ def main():
         for j in fresh:
             new_seen.add(j["guid"])
         key = f"WWR — {label}"
+        results[key] = results.get(key, []) + fresh
+
+    # Indeed
+    for query, label in INDEED_SEARCHES:
+        jobs, err = search_indeed(query, label)
+        if err:
+            errors.append(err)
+        fresh = [j for j in jobs if j["guid"] not in seen and j["guid"] not in new_seen]
+        for j in fresh:
+            new_seen.add(j["guid"])
+        key = f"Indeed — {label}"
         results[key] = results.get(key, []) + fresh
 
     total_new = sum(len(v) for v in results.values())

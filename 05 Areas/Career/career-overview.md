@@ -48,6 +48,10 @@ tags: [career]
 
 ## Notes / Log
 
+### 2026-03-24
+- Applied to **Solutions Engineer — Dynatrace** (Tampa, FL | $128K–$160K) via Indeed
+- Applied to **Senior Solutions Engineer — n8n** (Remote | $250K–$275K) via Indeed
+
 ### 2026-03-23
 - Applied to TAM role at Ping Identity via Greenhouse — cover letter included
 - Resume finalized (Crunchtime name, LinkedIn, AI bullet, KDS/Freshdesk skills)

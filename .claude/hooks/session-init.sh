@@ -6,7 +6,7 @@
 FAMILIAR_URL="http://192.168.5.50:3000/api/state"
 FLAG="/tmp/vox-session-started.flag"
 VAULT="F:/My Drive/Obsidian/Codex.os"
-QMD_PORT=8182
+QMD_PORT=8181
 
 # ---------------------------------------------------------------------------
 # QMD MCP AUTO-HEAL — ensure daemon is up on the correct port
@@ -14,7 +14,7 @@ QMD_PORT=8182
 QMD_CHECK=$(curl -s --max-time 2 "http://localhost:${QMD_PORT}/mcp" 2>/dev/null)
 if [[ "$QMD_CHECK" != *"jsonrpc"* && "$QMD_CHECK" != *"event-stream"* ]]; then
   qmd mcp stop 2>/dev/null || true
-  qmd mcp --http --port "$QMD_PORT" --daemon 2>/dev/null
+  qmd mcp --http --daemon 2>/dev/null
 fi
 
 # ANSI colors

@@ -29,7 +29,6 @@ Foundry VTT (browser)
 
 ## Components to Build
 
-- [ ] Foundry macro or module — listens to hooks, POSTs to local server
 - [ ] Scene type → light scene mapping config
 - [ ] Auto-start the server (add to Windows Startup like QMD daemon)
 

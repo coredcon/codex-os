@@ -1,8 +1,11 @@
----
-created: 2026-03-17
-updated: 2026-03-17
-seed: upcoming Star Wars movies
----
+# Star Wars
+
+> Promoted from Rabbit Hole — 2026-03-24
+> Seed: upcoming Star Wars movies
+
+## Notes
+
+Star Wars Rocks!
 
 ## Research
 
@@ -40,3 +43,8 @@ seed: upcoming Star Wars movies
 - **Dawn of the Jedi** — James Mangold — 25,000 years before ANH, Force origin story — script done, on hold
 - **Taika Waititi untitled** — co-written with Tony McNamara (Poor Things) — "hilarious and great" per Kennedy
 - **Simon Kinberg trilogy** — announced Nov 2024, earliest stages
+
+## Tasks
+
+- [ ] Define scope for Star Wars
+- [ ] First concrete step
