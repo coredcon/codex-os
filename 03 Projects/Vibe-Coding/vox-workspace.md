@@ -1,7 +1,8 @@
 ---
 title: Vox Workspace
-status: Planning
+status: Active — Daily Use
 started: 2026-03-14
+last_updated: 2026-03-26
 tags: [vibe-coding, electron, vox, tooling]
 ---
 
@@ -126,27 +127,46 @@ The terminal isn't going away — it's getting a frame. The left side is the act
 
 ## Project Status
 
-- [x] Scaffold Electron + Vite + React project
-- [x] Get xterm.js + node-pty running with a basic shell
-- [x] Pipe Claude Code subprocess into xterm.js
-- [x] Add chokidar file watcher + IPC to renderer
-- [x] Build Vault File Viewer panel (with edit mode + save)
-- [x] Build Today View panel (clean section parser, no frontmatter noise)
-- [x] Build Kanban / Task Board panel
-- [x] Style — dark theme, purple accent, drag handle, status bar
-- [x] Govee Lights panel (direct API, faster than Govee desktop app)
-- [x] State strip — Mode, Momentum, Open Tasks, Pressures (clickable popovers)
-- [x] Today: Focus card (Mode + Momentum from state.md, live-updating)
-- [x] Vault: Edit mode with save (writeFile IPC)
-- [x] Board: 3-column Kanban (To Do / In Progress / Done)
-- [x] Board: Project cards with progress bar + expandable subtasks
-- [x] Board: Drag cards between columns (writes back to vault files)
-- [x] Board: Clickable subtasks on project cards
-- [x] Board: Right-click → Discuss with Vox (sends context to terminal)
-- [x] State strip popovers: click item → Discuss with Vox
-- [ ] Replace `Codex_os.bat` launcher with app shortcut
-- [ ] Persist split pane position across launches
-- [ ] Session continuity panel
+### Core Infrastructure ✅
+- [x] Scaffold Electron + Vite + React + TypeScript
+- [x] xterm.js + node-pty terminal emulation
+- [x] Claude Code subprocess piped into terminal
+- [x] chokidar file watcher + IPC to renderer
+- [x] Remote control auto-spawn (Claude mobile access)
+- [x] Design system overhaul — 4-level surface tokens, unified Cascadia Code font
+- [x] App launcher via `Vox Workspace.vbs` (desktop shortcut, replaces Codex_os.bat)
+
+### Mode System ✅ (6 modes)
+- [x] **Daily** — Today, Vault, Board, Lights
+- [x] **Work** — Queue (Freshdesk), Calendar, Board, Docs
+- [x] **Builder** — Projects, Board, Rabbit Holes, Vault, Lights
+- [x] **Home** — Nest (HomePanel), Honey-Do, Projects, Health (amber theme)
+- [x] **Career** — Jobs (job-tracker.md), Overview, Files
+- [x] **Campaign** — EotFG vault, Session Notes (placeholder), Encounter Ref (placeholder)
+
+### Panels Built ✅
+- [x] TodayPanel — daily note, tasks, Focus card, **Best Next Action intelligence card**
+- [x] VaultPanel — file tree + markdown preview + edit mode + Discuss with Vox (right-click)
+- [x] KanbanPanel — 3-column drag & drop, project cards, subtasks, manual task entry
+- [x] FreshdeskPanel — live ticket queue, change detection (diffs updated_at/status), badge counts, filter pills
+- [x] GoveePanel — mood setter via direct Govee API
+- [x] ProjectsPanel — master-detail, category auto-discovery, tasks + notes + dev log
+- [x] HomePanel — honey-do tasks, ambient context widget, family card, house projects
+- [x] WorkCalendarPanel — 7-day ICS reader (node-ical), NOW badge, recurring events
+
+### Intelligence Layer ✅
+- [x] Best Next Action card — 5-state rules engine (urgent/important/quick-win/recovery/clear)
+- [ ] Priority tagging on individual tasks (avoidance/blocked/emotionally heavy)
+- [ ] Mode-aware proactive Vox surface in panel layer
+
+### Pending
+- [ ] Campaign panels: Session Notes + Encounter Reference (still PlaceholderPanel)
+- [ ] Focus Mode: minimal UI, single task large, optional timer
+- [ ] Quick Capture widget → 00 Inbox/
+- [ ] Persist split pane % to localStorage
+- [ ] Rabbit Holes panel: needs UI/design pass
+- [ ] FreshdeskPanel / ProjectsPanel / RabbitHolePanel CSS: still have hardcoded hex
+- [ ] Requester name on tickets (needs per-ticket API calls)
 
 ---
 

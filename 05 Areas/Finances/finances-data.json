@@ -1,0 +1,158 @@
+{
+  "period": {
+    "start": "2026-02-24",
+    "end": "2026-03-21"
+  },
+  "parsedAt": "2026-03-26 21:46",
+  "source": "SOFI-JointChecking\u20222540-2026-03-26T05_49_36.csv",
+  "balance": -45.09,
+  "totalIn": 5441.47,
+  "totalOut": 5085.2,
+  "net": 356.27,
+  "spending": [
+    {
+      "category": "Housing: Mortgage",
+      "amount": 1676.64,
+      "budget": 1677
+    },
+    {
+      "category": "Utilities: Electric",
+      "amount": 760.0,
+      "budget": 300
+    },
+    {
+      "category": "Dining: Fast Food",
+      "amount": 717.11,
+      "budget": 300
+    },
+    {
+      "category": "Shopping: Amazon",
+      "amount": 555.32,
+      "budget": 200
+    },
+    {
+      "category": "Gas",
+      "amount": 269.84,
+      "budget": 150
+    },
+    {
+      "category": "Groceries",
+      "amount": 245.06,
+      "budget": 300
+    },
+    {
+      "category": "Personal: Tobacco",
+      "amount": 216.09,
+      "budget": 150
+    },
+    {
+      "category": "Bills: Phone",
+      "amount": 183.33,
+      "budget": 183
+    },
+    {
+      "category": "Utilities: Water",
+      "amount": 128.19,
+      "budget": 130
+    },
+    {
+      "category": "Utilities: City",
+      "amount": 82.8,
+      "budget": 85
+    },
+    {
+      "category": "Shopping: Thrift",
+      "amount": 48.81,
+      "budget": 50
+    },
+    {
+      "category": "Bills: Internet",
+      "amount": 44.99,
+      "budget": 45
+    },
+    {
+      "category": "Subscriptions: Audible",
+      "amount": 32.84,
+      "budget": 17
+    },
+    {
+      "category": "Personal: Grooming",
+      "amount": 23.54,
+      "budget": 25
+    },
+    {
+      "category": "Uncategorized",
+      "amount": 22.25,
+      "budget": null
+    },
+    {
+      "category": "Subscriptions: ChatGPT",
+      "amount": 20.0,
+      "budget": 20
+    },
+    {
+      "category": "Subscriptions: Claude",
+      "amount": 20.0,
+      "budget": 20
+    },
+    {
+      "category": "Shopping: Convenience",
+      "amount": 12.12,
+      "budget": 30
+    },
+    {
+      "category": "Subscriptions: Midjourney",
+      "amount": 10.0,
+      "budget": 10
+    },
+    {
+      "category": "City: Parking/Fees",
+      "amount": 10.0,
+      "budget": 15
+    },
+    {
+      "category": "Subscriptions: Google",
+      "amount": 4.22,
+      "budget": 5
+    },
+    {
+      "category": "Health: Pharmacy",
+      "amount": 2.05,
+      "budget": 25
+    }
+  ],
+  "income": [
+    {
+      "source": "Income: Other",
+      "amount": 317.65
+    },
+    {
+      "source": "Income: Paycheck",
+      "amount": 5123.82
+    }
+  ],
+  "transfers": [
+    {
+      "type": "Transfers: Internal",
+      "amount": 194.1
+    },
+    {
+      "type": "Transfers: People",
+      "amount": 355.0
+    }
+  ],
+  "flagged": [
+    {
+      "date": "03-15",
+      "description": "AMAZON MARKETPLACE",
+      "amount": 296.52,
+      "category": "Shopping: Amazon"
+    },
+    {
+      "date": "03-16",
+      "description": "DUKEENERGYCORPOR",
+      "amount": 760.0,
+      "category": "Utilities: Electric"
+    }
+  ]
+}

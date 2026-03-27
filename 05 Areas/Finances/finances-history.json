@@ -1,0 +1,362 @@
+[
+  {
+    "label": "Apr 2025",
+    "period": {
+      "start": "2025-04-01",
+      "end": "2025-04-30"
+    },
+    "totalIn": 5177.45,
+    "totalOut": 3962.27,
+    "net": 1215.18,
+    "spending": {
+      "Uncategorized": 2050.27,
+      "Groceries": 506.99,
+      "Shopping: Amazon": 356.47,
+      "Gas": 353.04,
+      "Dining: Fast Food": 267.25,
+      "Bills: Phone": 183.33,
+      "Personal: Tobacco": 110.24,
+      "Shopping: Thrift": 90.0,
+      "Subscriptions: Streaming": 15.98,
+      "Subscriptions: Patreon": 13.5,
+      "Shopping: Convenience": 9.86,
+      "Subscriptions: Google": 5.34
+    }
+  },
+  {
+    "label": "May 2025",
+    "period": {
+      "start": "2025-05-01",
+      "end": "2025-05-31"
+    },
+    "totalIn": 11302.44,
+    "totalOut": 6150.4,
+    "net": 5152.04,
+    "spending": {
+      "Shopping: Amazon": 1457.31,
+      "Uncategorized": 1359.35,
+      "Dining: Fast Food": 947.45,
+      "Gas": 733.83,
+      "Groceries": 716.81,
+      "Dining: Restaurants": 232.47,
+      "Bills: Phone": 213.33,
+      "Shopping: Thrift": 100.0,
+      "Bills: Internet": 86.18,
+      "Shopping: Media": 70.88,
+      "Shopping: Home Improvement": 57.5,
+      "Personal: Tobacco": 46.38,
+      "Shopping: Convenience": 34.11,
+      "Subscriptions: Streaming": 21.97,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Patreon": 17.5,
+      "Subscriptions: Audible": 16.0,
+      "Subscriptions: Hosting": 12.0,
+      "Subscriptions: Google": 7.33
+    }
+  },
+  {
+    "label": "Jun 2025",
+    "period": {
+      "start": "2025-06-01",
+      "end": "2025-06-30"
+    },
+    "totalIn": 5252.42,
+    "totalOut": 4593.97,
+    "net": 658.45,
+    "spending": {
+      "Dining: Fast Food": 1101.84,
+      "Groceries": 870.08,
+      "Gas": 602.42,
+      "Shopping: Amazon": 579.57,
+      "Uncategorized": 541.31,
+      "Health: Other": 217.24,
+      "Bills: Phone": 213.33,
+      "Personal: Tobacco": 180.32,
+      "Bills: Internet": 54.99,
+      "Dining: Restaurants": 49.32,
+      "Utilities: Water": 41.95,
+      "Shopping: Convenience": 26.36,
+      "Subscriptions: Streaming": 21.97,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Hosting": 18.28,
+      "Subscriptions: Gaming": 17.99,
+      "Subscriptions: Patreon": 13.5,
+      "Subscriptions: Google": 12.81,
+      "Subscriptions: Apple": 10.69
+    }
+  },
+  {
+    "label": "Jul 2025",
+    "period": {
+      "start": "2025-07-01",
+      "end": "2025-07-31"
+    },
+    "totalIn": 5152.45,
+    "totalOut": 3207.72,
+    "net": 1944.73,
+    "spending": {
+      "Dining: Fast Food": 1075.6,
+      "Gas": 400.48,
+      "Groceries": 372.49,
+      "Personal: Tobacco": 323.84,
+      "Bills: Phone": 213.33,
+      "Shopping: Amazon": 157.05,
+      "Uncategorized": 102.23,
+      "Dining: Restaurants": 89.94,
+      "Subscriptions: Patreon": 71.35,
+      "Entertainment": 59.25,
+      "Bills: Internet": 54.99,
+      "Subscriptions: Apple": 52.77,
+      "Pets": 44.91,
+      "Health: Other": 40.0,
+      "Shopping: Convenience": 37.55,
+      "Shopping: Retail": 34.57,
+      "Family: School": 33.25,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Hosting": 16.0,
+      "Subscriptions: Streaming": 5.99,
+      "Subscriptions: Google": 2.13
+    }
+  },
+  {
+    "label": "Aug 2025",
+    "period": {
+      "start": "2025-08-01",
+      "end": "2025-08-31"
+    },
+    "totalIn": 5152.44,
+    "totalOut": 4632.47,
+    "net": 519.97,
+    "spending": {
+      "Dining: Fast Food": 922.52,
+      "Shopping: Amazon": 763.9,
+      "Groceries": 486.43,
+      "Gas": 412.87,
+      "Utilities: Trash": 356.96,
+      "Personal: Tobacco": 336.88,
+      "Uncategorized": 238.96,
+      "Bills: Phone": 213.33,
+      "Shopping: Thrift": 210.94,
+      "Subscriptions: Apple": 76.59,
+      "Subscriptions: Patreon": 61.44,
+      "Shopping: Media": 57.23,
+      "Dining: Restaurants": 55.42,
+      "Bills: Internet": 54.99,
+      "Shopping: Retail": 54.85,
+      "Family: School": 53.5,
+      "Utilities: Water": 48.05,
+      "Shopping: Home Improvement": 45.85,
+      "Health: Other": 40.0,
+      "Entertainment": 35.89,
+      "Shopping: Convenience": 32.92,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Audible": 16.0,
+      "Subscriptions: Hosting": 16.0,
+      "Subscriptions: Gaming": 13.62,
+      "Subscriptions: Google": 7.33
+    }
+  },
+  {
+    "label": "Sep 2025",
+    "period": {
+      "start": "2025-09-01",
+      "end": "2025-09-30"
+    },
+    "totalIn": 5152.43,
+    "totalOut": 3381.48,
+    "net": 1770.95,
+    "spending": {
+      "Dining: Fast Food": 761.1,
+      "Groceries": 397.14,
+      "Uncategorized": 352.36,
+      "Shopping: Amazon": 304.12,
+      "Personal: Tobacco": 276.34,
+      "Shopping: Thrift": 229.11,
+      "Shopping: Media": 223.62,
+      "Bills: Phone": 213.33,
+      "Gas": 174.62,
+      "Dining: Restaurants": 140.71,
+      "Family: School": 108.5,
+      "Shopping: Home Improvement": 45.31,
+      "Subscriptions: Patreon": 36.51,
+      "Health: Other": 30.0,
+      "Subscriptions: ChatGPT": 20.0,
+      "Entertainment": 17.94,
+      "Subscriptions: Audible": 16.0,
+      "Subscriptions: Hosting": 16.0,
+      "Shopping: Convenience": 11.44,
+      "Subscriptions: Google": 7.33
+    }
+  },
+  {
+    "label": "Oct 2025",
+    "period": {
+      "start": "2025-10-01",
+      "end": "2025-10-31"
+    },
+    "totalIn": 5152.44,
+    "totalOut": 6171.05,
+    "net": -1018.61,
+    "spending": {
+      "Shopping: Amazon": 1208.53,
+      "Dining: Fast Food": 1207.11,
+      "Groceries": 1142.57,
+      "Uncategorized": 702.95,
+      "Gas": 399.23,
+      "Personal: Tobacco": 297.09,
+      "Bills: Phone": 213.33,
+      "Dining: Restaurants": 202.85,
+      "Family: School": 142.0,
+      "Shopping: Home Improvement": 113.43,
+      "Bills: Internet": 109.98,
+      "Utilities: Water": 84.95,
+      "Subscriptions: Gaming": 63.11,
+      "Subscriptions: Patreon": 59.81,
+      "Shopping: Clothing": 46.98,
+      "Shopping: Home": 42.52,
+      "Subscriptions: Audible": 30.41,
+      "Shopping: Convenience": 28.94,
+      "Subscriptions: Apple": 21.37,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Hosting": 16.0,
+      "Shopping: Media": 15.9,
+      "Subscriptions: Google": 1.99
+    }
+  },
+  {
+    "label": "Nov 2025",
+    "period": {
+      "start": "2025-11-01",
+      "end": "2025-11-30"
+    },
+    "totalIn": 5152.43,
+    "totalOut": 3612.13,
+    "net": 1540.3,
+    "spending": {
+      "Shopping: Amazon": 1440.2,
+      "Dining: Fast Food": 751.15,
+      "Uncategorized": 313.53,
+      "Groceries": 304.77,
+      "Dining: Restaurants": 223.48,
+      "Bills: Phone": 213.33,
+      "Personal: Tobacco": 108.88,
+      "Gas": 96.72,
+      "Bills: Internet": 54.99,
+      "Subscriptions: Patreon": 30.6,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Claude": 20.0,
+      "Subscriptions: Audible": 16.0,
+      "Subscriptions: Hosting": 16.0,
+      "Shopping: Convenience": 2.48
+    }
+  },
+  {
+    "label": "Dec 2025",
+    "period": {
+      "start": "2025-12-01",
+      "end": "2025-12-31"
+    },
+    "totalIn": 7688.62,
+    "totalOut": 3816.57,
+    "net": 3872.05,
+    "spending": {
+      "Dining: Fast Food": 1167.66,
+      "Shopping: Amazon": 999.34,
+      "Shopping: Clothing": 362.88,
+      "Shopping: eBay": 281.29,
+      "Bills: Phone": 213.33,
+      "Shopping: Home": 196.68,
+      "Uncategorized": 195.37,
+      "Dining: Restaurants": 114.09,
+      "Groceries": 63.88,
+      "Family: School": 63.5,
+      "Bills: Internet": 54.99,
+      "Subscriptions: Google": 26.73,
+      "Subscriptions: Patreon": 22.84,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Gaming": 17.99,
+      "Subscriptions: Hosting": 16.0
+    }
+  },
+  {
+    "label": "Jan 2026",
+    "period": {
+      "start": "2026-01-01",
+      "end": "2026-01-31"
+    },
+    "totalIn": 4933.48,
+    "totalOut": 2511.41,
+    "net": 2422.07,
+    "spending": {
+      "Uncategorized": 624.0,
+      "Groceries": 553.02,
+      "Dining: Fast Food": 511.87,
+      "Shopping: Amazon": 345.56,
+      "Bills: Phone": 213.33,
+      "Utilities: Water": 57.61,
+      "Bills: Internet": 54.99,
+      "Shopping: Clothing": 43.62,
+      "Subscriptions: Hosting": 21.49,
+      "Subscriptions: Claude": 20.0,
+      "Subscriptions: ChatGPT": 20.0,
+      "Shopping: Home": 19.23,
+      "Subscriptions: Audible": 16.0,
+      "Subscriptions: Apple": 10.69
+    }
+  },
+  {
+    "label": "Feb 2026",
+    "period": {
+      "start": "2026-02-01",
+      "end": "2026-02-28"
+    },
+    "totalIn": 2452.31,
+    "totalOut": 1328.77,
+    "net": 1123.54,
+    "spending": {
+      "Shopping: Amazon": 411.7,
+      "Dining: Fast Food": 288.58,
+      "Groceries": 249.42,
+      "Bills: Phone": 183.33,
+      "Uncategorized": 94.16,
+      "Family: School": 33.5,
+      "Subscriptions: Apple": 32.08,
+      "Subscriptions: Hosting": 20.0,
+      "Subscriptions: Audible": 16.0
+    }
+  },
+  {
+    "label": "Feb-Mar 2026",
+    "period": {
+      "start": "2026-02-24",
+      "end": "2026-03-21"
+    },
+    "totalIn": 5441.47,
+    "totalOut": 5085.2,
+    "net": 356.27,
+    "spending": {
+      "Housing: Mortgage": 1676.64,
+      "Utilities: Electric": 760.0,
+      "Dining: Fast Food": 717.11,
+      "Shopping: Amazon": 555.32,
+      "Gas": 269.84,
+      "Groceries": 245.06,
+      "Personal: Tobacco": 216.09,
+      "Bills: Phone": 183.33,
+      "Utilities: Water": 128.19,
+      "Utilities: City": 82.8,
+      "Shopping: Thrift": 48.81,
+      "Bills: Internet": 44.99,
+      "Subscriptions: Audible": 32.84,
+      "Personal: Grooming": 23.54,
+      "Uncategorized": 22.25,
+      "Subscriptions: ChatGPT": 20.0,
+      "Subscriptions: Claude": 20.0,
+      "Shopping: Convenience": 12.12,
+      "Subscriptions: Midjourney": 10.0,
+      "City: Parking/Fees": 10.0,
+      "Subscriptions: Google": 4.22,
+      "Health: Pharmacy": 2.05
+    }
+  }
+]

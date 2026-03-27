@@ -10,7 +10,6 @@
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
 | 2026-03-24 | [Senior Solutions Engineer](https://to.indeed.com/aaqstbnn6wft) | n8n | $250K–$275K | Applied | East Coast remote. Workflow automation. Strong fit. |
-| 2026-03-24 | [Solutions Engineer](https://to.indeed.com/aatqdy44px24) | Dynatrace | $128K–$160K | Applied | Tampa FL. Observability/APM. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
 
 ---
@@ -19,11 +18,11 @@
 
 | Role | Company | Pay | Link | Notes |
 |---|---|---|---|---|
-| Senior Support Engineer | n8n | $93K–$133K | [View](https://to.indeed.com/aamwtdmqrsbz) | Remote. Best natural fit — exactly Tier 3 + API work. |
-| Technical Account Manager | Brandon Associates | $120K–$150K | [View](https://to.indeed.com/aaj8l24j8qdd) | Remote. Posted 3/19. |
-| Technical Account Manager | Foundant Technologies | — | [View](https://to.indeed.com/aa9gxxbvy4b7) | Remote. Grants/nonprofit SaaS. |
-| AI & Automation Specialist | Acquisition.com | $150K–$180K | [View](https://to.indeed.com/aadmvkvfpnzv) | Las Vegas. Alex Hormozi's co. |
-| Implementation Specialist | AIQ | $87.9K–$132.6K | [View](https://to.indeed.com/aawqmn48qxsm) | Denver CO. |
+| Technical Support Engineer | Cursor | — | [View](https://to.indeed.com/aabhgbzwggvb) | Remote. AI code editor company. Tier 3 + debugging + automation — strong fit. |
+| Enterprise Solutions Engineer | NinjaOne | $140K | [View](https://to.indeed.com/aasqjqvnxr2j) | 🆕 Remote. IT management platform. Posted 3/26. |
+| Professional Services Consultant | MindTickle | $124–138K | [View](https://to.indeed.com/aaygcntvpbnd) | 🆕 Remote. Sales enablement SaaS. |
+| Senior Cloud Solutions Engineer | Humana | $107–147K | [View](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp) | 🆕 Remote. Oracle OIC integration focus. |
+| Technical Support Engineer | CyberNut | — | [View](https://to.indeed.com/aatbc4mdwpcg) | 🆕 Remote. Cybersecurity awareness platform. Posted 3/26. |
 
 ---
 
@@ -36,7 +35,7 @@
 ### Scan — 2026-03-24 (Indeed MCP)
 
 **Solutions Engineer**
-- [Solutions Engineer](https://to.indeed.com/aatqdy44px24) — Dynatrace | Tampa, FL | $128K–$160K | ✅ Applied
+- [Solutions Engineer](https://to.indeed.com/aatqdy44px24) — Dynatrace | Tampa, FL | $128K–$160K | ~~Filled~~
 - [Solutions Engineer, West Coast](https://to.indeed.com/aax4lflrrklw) — Astronomer | Remote | $120K–$150K
 - [Solutions Engineer](https://to.indeed.com/aaj4cg8c6yww) — NetraDyne | Nashville, TN | $100.5K–$140K
 - [Solutions Engineer](https://to.indeed.com/aawtwrd96yr4) — Instabase | Atlanta, GA | $112K–$143K
@@ -74,3 +73,56 @@
 - [GTM and Analytics Implementation Specialist](https://weworkremotely.com/remote-jobs/spiralyze-gtm-and-analytics-implementation-specialist) — Spiralyze | Remote
 - [WordPress Support Engineer](https://weworkremotely.com/remote-jobs/yoko-co-wordpress-support-engineer) — Yoko Co | Remote
 - [Senior Customer Support Engineer](https://weworkremotely.com/remote-jobs/netbox-labs-senior-customer-support-engineer) — Netbox Labs | Remote
+
+## Scan — 2026-03-26 09:59  (1 new)
+
+
+### WWR — Technical/Engineering
+
+- **[(Senior) AI Solutions Engineer](https://weworkremotely.com/remote-jobs/aktor-ai-senior-ai-solutions-engineer)** — Aktor AI | Remote
+  > Headquarters: Athens, Greece URL: https://aktor.ai We are hiring a (Senior) AI Solutions Engineer to join our AI engineering team remotely and help us build, harden, and scale AI a
+
+---
+
+## Scan — 2026-03-26 10:00  (8 new) — Indeed MCP
+
+### Indeed MCP — Solutions Engineer
+
+- **[CAE Solution Implementation Engineer (Eplan)](https://to.indeed.com/aa6bshddk8rl)** — RITTAL | Remote | $130K–$165K | Mar 12
+- **[Senior Solutions Engineer](https://to.indeed.com/aac9f6kml8mk)** — Mavenoid AB | Boston, MA | $125K–$175K | Mar 25
+- **[Solutions Engineer](https://to.indeed.com/aabjdr6f2jm2)** — betterworks | Menlo Park, CA | $123K–$166K | Feb 24
+- **[Product Solutions Engineer](https://to.indeed.com/aa2wvf8y9hnq)** — Transcard | Nashville, TN | $80K–$117K | Mar 25
+- **[Solutions Engineer - EMEA New](https://to.indeed.com/aahyh9sqwhbf)** — Kentik | Remote | Mar 25 *(EMEA-focused)*
+
+### Indeed MCP — Implementation Specialist
+
+- **[Implementation Specialist](https://to.indeed.com/aapqcyc67spr)** — Epiq | Chicago, IL | Up to $95K | Mar 25
+- **[Technical Solutions Specialist](https://to.indeed.com/aa8x96bd9tnp)** — Neogen Corporation | Remote | Mar 24
+
+### Indeed MCP — Technical Support Engineer
+
+- **[Technical Support Engineer](https://to.indeed.com/aaptxsbzbft7)** — CURSOR | Remote | Mar 25 ⭐
+- **[Technical Support Engineering Manager](https://to.indeed.com/aa6vmpzvb2fm)** — CURSOR | Remote | Mar 25 *(Manager role — same company as above)*
+- **[Senior Technical Support Engineer](https://to.indeed.com/aacn4fncmh77)** — Kevel | Remote | Mar 25
+
+---
+
+### Scan — 2026-03-26 (Dice MCP — first run)
+
+**Solutions Engineer**
+- **[Solutions Engineer (Salesforce)](https://www.dice.com/job-detail/0579bb34-0dd8-44d4-aa1c-4145c34c9909?utm_source=claude-user&utm_medium=mcp)** — Aflac | Remote | $145K–$195K | Mar 25 *(Salesforce-focused)*
+
+---
+
+### Scan — 2026-03-27 (Indeed + Dice MCP)
+
+**Solutions Engineer**
+- **[Enterprise Solutions Engineer](https://to.indeed.com/aasqjqvnxr2j)** — NinjaOne | Remote | $140K | Mar 26 ⭐
+- **[Senior Cloud Solutions Engineer](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp)** — Humana | Remote | $107K–$147K | Mar 25 *(Oracle OIC integration)*
+
+**Technical Support Engineer**
+- **[Technical Support Engineer](https://to.indeed.com/aatbc4mdwpcg)** — CyberNut | Remote | Mar 26
+
+**Implementation / PS**
+- **[Professional Services Consultant (US Central)](https://to.indeed.com/aaygcntvpbnd)** — MindTickle | Remote | $124K–$138K | Mar 18
+

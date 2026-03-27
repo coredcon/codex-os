@@ -11,9 +11,11 @@ tags: [health]
 - Physical exertion limits apply — wife monitors closely
 
 ## Current Focus
+- **Quitting smoking** — need to text doctor about options (NRT vs bupropion — note Zoloft interaction)
 
 ## Medications / Treatments
 - Cardiac medications (ongoing)
+- Zoloft (ongoing)
 
 ## Providers
 

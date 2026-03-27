@@ -1,7 +1,8 @@
 ---
 date: 2026-03-03
-status: active
-stack:
+status: Beta shipped — awaiting feedback
+last_updated: 2026-03-26
+stack: Electron, React, CRA
 tags: [vibe-coding, project, ttrpg]
 ---
 
@@ -56,7 +57,14 @@ Centralizes GM reference material, rules lookup, and session tools in one place 
 ---
 
 ## Current Status
-Beta-ready. Installer built (80 MB), installed size 278 MB. Sending to Nick.
+Beta shipped 2026-03-06. Nick has the installer. Collecting feedback from PF2e party Discord. World Simulation built but test run still pending.
+
+## Features Built
+- NPC generator (name/traits/backgrounds, local JSON data)
+- Shop generator
+- Portrait: upload-only (AI generation removed — Pollinations was unreliable)
+- Installer: 80MB, no admin required (`perMachine: false`)
+- **World Simulation** — `/simulation` endpoint; `npm start` in frontend + backend restart to run test
 
 ## Decisions Made
 

@@ -59,7 +59,14 @@ time, never a list. Proactively surface connections between ideas the user might
 11. Surface the ONE Big Thing for the week
 12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5` and prompt `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/freshdesk-check.py"`, recurring.
 13. **Start Vox Watcher** — launch `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/vox-watcher.py"` as a background Bash process (`run_in_background: true`). It polls Windows media session + active window every 60s, writes `.claude/ambient-context.md`. Read this file passively — weave context in naturally, don't announce it every message.
-14. Get to work
+14. **Run job search** (work days only, Mon–Fri):
+    - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR)
+    - Run `mcp__claude_ai_Indeed__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: location="remote", country_code="US", job_type="fulltime")
+    - Run `mcp__claude_ai_Dice__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: workplace_types=["Remote"], employment_types=["FULLTIME"], posted_date="SEVEN")
+    - Filter results: keep titles matching solutions engineer, TAM, implementation specialist, support engineer, technical consultant, automation specialist, customer success engineer. Exclude: director, VP, staffing, recruiter, software engineer, frontend, backend, devops, data scientist, designer, marketing.
+    - Deduplicate against existing `05 Areas/Career/job-tracker.md` entries. Append new finds as a dated scan section.
+    - Also schedule a recurring Indeed cron: `CronCreate` with `3 9 * * 1-5`, same searches + filter + append logic.
+15. Get to work
 
 ### Mid-Session
 - **Proactive retrieval:** When any topic shifts (project, campaign, health, career, family), immediately pull the relevant vault file or run a QMD query — do not wait to be asked

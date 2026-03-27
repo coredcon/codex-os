@@ -7,6 +7,8 @@
 
 ## Last updated: 2026-03-23
 
+## Last updated: 2026-03-27
+
 ## Current Pressures
 - Post-merger job uncertainty — actively job searching now (automation live, first application in)
 - Finances tight — can't afford Anthropic API $5 minimum right now `[user]`
@@ -20,6 +22,7 @@
 - **Applied to TAM at Ping Identity** (Greenhouse, cover letter included, 2026-03-23)
 - **Resume finalized** — Crunchtime name, LinkedIn, AI bullet, KDS/Freshdesk skills, at Vox Arcanum
 - **Vox Workspace Career mode** — shipped, auto-opens job-tracker.md + career-overview.md
+- **Vox Workspace Finances: 12-month history** — Apr 2025–Mar 2026, Insights tab shipped (2026-03-27)
 - Vox can add movies to Radarr by voice
 - Vox Watcher operational, Spotify ambient context working
 - Canonex World Simulation built — test run still pending
