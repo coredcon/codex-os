@@ -52,6 +52,37 @@ def save_last_check():
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     STATE_FILE.write_text(datetime.now(timezone.utc).isoformat())
 
+def fetch_agent_contact_id(domain, api_key, agent_id):
+    """Resolve agent_id → contact_id (used as user_id on conversations).
+    Returns None if the endpoint is unavailable (e.g. 403 after org migration)."""
+    try:
+        r = requests.get(
+            f"https://{domain}/api/v2/agents/{agent_id}",
+            auth=(api_key, "X"),
+            timeout=10,
+        )
+        if not r.ok:
+            return None
+        return r.json().get("contact_id")
+    except Exception:
+        return None
+
+def last_update_was_mine(domain, api_key, ticket_id, my_contact_id):
+    """Return True if the most recent conversation entry was created by me."""
+    r = requests.get(
+        f"https://{domain}/api/v2/tickets/{ticket_id}/conversations",
+        auth=(api_key, "X"),
+        timeout=10,
+    )
+    if not r.ok:
+        return False
+    convs = r.json()
+    if not convs:
+        return False
+    # Most recent conversation is last in the list
+    last = sorted(convs, key=lambda c: c.get("created_at", ""))[-1]
+    return last.get("user_id") == my_contact_id
+
 def fetch_my_active_tickets(domain, api_key, agent_id):
     """Fetch all non-closed tickets where I am the assigned agent."""
     status_part = " OR ".join(f"status:{s}" for s in ACTIVE_STATUSES)
@@ -136,9 +167,20 @@ def main():
         print(f"No updates on my Freshdesk tickets in the last {elapsed_min}m.")
         return
 
-    updated.sort(key=lambda x: x[0], reverse=True)
-    print(f"🔔 {len(updated)} ticket(s) updated in the last {elapsed_min}m:\n")
-    for _, t in updated:
+    # Filter out tickets where the last conversation was from me
+    my_contact_id = fetch_agent_contact_id(domain, api_key, agent_id)
+    actionable = [
+        (upd_dt, t) for upd_dt, t in updated
+        if not last_update_was_mine(domain, api_key, t["id"], my_contact_id)
+    ]
+
+    if not actionable:
+        print(f"No updates on my Freshdesk tickets in the last {elapsed_min}m.")
+        return
+
+    actionable.sort(key=lambda x: x[0], reverse=True)
+    print(f"🔔 {len(actionable)} ticket(s) updated in the last {elapsed_min}m:\n")
+    for _, t in actionable:
         needs_action = t.get("status") in (2, 6)
         print(format_ticket(t, highlight=needs_action))
 

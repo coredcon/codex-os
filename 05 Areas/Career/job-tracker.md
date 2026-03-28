@@ -9,8 +9,8 @@
 
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
-| 2026-03-24 | [Senior Solutions Engineer](https://to.indeed.com/aaqstbnn6wft) | n8n | $250K–$275K | Applied | East Coast remote. Workflow automation. Strong fit. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
+
 
 ---
 
@@ -20,7 +20,6 @@
 |---|---|---|---|---|
 | Technical Support Engineer | Cursor | — | [View](https://to.indeed.com/aabhgbzwggvb) | Remote. AI code editor company. Tier 3 + debugging + automation — strong fit. |
 | Enterprise Solutions Engineer | NinjaOne | $140K | [View](https://to.indeed.com/aasqjqvnxr2j) | 🆕 Remote. IT management platform. Posted 3/26. |
-| Professional Services Consultant | MindTickle | $124–138K | [View](https://to.indeed.com/aaygcntvpbnd) | 🆕 Remote. Sales enablement SaaS. |
 | Senior Cloud Solutions Engineer | Humana | $107–147K | [View](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp) | 🆕 Remote. Oracle OIC integration focus. |
 | Technical Support Engineer | CyberNut | — | [View](https://to.indeed.com/aatbc4mdwpcg) | 🆕 Remote. Cybersecurity awareness platform. Posted 3/26. |
 
@@ -125,4 +124,25 @@
 
 **Implementation / PS**
 - **[Professional Services Consultant (US Central)](https://to.indeed.com/aaygcntvpbnd)** — MindTickle | Remote | $124K–$138K | Mar 18
+
+---
+
+### Scan — 2026-03-27 08:00 (Indeed + Dice MCP — morning run)
+
+**Solutions Engineer**
+- **[Solutions Engineer (Remote, Northeast)](https://to.indeed.com/aatzvt77xzz6)** — Dynatrace | Remote | $128K–$160K | Mar 27 *(new regional posting — Tampa one marked filled; already applied there)*
+
+*(No other net-new finds — Aflac/NinjaOne/Humana/CyberNut already logged)*
+
+---
+
+### Scan — 2026-03-27 afternoon (Dice MCP + RemoteOK/WWR)
+
+*(No new finds — all results already logged or filtered out)*
+
+---
+
+### Scan — 2026-03-27 (Dice MCP — afternoon run)
+
+*(No net-new finds — CVS Health WMS SE roles not a fit; Copeland HVAC support not a fit; all prior listings already logged)*
 

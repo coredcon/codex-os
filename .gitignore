@@ -25,3 +25,6 @@
 # Google Drive temp files
 desktop.ini
 Thumbs.db
+
+# Spotify OAuth tokens — never commit
+.claude/scripts/spotify-token.json

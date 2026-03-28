@@ -25,7 +25,7 @@ from datetime import datetime
 
 CLIENT_ID = "fcd51263339842ffa8a6e6e2beb1847a"
 REDIRECT_URI = "http://127.0.0.1:8888/callback"
-SCOPES = "user-read-currently-playing user-read-playback-state"
+SCOPES = "user-read-currently-playing user-read-playback-state user-modify-playback-state"
 TOKEN_FILE = os.path.join(os.path.dirname(__file__), "spotify-token.json")
 PORT = 8888
 

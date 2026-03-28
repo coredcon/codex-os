@@ -139,7 +139,8 @@ def get_all_windows():
     try:
         result = subprocess.run(
             ["powershell", "-NoProfile", "-NonInteractive", "-File", ps1],
-            capture_output=True, text=True, timeout=10
+            capture_output=True, text=True, timeout=10,
+            creationflags=subprocess.CREATE_NO_WINDOW
         )
         windows = {}
         for line in result.stdout.strip().splitlines():
@@ -267,8 +268,11 @@ def write_context(media, foreground, windows):
 
 def main():
     api_available = os.path.exists(TOKEN_FILE)
-    print(f"Vox Watcher started - polling every {POLL_INTERVAL}s -> {OUTPUT}")
-    print(f"Spotify: {'API mode' if api_available else 'window title fallback (run spotify-auth.py to enable API)'}")
+    try:
+        print(f"Vox Watcher started - polling every {POLL_INTERVAL}s -> {OUTPUT}")
+        print(f"Spotify: {'API mode' if api_available else 'window title fallback'}")
+    except Exception:
+        pass
     while True:
         try:
             windows = get_all_windows()

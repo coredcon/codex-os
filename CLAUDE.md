@@ -39,7 +39,14 @@ time, never a list. Proactively surface connections between ideas the user might
 
 ### Startup (in order)
 1. Check `.claude/WORKING.md` — if it has content, last session ended abruptly; process it first
-2. Check `.claude/pending-reflection.md` — if it has entries, process them:
+2. Check `.claude/extraction-queue.md` — if it has entries (beyond the header), promote them:
+   - `vault_write` entries → verify file exists, note in WORKING.md if significant
+   - `job_app` entries → verify against job-tracker.md; append if new
+   - `open_loop` entries → append to promises.md if not already tracked
+   - `momentum` entries → update state.md Current Momentum if relevant
+   - `decision` entries → append to WORKING.md for context
+   - Clear the queue after processing (rewrite to header-only state)
+3. Check `.claude/pending-reflection.md` — if it has entries, process them:
    - For any new/modified file under `C:/Users/aspor/Documents/Vox Arcanum`: **read the file and act on its contents** (this is Corey's async instruction drop folder — treat it as a task or note to process, then delete the file after acting)
    - For all other entries: update memory/cross-references as needed
    - Clear the reflection queue when done (use Haiku agent for the write)
@@ -58,7 +65,18 @@ time, never a list. Proactively surface connections between ideas the user might
 10. Verify QMD is available — try a test query; if it fails, alert Corey (daemon may need restart: `qmd mcp --http --daemon`)
 11. Surface the ONE Big Thing for the week
 12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5` and prompt `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/freshdesk-check.py"`, recurring.
-13. **Start Vox Watcher** — launch `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/vox-watcher.py"` as a background Bash process (`run_in_background: true`). It polls Windows media session + active window every 60s, writes `.claude/ambient-context.md`. Read this file passively — weave context in naturally, don't announce it every message.
+13. **Start Vox Watcher** — first kill any existing instances (stacking causes 30+ ghost processes), then launch via .NET ProcessStartInfo with CreateNoWindow=true. Process name is `python3.13.exe` — `Get-Process python` finds nothing. Use this exact PowerShell block:
+    ```powershell
+    # Kill existing
+    Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*vox-watcher*' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
+    # Launch clean
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = 'C:\Users\aspor\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe'
+    $psi.Arguments = '"F:\My Drive\Obsidian\Codex.os\.claude\scripts\vox-watcher.py"'
+    $psi.UseShellExecute = $false; $psi.CreateNoWindow = $true
+    [System.Diagnostics.Process]::Start($psi)
+    ```
+    Polls every 60s, writes `.claude/ambient-context.md`. Read passively — weave context in naturally, don't announce it every message.
 14. **Run job search** (work days only, Mon–Fri):
     - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR)
     - Run `mcp__claude_ai_Indeed__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: location="remote", country_code="US", job_type="fulltime")
