@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Vox Job Search — automated job listing scanner
-Sources: RemoteOK API (no-auth, free), We Work Remotely RSS
-Indeed: handled separately via Indeed MCP (Claude-side)
+Sources: RemoteOK API (no-auth, free), We Work Remotely RSS, LinkedIn guest API
+Indeed + Dice: handled separately via MCP (Claude-side)
 Deduplicates, logs new finds to vault tracker
 """
 
 import json
 import os
+import ssl
 import sys
 import urllib.request
 import urllib.parse
@@ -15,6 +16,11 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 import re
 import html
+
+# Windows SSL workaround — system cert store sometimes has expired roots
+_ssl_ctx = ssl.create_default_context()
+_ssl_ctx.check_hostname = False
+_ssl_ctx.verify_mode = ssl.CERT_NONE
 
 # Force UTF-8 output on Windows
 if sys.platform == "win32":
@@ -33,6 +39,15 @@ REMOTEOK_TAGS = [
     ("technical",           "Technical Roles"),
     ("saas",                "SaaS"),
     ("api",                 "API/Integration"),
+]
+
+# LinkedIn guest API searches (keywords → label)
+# Uses unauthenticated guest endpoint — no login required, rate-limited to ~10 req/run
+LINKEDIN_SEARCHES = [
+    ("solutions engineer",          "Solutions Engineer"),
+    ("technical account manager",   "Technical Account Manager"),
+    ("implementation specialist",   "Implementation Specialist"),
+    ("technical support engineer",  "Technical Support Engineer"),
 ]
 
 # We Work Remotely RSS categories
@@ -97,18 +112,41 @@ def clean_html(text):
     text = re.sub(r"<[^>]+>", "", text)
     return " ".join(text.split()).strip()
 
+MIN_SALARY = 100_000  # Drop listings where salary is KNOWN to be below this
+
 def is_good_match(title, description=""):
     t = title.lower()
     if any(kw in t for kw in EXCLUDE_TITLE_KEYWORDS):
         return False
     return any(kw in t for kw in INCLUDE_TITLE_KEYWORDS)
 
-def fetch_url(url, headers=None):
+def parse_salary(salary_str):
+    """Extract a max salary number from a string like '$80K-$120K/yr' or '80000'.
+    Returns None if salary can't be parsed."""
+    if not salary_str:
+        return None
+    s = str(salary_str).replace(",", "").upper()
+    nums = re.findall(r'\d+(?:\.\d+)?', s)
+    if not nums:
+        return None
+    vals = [float(n) * (1000 if "K" in s[max(0, s.find(n)-1):s.find(n)+len(n)+1] else 1) for n in nums]
+    # Use the higher number (max of range)
+    return max(vals)
+
+def salary_ok(salary_str):
+    """True if salary is unknown OR known to be >= MIN_SALARY."""
+    val = parse_salary(salary_str)
+    if val is None:
+        return True  # unknown — keep it
+    return val >= MIN_SALARY
+
+def fetch_url(url, headers=None, verify_ssl=True):
     h = {"User-Agent": "Mozilla/5.0 (compatible; VoxJobBot/1.0)"}
     if headers:
         h.update(headers)
     req = urllib.request.Request(url, headers=h)
-    with urllib.request.urlopen(req, timeout=15) as resp:
+    ctx = None if verify_ssl else _ssl_ctx
+    with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
         return resp.read()
 
 # ── Sources ───────────────────────────────────────────────────────────────────
@@ -135,6 +173,12 @@ def search_remoteok(tag, label):
         snippet  = clean_html(item.get("description", ""))[:200]
 
         if not is_good_match(title, tags + " " + snippet):
+            continue
+
+        salary_min = item.get("salary_min")
+        salary_max = item.get("salary_max")
+        salary_str = f"${salary_min}–${salary_max}" if salary_min and salary_max else None
+        if not salary_ok(salary_str):
             continue
 
         jobs.append({
@@ -176,6 +220,53 @@ def search_wwr(feed_url, label):
         })
 
     return jobs, None
+
+def search_linkedin(keyword, label):
+    """Fetch from LinkedIn guest job search API (no auth required)."""
+    params = urllib.parse.urlencode({
+        "keywords": keyword,
+        "location": "United States",
+        "f_WT": "2",          # remote only
+        "geoId": "103644278", # US
+        "start": "0",
+    })
+    url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?{params}"
+    try:
+        raw = fetch_url(url, {
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "en-US,en;q=0.9",
+        }, verify_ssl=False).decode("utf-8", errors="replace")
+    except Exception as e:
+        return [], f"LinkedIn ({keyword}): {e}"
+
+    jobs = []
+    # Parse job cards from HTML — LinkedIn guest API returns list items
+    cards = re.findall(r'<li[^>]*>(.*?)</li>', raw, re.DOTALL)
+    for card in cards:
+        title_m   = re.search(r'class="[^"]*base-search-card__title[^"]*"[^>]*>(.*?)</h3', card, re.DOTALL)
+        company_m = re.search(r'class="[^"]*base-search-card__subtitle[^"]*"[^>]*>(.*?)</a', card, re.DOTALL)
+        link_m    = re.search(r'href="(https://www\.linkedin\.com/jobs/view/[^"?]+)', card)
+        loc_m     = re.search(r'class="[^"]*job-search-card__location[^"]*"[^>]*>(.*?)</span', card, re.DOTALL)
+
+        if not title_m or not link_m:
+            continue
+
+        title   = clean_html(title_m.group(1))
+        company = clean_html(company_m.group(1)) if company_m else "Unknown"
+        link    = link_m.group(1).strip()
+        loc     = clean_html(loc_m.group(1)) if loc_m else "Remote"
+        guid    = link.rstrip("/").split("/")[-1]  # LinkedIn job ID from URL
+
+        if not is_good_match(title):
+            continue
+
+        jobs.append({
+            "guid": f"li_{guid}", "title": title, "company": company,
+            "location": loc, "link": link, "snippet": "",
+        })
+
+    return jobs, None
+
 
 # ── Tracker ───────────────────────────────────────────────────────────────────
 
@@ -221,6 +312,17 @@ def main():
         for j in fresh:
             new_seen.add(j["guid"])
         key = f"RemoteOK — {label}"
+        results[key] = results.get(key, []) + fresh
+
+    # LinkedIn
+    for keyword, label in LINKEDIN_SEARCHES:
+        jobs, err = search_linkedin(keyword, label)
+        if err:
+            errors.append(err)
+        fresh = [j for j in jobs if j["guid"] not in seen and j["guid"] not in new_seen]
+        for j in fresh:
+            new_seen.add(j["guid"])
+        key = f"LinkedIn — {label}"
         results[key] = results.get(key, []) + fresh
 
     # We Work Remotely

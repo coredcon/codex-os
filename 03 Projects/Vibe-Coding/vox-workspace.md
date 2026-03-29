@@ -128,39 +128,18 @@ The terminal isn't going away — it's getting a frame. The left side is the act
 ## Project Status
 
 ### Core Infrastructure ✅
-- [x] Scaffold Electron + Vite + React + TypeScript
-- [x] xterm.js + node-pty terminal emulation
-- [x] Claude Code subprocess piped into terminal
-- [x] chokidar file watcher + IPC to renderer
-- [x] Remote control auto-spawn (Claude mobile access)
-- [x] Design system overhaul — 4-level surface tokens, unified Cascadia Code font
-- [x] App launcher via `Vox Workspace.vbs` (desktop shortcut, replaces Codex_os.bat)
 
 ### Mode System ✅ (6 modes)
-- [x] **Daily** — Today, Vault, Board, Lights
-- [x] **Work** — Queue (Freshdesk), Calendar, Board, Docs
-- [x] **Builder** — Projects, Board, Rabbit Holes, Vault, Lights
-- [x] **Home** — Nest (HomePanel), Honey-Do, Projects, Health (amber theme)
-- [x] **Career** — Jobs (job-tracker.md), Overview, Files
-- [x] **Campaign** — EotFG vault, Session Notes (placeholder), Encounter Ref (placeholder)
 
 ### Panels Built ✅
-- [x] TodayPanel — daily note, tasks, Focus card, **Best Next Action intelligence card**
-- [x] VaultPanel — file tree + markdown preview + edit mode + Discuss with Vox (right-click)
-- [x] KanbanPanel — 3-column drag & drop, project cards, subtasks, manual task entry
-- [x] FreshdeskPanel — live ticket queue, change detection (diffs updated_at/status), badge counts, filter pills
-- [x] GoveePanel — mood setter via direct Govee API
-- [x] ProjectsPanel — master-detail, category auto-discovery, tasks + notes + dev log
-- [x] HomePanel — honey-do tasks, ambient context widget, family card, house projects
-- [x] WorkCalendarPanel — 7-day ICS reader (node-ical), NOW badge, recurring events
 
 ### Intelligence Layer ✅
-- [x] Best Next Action card — 5-state rules engine (urgent/important/quick-win/recovery/clear)
 - [ ] Priority tagging on individual tasks (avoidance/blocked/emotionally heavy)
 - [ ] Mode-aware proactive Vox surface in panel layer
 
 ### Pending
-- [ ] Campaign panels: Session Notes + Encounter Reference (still PlaceholderPanel)
+- [x] Campaign Prep panel built (replaced Session Notes placeholder) — reads all 14 cradles, todos, locations, travel batches, NPC count, plot holes
+- [ ] Campaign Encounter Reference (still PlaceholderPanel)
 - [ ] Focus Mode: minimal UI, single task large, optional timer
 - [ ] Quick Capture widget → 00 Inbox/
 - [ ] Persist split pane % to localStorage

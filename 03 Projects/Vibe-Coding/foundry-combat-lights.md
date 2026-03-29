@@ -29,7 +29,7 @@ Foundry VTT (browser)
 
 ## Components to Build
 
-- [ ] Scene type → light scene mapping config
+- [/] Scene type → light scene mapping config
 - [ ] Auto-start the server (add to Windows Startup like QMD daemon)
 
 ## Light Mapping (draft)

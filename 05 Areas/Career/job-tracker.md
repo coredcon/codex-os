@@ -18,6 +18,7 @@
 
 | Role | Company | Pay | Link | Notes |
 |---|---|---|---|---|
+| Technical Client Specialist | MacroHealth | $110K–$120K | [View](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | 🆕 Remote. Health plan intelligence platform. Client-facing technical role. |
 | Technical Support Engineer | Cursor | — | [View](https://to.indeed.com/aabhgbzwggvb) | Remote. AI code editor company. Tier 3 + debugging + automation — strong fit. |
 | Enterprise Solutions Engineer | NinjaOne | $140K | [View](https://to.indeed.com/aasqjqvnxr2j) | 🆕 Remote. IT management platform. Posted 3/26. |
 | Senior Cloud Solutions Engineer | Humana | $107–147K | [View](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp) | 🆕 Remote. Oracle OIC integration focus. |
@@ -145,4 +146,170 @@
 ### Scan — 2026-03-27 (Dice MCP — afternoon run)
 
 *(No net-new finds — CVS Health WMS SE roles not a fit; Copeland HVAC support not a fit; all prior listings already logged)*
+
+
+## Scan — 2026-03-28 11:59  (50 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Associate Solutions Engineer](https://www.linkedin.com/jobs/view/associate-solutions-engineer-at-digicert-4390736759)** — DigiCert | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-acquia-4367334847)** — Acquia | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-calibrant-energy-4388157590)** — Calibrant Energy | United States
+
+- **[Solutions Engineer (Pre-Sales)](https://www.linkedin.com/jobs/view/solutions-engineer-pre-sales-at-dataweavers-4389306319)** — Dataweavers | United States
+
+- **[Support Solutions Engineer (L5), Cloud Networking, CIE](https://www.linkedin.com/jobs/view/support-solutions-engineer-l5-cloud-networking-cie-at-netflix-4360597916)** — Netflix | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-turvo-4389040505)** — Turvo | Dallas, TX
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-hussmann-4391902234)** — Hussmann | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-sprinto-4280850157)** — Sprinto | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-bitwarden-4378545334)** — Bitwarden | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager- Team Lead](https://www.linkedin.com/jobs/view/technical-account-manager-team-lead-at-genetec-4390877934)** — Genetec | New York, NY
+
+- **[Senior Technical Account Manager](https://www.linkedin.com/jobs/view/senior-technical-account-manager-at-gofundme-4364958857)** — GoFundMe | United States
+
+- **[Technical Account Manager- Team Lead](https://www.linkedin.com/jobs/view/technical-account-manager-team-lead-at-genetec-4390877940)** — Genetec | Austin, TX
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-cedar-4361533025)** — Cedar | United States
+
+- **[Technical Account Manager- Team Lead](https://www.linkedin.com/jobs/view/technical-account-manager-team-lead-at-genetec-4390890388)** — Genetec | Seattle, WA
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-stripe-4286249531)** — Stripe | United States
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-greenslate-4367686922)** — GreenSlate | Atlanta, GA
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-ping-identity-4377546174)** — Ping Identity | United States
+
+- **[Technical Account Manager (East)](https://www.linkedin.com/jobs/view/technical-account-manager-east-at-echo-4362530163)** — Echo | New York, NY
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-hanwha-vision-america-4368292029)** — Hanwha Vision America | Massachusetts, United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-churnzero-4379435441)** — ChurnZero | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-karbon-4390616796)** — Karbon | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-karbon-4390612966)** — Karbon | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-karbon-4377026571)** — Karbon | United States
+
+- **[Implementation Specialist – Enterprise](https://www.linkedin.com/jobs/view/implementation-specialist-%E2%80%93-enterprise-at-plaid-4385593970)** — Plaid | United States
+
+- **[Implementation Specialist - Dispatch](https://www.linkedin.com/jobs/view/implementation-specialist-dispatch-at-eso-4387730848)** — ESO | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-odyssey-4384391285)** — Odyssey | United States
+
+- **[Implementation Specialist - Health-tech (US)](https://www.linkedin.com/jobs/view/implementation-specialist-health-tech-us-at-adoreal-4342953797)** — Adoreal | United States
+
+- **[Implementation Specialist - Health-tech (US)](https://www.linkedin.com/jobs/view/implementation-specialist-health-tech-us-at-adoreal-4342844483)** — Adoreal | Charlotte, NC
+
+- **[Implementation Specialist - Health-tech (US)](https://www.linkedin.com/jobs/view/implementation-specialist-health-tech-us-at-adoreal-4342933873)** — Adoreal | Atlanta, GA
+
+- **[Implementation Specialist - Health-tech (US)](https://www.linkedin.com/jobs/view/implementation-specialist-health-tech-us-at-adoreal-4342804563)** — Adoreal | New York, NY
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-hussmann-4388471487)** — Hussmann | United States
+
+- **[Senior Implementation Specialist](https://www.linkedin.com/jobs/view/senior-implementation-specialist-at-novisync-inc-4343364302)** — Novisync, Inc | United States
+
+- **[Customer Success Implementation Specialist](https://www.linkedin.com/jobs/view/customer-success-implementation-specialist-at-ehs-insight-4388383415)** — EHS Insight | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-the-difference-card-4369959816)** — The Difference Card | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-synapse-health-4380537359)** — Synapse Health | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-aiq-com-alpine-iq-4389472050)** — AIQ.com (Alpine IQ) | Denver, CO
+
+- **[Implementation Specialist – Credit](https://www.linkedin.com/jobs/view/implementation-specialist-%E2%80%93-credit-at-plaid-4386988552)** — Plaid | United States
+
+- **[Lead Implementation Specialist](https://www.linkedin.com/jobs/view/lead-implementation-specialist-at-evenup-4373021373)** — EvenUp | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-samsara-4378113729)** — Samsara | United States
+
+- **[Support Engineer](https://www.linkedin.com/jobs/view/support-engineer-at-stainless-4347991518)** — Stainless | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-plaid-4364956368)** — Plaid | United States
+
+- **[Support Engineer (Tier 1)](https://www.linkedin.com/jobs/view/support-engineer-tier-1-at-tailscale-4372411209)** — Tailscale | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-finalsite-4386971722)** — Finalsite | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-navina-4372457755)** — Navina | New York, United States
+
+- **[Support Engineer - US East [IC2]](https://www.linkedin.com/jobs/view/support-engineer-us-east-ic2-at-sourcegraph-4383879391)** — Sourcegraph | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-funnel-leasing-4378361891)** — Funnel Leasing | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-fieldguide-4331983036)** — Fieldguide | San Francisco, CA
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-acre-security-4376831183)** — Acre Security | United States
+
+- **[Technical Support Engineer L1](https://www.linkedin.com/jobs/view/technical-support-engineer-l1-at-ddn-4383793584)** — DDN | United States
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-snapsheet-inc-4389424193)** — Snapsheet Inc | United States
+
+
+## Scan — 2026-03-28 12:03  (19 new)
+
+
+### RemoteOK — Technical Roles
+
+- **[Salesforce Technical Consultant](https://remoteOK.com/remote-jobs/remote-salesforce-technical-consultant-hunt-st-1130911)** — Hunt St | Remote
+  > Job Role: Salesforce Technical ConsultantCompensation range: $3,000 AUD - $4,000 AUD / MonthlyEngagement type: Independent Contractor AgreementWork Schedule: This role is expected 
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-estuary-4380937649)** — Estuary | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[National Account Implementation Specialist](https://www.linkedin.com/jobs/view/national-account-implementation-specialist-at-imagine360-4383263116)** — Imagine360 | United States
+
+- **[LoanIQ Implementation Specialist](https://www.linkedin.com/jobs/view/loaniq-implementation-specialist-at-iris-software-inc-4384287758)** — Iris Software Inc. | Boston, MA
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-gworks-4380152936)** — gWorks | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-raptor-technologies-4362423289)** — Raptor Technologies | Houston, TX
+
+- **[Monday.com Implementation Specialist](https://www.linkedin.com/jobs/view/monday-com-implementation-specialist-at-aquent-4379199754)** — Aquent | New York, NY
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-mastery-logistics-systems-4385951601)** — Mastery Logistics Systems | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-sovra-4332335547)** — SOVRA | New York, United States
+
+- **[HubSpot Implementation Specialist - Full-time](https://www.linkedin.com/jobs/view/hubspot-implementation-specialist-full-time-at-revops-hq-4391593461)** — RevOps HQ | United States
+
+- **[Implementation Specialist I](https://www.linkedin.com/jobs/view/implementation-specialist-i-at-affirm-4386481659)** — Affirm | Denver, CO
+
+- **[Implementation Specialist - PrivacyPro](https://www.linkedin.com/jobs/view/implementation-specialist-privacypro-at-bluesight-4388388482)** — Bluesight | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-imagine360-4383252764)** — Imagine360 | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-kane-selection-ltd-4381446305)** — Kane Selection Ltd | Georgia, United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-nest-veterinary-4376525677)** — Nest Veterinary | United States
+
+- **[Implementation Specialist I](https://www.linkedin.com/jobs/view/implementation-specialist-i-at-affirm-4386484541)** — Affirm | Houston, TX
+
+- **[Sr Implementation Specialist](https://www.linkedin.com/jobs/view/sr-implementation-specialist-at-jobgether-4389879395)** — Jobgether | United States
+
+- **[Implementation Specialist I](https://www.linkedin.com/jobs/view/implementation-specialist-i-at-affirm-4386487563)** — Affirm | San Jose, CA
+
+- **[CXone & IVA Implementation Specialist](https://www.linkedin.com/jobs/view/cxone-iva-implementation-specialist-at-mpower-plus-4391755671)** — MPower Plus | United States
 
