@@ -9,6 +9,8 @@
 
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
+| 2026-03-29 | [Technical Support Engineer](https://to.indeed.com/aabhgbzwggvb) | Cursor | — | Applied | Remote. AI code editor. Tier 3 + debugging + automation. |
+| 2026-03-29 | [Technical Client Specialist](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | MacroHealth | $110K–$120K | Applied | Remote. Health plan intelligence platform. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
 
 
@@ -18,9 +20,6 @@
 
 | Role | Company | Pay | Link | Notes |
 |---|---|---|---|---|
-| Technical Client Specialist | MacroHealth | $110K–$120K | [View](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | 🆕 Remote. Health plan intelligence platform. Client-facing technical role. |
-| Technical Support Engineer | Cursor | — | [View](https://to.indeed.com/aabhgbzwggvb) | Remote. AI code editor company. Tier 3 + debugging + automation — strong fit. |
-| Enterprise Solutions Engineer | NinjaOne | $140K | [View](https://to.indeed.com/aasqjqvnxr2j) | 🆕 Remote. IT management platform. Posted 3/26. |
 | Senior Cloud Solutions Engineer | Humana | $107–147K | [View](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp) | 🆕 Remote. Oracle OIC integration focus. |
 | Technical Support Engineer | CyberNut | — | [View](https://to.indeed.com/aatbc4mdwpcg) | 🆕 Remote. Cybersecurity awareness platform. Posted 3/26. |
 

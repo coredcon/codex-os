@@ -1,5 +1,5 @@
 # Vox Ambient Context
-> Updated: 2026-03-29 05:00 ET
+> Updated: 2026-03-30 05:00 ET
 
 ## Now Playing
 - (nothing detected)
@@ -8,5 +8,5 @@
 - electron: Vox Workspace
 
 ## Also Open
-- BambuStudio: fregio14 - BambuStudio
+- BambuStudio: Book_Nook_-_Alchemist_Library - BambuStudio
 
