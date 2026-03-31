@@ -11,6 +11,11 @@ tags: [finances]
 - Wife starting new job soon → will relieve pressure (WFH, medical answering service)
 - Only major debt: mortgage
 
+## Pay Schedule (post-merger, Crunchtime)
+- 15th and last day of month
+- If pay date falls on weekend or holiday: paid the day before
+- March 2026 payday: 2026-03-31 (Tuesday)
+
 ## Goals
 
 ## Accounts / Tracking

@@ -9,6 +9,7 @@
 
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
+| 2026-03-30 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-stripe-4339340440) | Stripe | — | Applied | NY listed. High priority. |
 | 2026-03-29 | [Technical Support Engineer](https://to.indeed.com/aabhgbzwggvb) | Cursor | — | Applied | Remote. AI code editor. Tier 3 + debugging + automation. |
 | 2026-03-29 | [Technical Client Specialist](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | MacroHealth | $110K–$120K | Applied | Remote. Health plan intelligence platform. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
@@ -311,4 +312,24 @@
 - **[Implementation Specialist I](https://www.linkedin.com/jobs/view/implementation-specialist-i-at-affirm-4386487563)** — Affirm | San Jose, CA
 
 - **[CXone & IVA Implementation Specialist](https://www.linkedin.com/jobs/view/cxone-iva-implementation-specialist-at-mpower-plus-4391755671)** — MPower Plus | United States
+
+
+## Scan — 2026-03-30 09:43  (4 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[(Future Opportunities): Solutions Engineer](https://www.linkedin.com/jobs/view/future-opportunities-solutions-engineer-at-shipbob-4311846179)** — ShipBob | United States
+
+- **[Junior Solutions Engineer/Ad Tech Operations (AMERS)](https://www.linkedin.com/jobs/view/junior-solutions-engineer-ad-tech-operations-amers-at-enroute-4358334067)** — Enroute | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-stripe-4339340440)** — Stripe | New York, United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-apiiro-4392351691)** — Apiiro | United States
 

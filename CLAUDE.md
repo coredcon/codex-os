@@ -65,17 +65,11 @@ time, never a list. Proactively surface connections between ideas the user might
 10. Verify QMD is available — try a test query; if it fails, alert Corey (daemon may need restart: `qmd mcp --http --daemon`)
 11. Surface the ONE Big Thing for the week
 12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5` and prompt `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/freshdesk-check.py"`, recurring.
-13. **Start Vox Watcher** — first kill any existing instances (stacking causes 30+ ghost processes), then launch via .NET ProcessStartInfo with CreateNoWindow=true. Process name is `python3.13.exe` — `Get-Process python` finds nothing. Use this exact PowerShell block:
+13. **Start Vox Watcher** — first kill any existing instances (stacking causes 30+ ghost processes), then launch via `Start-Process -WindowStyle Hidden` (confirmed working 2026-03-29). Note: `.NET ProcessStartInfo` returns exit code 4294967295 — do NOT use it. Use this exact PowerShell command:
     ```powershell
-    # Kill existing
-    Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*vox-watcher*' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
-    # Launch clean
-    $psi = New-Object System.Diagnostics.ProcessStartInfo
-    $psi.FileName = 'C:\Users\aspor\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe'
-    $psi.Arguments = '"F:\My Drive\Obsidian\Codex.os\.claude\scripts\vox-watcher.py"'
-    $psi.UseShellExecute = $false; $psi.CreateNoWindow = $true
-    [System.Diagnostics.Process]::Start($psi)
+    powershell -Command "Get-CimInstance Win32_Process | Where-Object { \$_.CommandLine -like '*vox-watcher*' } | ForEach-Object { Stop-Process -Id \$_.ProcessId -Force -ErrorAction SilentlyContinue }; Start-Process -WindowStyle Hidden 'C:\Users\aspor\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe' -ArgumentList '\"F:\My Drive\Obsidian\Codex.os\.claude\scripts\vox-watcher.py\"'"
     ```
+    Note: Run via Bash tool. The `$_` in the Where-Object block will be mangled by bash variable expansion — if using a heredoc or Bash tool, write the PS1 to a temp file first or escape carefully.
     Polls every 60s, writes `.claude/ambient-context.md`. Read passively — weave context in naturally, don't announce it every message.
 14. **Run job search** (work days only, Mon–Fri):
     - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR)
@@ -154,9 +148,9 @@ Run this synthesis before or during the weekly review:
 ## Active Context
 > Update this section at the end of each weekly review.
 
-- **ONE Big Thing this week:** Raising Canes call Monday + clear 3 NEEDS RESPONSE tickets by Wednesday
+- **ONE Big Thing this week:** Clear NEEDS RESPONSE tickets + Stripe TAM application (Raising Canes discovery call completed 2026-03-23, handed off)
 - **Current work focus:** Work stability + EotFG prep momentum
-- **Last weekly review:** 2026-03-16 (W12)
+- **Last weekly review:** 2026-03-30 (W13)
 - **Inbox status:** Empty
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)
-- **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`). MCP daemon runs on port 8181 (`qmd mcp --http --daemon`).
+- **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`). MCP daemon runs on port **8182** (`qmd mcp --http --daemon`) — port 8181 conflicts with Tautulli.

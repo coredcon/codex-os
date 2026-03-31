@@ -1,6 +1,6 @@
 # Vault Index — Codex.os
 > Vox reads this at the start of every session. Keep it current.
-> Last updated: 2026-03-16
+> Last updated: 2026-03-30
 > Launcher: `Codex_os.bat` (desktop shortcut)
 
 ---
@@ -8,7 +8,9 @@
 ## This Week's ONE Big Thing
 > The single most important thing to move forward this week.
 
-Raising Canes call Monday + clear 3 NEEDS RESPONSE tickets by Wednesday
+Clear NEEDS RESPONSE tickets + Stripe TAM application
+
+> Raising Canes discovery call completed 2026-03-23 — handed off, no follow-up needed.
 
 ## Active Projects
 | Project | Status | Next Action |
@@ -38,7 +40,7 @@ Raising Canes call Monday + clear 3 NEEDS RESPONSE tickets by Wednesday
 | Ritual | Last Done | Next |
 |---|---|---|
 | Morning Check-In | 2026-03-03 | Tomorrow |
-| Weekly Review | 2026-03-16 | Sunday 2026-03-22 |
+| Weekly Review | 2026-03-30 (W13) | Sunday 2026-04-05 |
 | QMD re-index | 2026-03-06 | ✅ Done — 5 new, 6 updated, 37 chunks |
 
 ## Active Areas

@@ -13,15 +13,15 @@
 - Post-merger job uncertainty — actively job searching now (automation live, first application in)
 - Finances tight — can't afford Anthropic API $5 minimum right now `[user]`
 - EotFG prep window (~5 weeks from 2026-03-22) — active prep happening
-- Freshdesk tickets: 5 NEEDS RESPONSE tickets — Raising Canes call Monday is ONE Big Thing
+- Freshdesk tickets: 5 NEEDS RESPONSE tickets — need to clear by end of week
 
 ## Current Momentum
 - Radarr + Prowlarr + IPTorrents fully operational — movie automation live
 - **Sonarr fully configured** — root: G:\Plex Media\TV, qBittorrent wired, Prowlarr synced (2026-03-23)
 - **Job search automation live** — job-search.py runs weekdays 9am, results in job-tracker.md
-- **Applied to TAM at Ping Identity** (Greenhouse, cover letter included, 2026-03-23)
+- **Applied to:** Ping Identity TAM (2026-03-23), n8n Senior SE (2026-03-24), Dynatrace SE (2026-03-24), MacroHealth Technical Client Specialist $110K–$120K (2026-03-29)
 - **Resume finalized** — Crunchtime name, LinkedIn, AI bullet, KDS/Freshdesk skills, at Vox Arcanum
-- **Vox Workspace Career mode** — shipped, auto-opens job-tracker.md + career-overview.md
+- **Vox Workspace:** FinancesPanel + Trends + Insights + Home mode + Intelligence Layer + Candlelit Library theme + CampaignPrepPanel — all shipped W13
 - **Vox Workspace Finances: 12-month history** — Apr 2025–Mar 2026, Insights tab shipped (2026-03-27)
 - Vox can add movies to Radarr by voice
 - Vox Watcher operational, Spotify ambient context working
