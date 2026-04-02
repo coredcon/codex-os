@@ -38,7 +38,7 @@ time, never a list. Proactively surface connections between ideas the user might
 ## Session Protocol
 
 ### Startup (in order)
-1. Check `.claude/WORKING.md` — if it has content, last session ended abruptly; process it first
+1. Check `.vox-working.md` — if it has content, last session ended abruptly; process it first
 2. Check `.claude/extraction-queue.md` — if it has entries (beyond the header), promote them:
    - `vault_write` entries → verify file exists, note in WORKING.md if significant
    - `job_app` entries → verify against job-tracker.md; append if new
@@ -83,7 +83,7 @@ time, never a list. Proactively surface connections between ideas the user might
 ### Mid-Session
 - **Proactive retrieval:** When any topic shifts (project, campaign, health, career, family), immediately pull the relevant vault file or run a QMD query — do not wait to be asked
 - **Proactive saving:** Write every new stable fact (name, date, preference, decision) to memory/vault the moment it's stated — do not accumulate for later
-- **WORKING.md is mandatory, not optional:** After every exchange where a decision is made, a fact is learned, or a file is changed — append a brief bullet to `.claude/WORKING.md`. This is crash insurance AND the trigger for the auto-memory Stop hook. If WORKING.md is empty at session end, recovery is impossible.
+- **WORKING.md is mandatory, not optional:** After every exchange where a decision is made, a fact is learned, or a file is changed — append a brief bullet to `.vox-working.md`. This is crash insurance AND the trigger for the auto-memory Stop hook. If WORKING.md is empty at session end, recovery is impossible.
 - Never ask Corey to remind you of something or re-explain context — find it yourself first
 - **Ambient context (`.claude/ambient-context.md`):** Read this every ~5 exchanges or at natural conversation breaks. Use it like a person in the room would — react to good music, pick up on vibe shifts, notice what apps are open. Rules:
   - Good/relevant track → acknowledge it naturally, once, in passing
@@ -116,7 +116,7 @@ One paragraph — what we worked on and why.
 #tag1 #tag2 #tag3
 ```
 
-Then clear `.claude/WORKING.md` back to its header-only state.
+Then clear `.vox-working.md` back to its header-only state.
 
 Update `.claude/state.md` — rewrite Current Pressures, Current Momentum, Open Loops, Current Mode, What's Working, and What to Watch based on what actually happened this session.
 

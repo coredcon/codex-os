@@ -36,8 +36,8 @@ These should always be spawned as `Agent(model="haiku", ...)`:
 
 ### File Writes (no synthesis needed)
 - Clearing / writing `pending-reflection.md`
-- Clearing `WORKING.md` at session end
-- Writing WORKING.md crash buffer entries (mid-session)
+- Clearing `.vox-working.md` at session end
+- Writing .vox-working.md crash buffer entries (mid-session)
 - Deleting processed Vox Arcanum files
 - Creating daily/weekly notes from template
 - Appending completed items to honey-do or project logs

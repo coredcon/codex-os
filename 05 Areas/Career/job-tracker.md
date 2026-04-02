@@ -333,3 +333,80 @@
 
 - **[Technical Support Engineer](https://www.linkedin.com/jobs/view/technical-support-engineer-at-apiiro-4392351691)** — Apiiro | United States
 
+
+## Scan — 2026-03-31 09:12  (5 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Associate Solutions Engineer](https://www.linkedin.com/jobs/view/associate-solutions-engineer-at-digicert-4391866599)** — DigiCert | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-firefly-4393240161)** — Firefly | New York, NY
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager- Team Lead](https://www.linkedin.com/jobs/view/technical-account-manager-team-lead-at-genetec-4390896068)** — Genetec | Washington, United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-nox-health-4393517795)** — Nox Health | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Technical Support Engineer 1 (Remote)](https://www.linkedin.com/jobs/view/technical-support-engineer-1-remote-at-databank-4392973427)** — DataBank | Dallas, TX
+
+
+## Scan — 2026-03-31 09:23  (1 new)
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Support Engineer](https://www.linkedin.com/jobs/view/support-engineer-at-zuma-%E2%9A%A1-4292024458)** — Zuma ⚡ | San Francisco Bay Area
+
+
+---
+
+### Scan — 2026-03-31 (Dice MCP — restart run)
+
+*(No net-new qualifying finds — Aflac SE already logged 3/26; CVS WMS SE already noted not a fit 3/27; Brains Workgroup IS has 70% travel requirement; Apex Adobe IS is contract-only; J&J/Copeland TSE not SaaS-aligned)*
+
+
+## Scan — 2026-04-01 08:35  (8 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-reco-4394627323)** — Reco | Wilmington, DE
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-oxbow-talent-4395867551)** — Oxbow Talent | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager - (AU)](https://www.linkedin.com/jobs/view/technical-account-manager-au-at-obsidian-security-4393575467)** — Obsidian Security | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-robert-half-4393562616)** — Robert Half | Austin, TX
+
+- **[Implementation Specialist (JARVISS)](https://www.linkedin.com/jobs/view/implementation-specialist-jarviss-at-everbridge-4389878249)** — Everbridge | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-aiwyn-4382636395)** — Aiwyn | United States
+
+- **[ServiceNow Discovery Admin/Implementation Specialist](https://www.linkedin.com/jobs/view/servicenow-discovery-admin-implementation-specialist-at-princeton-it-services-inc-4332059493)** — Princeton IT Services, Inc | United States
+
+
+### WWR — Customer/Technical Support
+
+- **[Customer Support Engineer - India](https://weworkremotely.com/remote-jobs/vast-data-customer-support-engineer-india)** — Vast Data | Remote
+  > Headquarters: Description: VAST Data is looking for a Customer Support Engineer to join our growing team!This is a great opportunity to be part of one of the fastest-growing infras
+
+
+### Dice MCP — 2026-04-01 (new finds)
+
+- **[Sage x3 Solutions Engineer](https://www.dice.com/job-detail/d8ad8214-ab58-47df-8449-a8987c035e78)** — Mitchell Martin (recruiter) | Remote | $90K–$130K
+- **[Infrastructure Solutions Engineer Sr. Consultant I](https://www.dice.com/job-detail/d50abe20-96d6-4f1c-aea8-83a42716bf8c)** — Allstate | Remote | $75K–$126K

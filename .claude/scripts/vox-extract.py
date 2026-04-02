@@ -21,7 +21,7 @@ from pathlib import Path
 # ─── Paths ────────────────────────────────────────────────────────────────────
 
 VAULT = Path("F:/My Drive/Obsidian/Codex.os")
-WORKING_MD   = VAULT / ".claude/WORKING.md"
+WORKING_MD   = VAULT / ".vox-working.md"
 QUEUE_FILE   = VAULT / ".claude/extraction-queue.md"
 QMD_STAMP    = VAULT / ".claude/state/qmd-last-reindex.txt"
 

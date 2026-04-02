@@ -1,6 +1,7 @@
 {
   "enableAllProjectMcpServers": true,
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
       "Edit",
       "Write",

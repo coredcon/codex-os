@@ -98,7 +98,7 @@ if [ -n "$LATEST_SNAP" ] && [ -f "$LATEST_SNAP" ]; then
   claude -p "You are Vox, Corey's personal assistant AI. A session ended without completing the memory-save protocol. Process the snapshot below and:
 1. Save any new stable facts (decisions, preferences, project state, learned info) to the appropriate memory files at C:/Users/aspor/.claude/projects/F--My-Drive-Obsidian-Codex-os/memory/
 2. Append a Vox Session Digest block to the daily note at ${DAILY_NOTE_PATH} (create it only if no digest section already exists)
-3. Clear F:/My Drive/Obsidian/Codex.os/.claude/WORKING.md back to its header-only state (keep the header comment block, remove everything after the horizontal rule marker)
+3. Clear F:/My Drive/Obsidian/Codex.os/.vox-working.md back to its header-only state (keep the header comment block, remove everything after the horizontal rule marker)
 4. Delete the snapshot file at ${LATEST_SNAP}
 
 Snapshot content:

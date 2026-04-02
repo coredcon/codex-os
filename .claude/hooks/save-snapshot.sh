@@ -7,7 +7,7 @@
 # Capture stdin (hook data JSON from Claude Code)
 HOOK_DATA=$(cat)
 
-WORKING="F:/My Drive/Obsidian/Codex.os/.claude/WORKING.md"
+WORKING="F:/My Drive/Obsidian/Codex.os/.vox-working.md"
 SNAPDIR="F:/My Drive/Obsidian/Codex.os/.claude/snapshots"
 
 mkdir -p "$SNAPDIR"

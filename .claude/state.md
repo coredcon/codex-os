@@ -27,6 +27,9 @@
 - Vox Watcher operational, Spotify ambient context working
 - Canonex World Simulation built — test run still pending
 - Bambu P2S price tracker running nightly
+- **EotFG Session 1 framework substantially built** — State of World, Aesephna Vision (two-way with glitch mechanic), newspaper prop (Canva)
+- **Map viewer at 3,637 maps** — MAD Cartographer added (3,246 maps), group tab UI, favorites, 1200px previews
+- **Broken Halo encounter maps complete** — 3 maps generated (Entrance, Inner Plaza, Spire Base), saved to D:\Foundry Assets
 
 ## Open Loops
 - **Test Canonex World Simulation** — run `npm start` in frontend, restart backend, hit /simulation

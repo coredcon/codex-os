@@ -7,7 +7,7 @@
 ## Immediate Triggers (surface at session start, no waiting)
 - Brief or Freshdesk shows **privacy requests** → surface count + oldest date first, before anything else
 - Brief shows **tickets needing response (← flag)** → surface in morning summary
-- `.claude/WORKING.md` has content → last session ended abruptly; process before anything else
+- `.vox-working.md` has content → last session ended abruptly; process before anything else
 - Vox Arcanum has files → read and act before regular startup
 
 ## Time-Based Triggers (fire on relevant day)
