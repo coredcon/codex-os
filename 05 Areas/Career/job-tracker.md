@@ -9,10 +9,10 @@
 
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
-| 2026-03-30 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-stripe-4339340440) | Stripe | — | Applied | NY listed. High priority. |
 | 2026-03-29 | [Technical Support Engineer](https://to.indeed.com/aabhgbzwggvb) | Cursor | — | Applied | Remote. AI code editor. Tier 3 + debugging + automation. |
 | 2026-03-29 | [Technical Client Specialist](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | MacroHealth | $110K–$120K | Applied | Remote. Health plan intelligence platform. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
+| 2026-04-02 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598) | SmartSimple Software | $120K | Applied | Remote. Grants/nonprofit SaaS. Easy Apply. |
 
 
 ---
@@ -21,8 +21,7 @@
 
 | Role | Company | Pay | Link | Notes |
 |---|---|---|---|---|
-| Senior Cloud Solutions Engineer | Humana | $107–147K | [View](https://www.dice.com/job-detail/d0c53064-f0d6-41fd-904f-7e758ebcbfe9?utm_source=claude-user&utm_medium=mcp) | 🆕 Remote. Oracle OIC integration focus. |
-| Technical Support Engineer | CyberNut | — | [View](https://to.indeed.com/aatbc4mdwpcg) | 🆕 Remote. Cybersecurity awareness platform. Posted 3/26. |
+| — | — | — | — | — |
 
 ---
 
@@ -410,3 +409,66 @@
 
 - **[Sage x3 Solutions Engineer](https://www.dice.com/job-detail/d8ad8214-ab58-47df-8449-a8987c035e78)** — Mitchell Martin (recruiter) | Remote | $90K–$130K
 - **[Infrastructure Solutions Engineer Sr. Consultant I](https://www.dice.com/job-detail/d50abe20-96d6-4f1c-aea8-83a42716bf8c)** — Allstate | Remote | $75K–$126K
+
+## Scan — 2026-04-02 09:53  (12 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Associate Solutions Engineer](https://www.linkedin.com/jobs/view/associate-solutions-engineer-at-digicert-4391867543)** — DigiCert | Lehi, UT
+
+- **[Lead Solutions Engineer](https://www.linkedin.com/jobs/view/lead-solutions-engineer-at-included-health-4392124504)** — Included Health | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-wisdomai-4395659376)** — WisdomAI | New York, NY
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-pulumi-4392461106)** — Pulumi | San Francisco Bay Area
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-bearing-4393917274)** — Bearing | Scottsdale, AZ
+
+- **[Senior Solutions Engineer](https://www.linkedin.com/jobs/view/senior-solutions-engineer-at-jobgether-4391835784)** — Jobgether | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598)** — SmartSimple Software | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-calculated-hire-4393457951)** — Calculated Hire | United States
+
+- **[Implementation Specialist I](https://www.linkedin.com/jobs/view/implementation-specialist-i-at-orange-logic-4388988034)** — Orange Logic | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-endeavor-flow-4370939781)** — Endeavor Flow | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-suvoda-4378979983)** — Suvoda | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Support Engineer](https://www.linkedin.com/jobs/view/support-engineer-at-default-4394943697)** — Default | United States
+
+
+## Scan — 2026-04-02 11:08  (4 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-jobgether-4392179669)** — Jobgether | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-acclaim-ai-4388556264)** — Acclaim AI | Miami, FL
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Customer Implementation Specialist](https://www.linkedin.com/jobs/view/customer-implementation-specialist-at-affineon-health-4393905471)** — Affineon Health | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-one-click-contractor-4393043507)** — One Click Contractor | United States
+
+### Dice MCP — 2026-04-02 (no new finds)
+
+*(No net-new qualifying results — Sage x3 SE + Allstate SE already logged 4/01; CVS WMS SE not a fit; travel-heavy IS filtered; J&J/Copeland TSE not SaaS-aligned)*
+
