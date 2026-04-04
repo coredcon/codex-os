@@ -9,27 +9,22 @@
 
 ## Last updated: 2026-03-27
 
+## Last updated: 2026-04-04
+
 ## Current Pressures
-- Post-merger job uncertainty — actively job searching now (automation live, first application in)
-- Finances tight — can't afford Anthropic API $5 minimum right now `[user]`
-- EotFG prep window (~5 weeks from 2026-03-22) — active prep happening
-- Freshdesk tickets: 5 NEEDS RESPONSE tickets — need to clear by end of week
+- Post-merger job uncertainty — actively job searching (automation live, multiple apps in)
+- EotFG prep window (~3.5 weeks from 2026-04-04) — launch ~2026-04-27
+- TXRH #449545 — not fully completed, carry to Monday 2026-04-07
 
 ## Current Momentum
-- Radarr + Prowlarr + IPTorrents fully operational — movie automation live
-- **Sonarr fully configured** — root: G:\Plex Media\TV, qBittorrent wired, Prowlarr synced (2026-03-23)
+- **HookSnap:** Live at hooksnap.app — Stripe working, domain live, endpoint naming, portal, Pro gating, mobile Settings all shipped (2026-04-04). Next: EAS production APK → Play Store, Stripe live keys, all-endpoints dashboard.
+- Radarr + Prowlarr + IPTorrents + Sonarr fully operational
 - **Job search automation live** — job-search.py runs weekdays 9am, results in job-tracker.md
-- **Applied to:** Ping Identity TAM (2026-03-23), n8n Senior SE (2026-03-24), Dynatrace SE (2026-03-24), MacroHealth Technical Client Specialist $110K–$120K (2026-03-29)
-- **Resume finalized** — Crunchtime name, LinkedIn, AI bullet, KDS/Freshdesk skills, at Vox Arcanum
-- **Vox Workspace:** FinancesPanel + Trends + Insights + Home mode + Intelligence Layer + Candlelit Library theme + CampaignPrepPanel — all shipped W13
-- **Vox Workspace Finances: 12-month history** — Apr 2025–Mar 2026, Insights tab shipped (2026-03-27)
-- Vox can add movies to Radarr by voice
+- **Applied to:** Ping Identity TAM, n8n Senior SE, Dynatrace SE, MacroHealth Technical Client Specialist
+- **Vox Workspace:** Full feature set shipped W13 — FinancesPanel, Trends, Insights, Home mode, Intelligence Layer, CampaignPrepPanel
 - Vox Watcher operational, Spotify ambient context working
-- Canonex World Simulation built — test run still pending
-- Bambu P2S price tracker running nightly
-- **EotFG Session 1 framework substantially built** — State of World, Aesephna Vision (two-way with glitch mechanic), newspaper prop (Canva)
-- **Map viewer at 3,637 maps** — MAD Cartographer added (3,246 maps), group tab UI, favorites, 1200px previews
-- **Broken Halo encounter maps complete** — 3 maps generated (Entrance, Inner Plaza, Spire Base), saved to D:\Foundry Assets
+- **EotFG Session 1 framework substantially built** — State of World, Aesephna Vision scripted, newspaper prop
+- **Map viewer at 3,637 maps** — group tab UI, favorites, 1200px previews
 
 ## Open Loops
 - **Test Canonex World Simulation** — run `npm start` in frontend, restart backend, hit /simulation

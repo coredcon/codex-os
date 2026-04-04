@@ -472,3 +472,23 @@
 
 *(No net-new qualifying results — Sage x3 SE + Allstate SE already logged 4/01; CVS WMS SE not a fit; travel-heavy IS filtered; J&J/Copeland TSE not SaaS-aligned)*
 
+### Dice MCP — 2026-04-03 (no new finds)
+
+*(No net-new qualifying results — Sage x3 SE + Allstate SE already logged; CVS WMS SE not a fit; DSS IS $70-85K too low; Brains Workgroup IS 70% travel; ICF IS gov/disaster not SaaS; J&J TSE not SaaS-aligned; Carrier TSE HVAC; U of Utah TSE $57K)*
+
+
+## Scan — 2026-04-03 09:25  (2 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Strategic Solutions Engineer](https://www.linkedin.com/jobs/view/strategic-solutions-engineer-at-jobgether-4391820723)** — Jobgether | United States
+
+- **[ML Features Solutions Engineer](https://www.linkedin.com/jobs/view/ml-features-solutions-engineer-at-sambanova-4392995073)** — SambaNova | Palo Alto, CA
+
+---
+
+## Scan — 2026-04-03 (Dice — morning run)
+
+*(No qualifying new finds — Solutions Engineer results were ERP/infra/warehouse-focused; TAM returned 0 results; Implementation Specialist hits were recruiter/low-pay/high-travel; Technical Support Engineer hits were on-site or out-of-range. All filtered.)*
+
