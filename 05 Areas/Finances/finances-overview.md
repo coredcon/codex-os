@@ -1,5 +1,5 @@
 ---
-date: 2026-03-03
+date: 2026-04-04
 area: finances
 tags: [finances]
 ---
@@ -26,7 +26,7 @@ tags: [finances]
 - File created — baseline snapshot
 
 ## Import: 2026-02-24 → 2026-03-21
-> Parsed: 2026-03-26 21:46 | Source: `SOFI-JointChecking•2540-2026-03-26T05_49_36.csv`
+> Parsed: 2026-04-04 23:20 | Source: `SOFI-JointChecking•2540-2026-03-26T05_49_36.csv`
 
 **Current Balance:** $-45.09
 **Total In:** $5,441.47  |  **Total Out:** $5,085.20  |  **Net:** $356.27

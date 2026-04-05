@@ -326,7 +326,7 @@
     }
   },
   {
-    "label": "Feb-Mar 2026",
+    "label": "Feb\u2013Mar 2026",
     "period": {
       "start": "2026-02-24",
       "end": "2026-03-21"
@@ -335,28 +335,54 @@
     "totalOut": 5085.2,
     "net": 356.27,
     "spending": {
-      "Housing: Mortgage": 1676.64,
-      "Utilities: Electric": 760.0,
-      "Dining: Fast Food": 717.11,
-      "Shopping: Amazon": 555.32,
-      "Gas": 269.84,
-      "Groceries": 245.06,
       "Personal: Tobacco": 216.09,
-      "Bills: Phone": 183.33,
-      "Utilities: Water": 128.19,
-      "Utilities: City": 82.8,
-      "Shopping: Thrift": 48.81,
-      "Bills: Internet": 44.99,
-      "Subscriptions: Audible": 32.84,
-      "Personal: Grooming": 23.54,
-      "Uncategorized": 22.25,
+      "Groceries": 245.06,
+      "Gas": 269.84,
+      "Housing: Mortgage": 1676.64,
+      "Dining: Fast Food": 717.11,
       "Subscriptions: ChatGPT": 20.0,
+      "Bills: Internet": 44.99,
+      "Subscriptions: Google": 4.22,
+      "Uncategorized": 22.25,
       "Subscriptions: Claude": 20.0,
       "Shopping: Convenience": 12.12,
+      "Bills: Phone": 183.33,
+      "Personal: Grooming": 23.54,
+      "Utilities: Water": 128.19,
+      "Subscriptions: Audible": 32.84,
+      "Shopping: Amazon": 555.32,
       "Subscriptions: Midjourney": 10.0,
-      "City: Parking/Fees": 10.0,
-      "Subscriptions: Google": 4.22,
-      "Health: Pharmacy": 2.05
+      "Utilities: City": 82.8,
+      "Health: Pharmacy": 2.05,
+      "Utilities: Electric": 760.0,
+      "Shopping: Thrift": 48.81,
+      "City: Parking/Fees": 10.0
+    }
+  },
+  {
+    "label": "Mar\u2013Apr 2026",
+    "period": {
+      "start": "2026-03-22",
+      "end": "2026-04-03"
+    },
+    "totalIn": 2530.10,
+    "totalOut": 1452.05,
+    "net": 1078.05,
+    "spending": {
+      "Shopping: Amazon": 658.99,
+      "Gas": 304.38,
+      "Dining: Fast Food": 126.91,
+      "Personal: Tobacco": 101.74,
+      "Groceries": 63.59,
+      "Dining: Restaurants": 51.00,
+      "Bills: Internet": 44.99,
+      "Subscriptions: Apple": 26.02,
+      "Family: School": 23.50,
+      "Subscriptions: Claude": 20.00,
+      "Subscriptions: ChatGPT": 20.00,
+      "Uncategorized": 4.99,
+      "Shopping: Convenience": 4.00,
+      "Subscriptions: Google": 1.94
     }
   }
 ]

@@ -1,158 +1,40 @@
 {
   "period": {
-    "start": "2026-02-24",
-    "end": "2026-03-21"
+    "start": "2026-03-22",
+    "end": "2026-04-03"
   },
-  "parsedAt": "2026-03-26 21:46",
-  "source": "SOFI-JointChecking\u20222540-2026-03-26T05_49_36.csv",
-  "balance": -45.09,
-  "totalIn": 5441.47,
-  "totalOut": 5085.2,
-  "net": 356.27,
+  "parsedAt": "2026-04-04 23:30",
+  "source": "SOFI-JointChecking\u20222540-2026-04-04T01_12_53.csv",
+  "balance": 521.88,
+  "totalIn": 2530.10,
+  "totalOut": 1452.05,
+  "net": 1078.05,
   "spending": [
-    {
-      "category": "Housing: Mortgage",
-      "amount": 1676.64,
-      "budget": 1677
-    },
-    {
-      "category": "Utilities: Electric",
-      "amount": 760.0,
-      "budget": 300
-    },
-    {
-      "category": "Dining: Fast Food",
-      "amount": 717.11,
-      "budget": 300
-    },
-    {
-      "category": "Shopping: Amazon",
-      "amount": 555.32,
-      "budget": 200
-    },
-    {
-      "category": "Gas",
-      "amount": 269.84,
-      "budget": 150
-    },
-    {
-      "category": "Groceries",
-      "amount": 245.06,
-      "budget": 300
-    },
-    {
-      "category": "Personal: Tobacco",
-      "amount": 216.09,
-      "budget": 150
-    },
-    {
-      "category": "Bills: Phone",
-      "amount": 183.33,
-      "budget": 183
-    },
-    {
-      "category": "Utilities: Water",
-      "amount": 128.19,
-      "budget": 130
-    },
-    {
-      "category": "Utilities: City",
-      "amount": 82.8,
-      "budget": 85
-    },
-    {
-      "category": "Shopping: Thrift",
-      "amount": 48.81,
-      "budget": 50
-    },
-    {
-      "category": "Bills: Internet",
-      "amount": 44.99,
-      "budget": 45
-    },
-    {
-      "category": "Subscriptions: Audible",
-      "amount": 32.84,
-      "budget": 17
-    },
-    {
-      "category": "Personal: Grooming",
-      "amount": 23.54,
-      "budget": 25
-    },
-    {
-      "category": "Uncategorized",
-      "amount": 22.25,
-      "budget": null
-    },
-    {
-      "category": "Subscriptions: ChatGPT",
-      "amount": 20.0,
-      "budget": 20
-    },
-    {
-      "category": "Subscriptions: Claude",
-      "amount": 20.0,
-      "budget": 20
-    },
-    {
-      "category": "Shopping: Convenience",
-      "amount": 12.12,
-      "budget": 30
-    },
-    {
-      "category": "Subscriptions: Midjourney",
-      "amount": 10.0,
-      "budget": 10
-    },
-    {
-      "category": "City: Parking/Fees",
-      "amount": 10.0,
-      "budget": 15
-    },
-    {
-      "category": "Subscriptions: Google",
-      "amount": 4.22,
-      "budget": 5
-    },
-    {
-      "category": "Health: Pharmacy",
-      "amount": 2.05,
-      "budget": 25
-    }
+    { "category": "Shopping: Amazon",      "amount": 658.99, "budget": 200 },
+    { "category": "Gas",                   "amount": 304.38, "budget": 150 },
+    { "category": "Dining: Fast Food",     "amount": 126.91, "budget": 300 },
+    { "category": "Personal: Tobacco",     "amount": 101.74, "budget": 150 },
+    { "category": "Groceries",             "amount": 63.59,  "budget": 300 },
+    { "category": "Dining: Restaurants",   "amount": 51.00,  "budget": null },
+    { "category": "Bills: Internet",       "amount": 44.99,  "budget": 45 },
+    { "category": "Subscriptions: Apple",  "amount": 26.02,  "budget": null },
+    { "category": "Family: School",        "amount": 23.50,  "budget": null },
+    { "category": "Subscriptions: Claude", "amount": 20.00,  "budget": 20 },
+    { "category": "Subscriptions: ChatGPT","amount": 20.00,  "budget": 20 },
+    { "category": "Uncategorized",         "amount": 4.99,   "budget": null },
+    { "category": "Shopping: Convenience", "amount": 4.00,   "budget": 30 },
+    { "category": "Subscriptions: Google", "amount": 1.94,   "budget": 5 }
   ],
   "income": [
-    {
-      "source": "Income: Other",
-      "amount": 317.65
-    },
-    {
-      "source": "Income: Paycheck",
-      "amount": 5123.82
-    }
+    { "source": "Income: Paycheck", "amount": 2527.89 },
+    { "source": "Income: Other",    "amount": 2.21 }
   ],
   "transfers": [
-    {
-      "type": "Transfers: Internal",
-      "amount": 194.1
-    },
-    {
-      "type": "Transfers: People",
-      "amount": 355.0
-    }
+    { "type": "Transfers: Internal", "amount": 425.01 },
+    { "type": "Transfers: People",   "amount": 293.91 }
   ],
   "flagged": [
-    {
-      "date": "03-15",
-      "description": "AMAZON MARKETPLACE",
-      "amount": 296.52,
-      "category": "Shopping: Amazon"
-    },
-    {
-      "date": "03-16",
-      "description": "DUKEENERGYCORPOR",
-      "amount": 760.0,
-      "category": "Utilities: Electric"
-    }
+    { "date": "04-03", "description": "AMAZON MARKETPLACE", "amount": 379.14, "category": "Shopping: Amazon" },
+    { "date": "04-02", "description": "AMAZON MARKETPLACE", "amount": 228.40, "category": "Shopping: Amazon" }
   ]
 }
