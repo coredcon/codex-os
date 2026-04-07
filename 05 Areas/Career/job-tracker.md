@@ -13,6 +13,9 @@
 | 2026-03-29 | [Technical Client Specialist](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | MacroHealth | $110K–$120K | Applied | Remote. Health plan intelligence platform. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
 | 2026-04-02 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598) | SmartSimple Software | $120K | Applied | Remote. Grants/nonprofit SaaS. Easy Apply. |
+| 2026-04-06 | [Solutions Engineer, Expansion](https://to.indeed.com/aaxnkdg9wk6g) | Vanta | $165K–$194K | Applied | Remote. Compliance SaaS. Expansion SE role. |
+| 2026-04-06 | [Developer Success Engineer](https://to.indeed.com/aakgzpywwqj2) | WorkOS | $135K | Applied | Remote. Auth SaaS for devs. SE + CS hybrid. |
+| 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
 
 
 ---
@@ -476,6 +479,26 @@
 
 *(No net-new qualifying results — Sage x3 SE + Allstate SE already logged; CVS WMS SE not a fit; DSS IS $70-85K too low; Brains Workgroup IS 70% travel; ICF IS gov/disaster not SaaS; J&J TSE not SaaS-aligned; Carrier TSE HVAC; U of Utah TSE $57K)*
 
+---
+
+### Scan — 2026-04-06 (Indeed + Dice MCP — Vox session)
+
+**Solutions Engineer**
+- **[Solutions Engineer, Expansion](https://to.indeed.com/aaxnkdg9wk6g)** — Vanta | Remote | $165K–$194K | Apr 3 ⭐ *(compliance/trust SaaS, expansion SE role — strong fit)*
+- **[Senior Solutions Engineer](https://to.indeed.com/aa8rbbzjqjvf)** — Indeed | Remote | $84K–$175K | Apr 3
+- **[Solutions Consulting Associate](https://to.indeed.com/aaxsqzdwj2dv)** — Veeva Systems | Remote | $75K–$100K | Mar 30
+- **[Solutions Engineer (US Remote)](https://to.indeed.com/aa6t2scsrgnr)** — First Advantage | Remote | $95K–$140K | Feb 11 *(older posting)*
+- **[Solutions Engineer](https://to.indeed.com/aa8g6yx9cskc)** — Novara | Remote | $90K–$115K | Feb 18 *(older posting)*
+- **[Contact Center Consulting Solutions Engineer](https://to.indeed.com/aa27qgl98wfk)** — Zoom | Remote | $131K–$262K | Feb 20 *(contact center focus, older posting)*
+- **[Solutions Engineer III](https://to.indeed.com/aads6lfcxtfr)** — GitHub | Remote | $67K–$179K | Feb 5 *(older posting)*
+- **[Solutions Consultants](https://to.indeed.com/aazsdtjndv8x)** — LexisNexis Risk Solutions | Remote | $72K–$193K | Mar 3
+
+**Technical Account Manager**
+- **[Technical Account Manager](https://to.indeed.com/aahrs64xrjzw)** — Conversica | Remote | $75K–$100K | Apr 2 *(AI-powered sales assistant SaaS)*
+- **[Technical Account Manager](https://to.indeed.com/aawtxtcbgdfs)** — Total Expert | Remote | $85K–$95K | Mar 4 *(fintech/mortgage SaaS)*
+
+*(Dice TAM: 0 results. Dice IS/TSE: DSS II + Brains Workgroup already filtered; ICF/QA Tester not a fit.)*
+
 
 ## Scan — 2026-04-03 09:25  (2 new)
 
@@ -491,4 +514,35 @@
 ## Scan — 2026-04-03 (Dice — morning run)
 
 *(No qualifying new finds — Solutions Engineer results were ERP/infra/warehouse-focused; TAM returned 0 results; Implementation Specialist hits were recruiter/low-pay/high-travel; Technical Support Engineer hits were on-site or out-of-range. All filtered.)*
+
+
+## Scan — 2026-04-06 09:25  (6 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-gbg-plc-4372795920)** — GBG Plc | New York, NY
+
+- **[ML Features Solutions Engineer](https://www.linkedin.com/jobs/view/ml-features-solutions-engineer-at-sambanova-4392991177)** — SambaNova | Austin, TX
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-cypress-hcm-4389590957)** — Cypress HCM | Atlanta Metropolitan Area
+
+
+### LinkedIn — Implementation Specialist
+
+- **[HubSpot Implementation Specialist - Full-time](https://www.linkedin.com/jobs/view/hubspot-implementation-specialist-full-time-at-revops-hq-4397741963)** — RevOps HQ | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Support Engineer](https://www.linkedin.com/jobs/view/support-engineer-at-reversinglabs-4397359827)** — ReversingLabs | United States
+
+
+### WWR — Customer/Technical Support
+
+- **[Customer Support Engineer](https://weworkremotely.com/remote-jobs/downhome-solutions-customer-support-engineer-1)** — DownHome Solutions | Remote
+  > Headquarters: Seattle, WA URL: https://downhomesolutions.com Ready to make a real difference in the world helping not for profits make loans to community based projects and people 
 
