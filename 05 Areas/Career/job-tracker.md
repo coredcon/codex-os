@@ -15,6 +15,7 @@
 | 2026-04-02 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598) | SmartSimple Software | $120K | Applied | Remote. Grants/nonprofit SaaS. Easy Apply. |
 | 2026-04-06 | [Solutions Engineer, Expansion](https://to.indeed.com/aaxnkdg9wk6g) | Vanta | $165K–$194K | Applied | Remote. Compliance SaaS. Expansion SE role. |
 | 2026-04-06 | [Developer Success Engineer](https://to.indeed.com/aakgzpywwqj2) | WorkOS | $135K | Applied | Remote. Auth SaaS for devs. SE + CS hybrid. |
+| 2026-04-07 | [Solutions Engineer](https://to.indeed.com/aasnmjzzkyqm) | Miter | $140K–$160K | Applied | Remote. Construction HR/payroll SaaS. Posted Apr 7. |
 | 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
 
 
@@ -545,4 +546,21 @@
 
 - **[Customer Support Engineer](https://weworkremotely.com/remote-jobs/downhome-solutions-customer-support-engineer-1)** — DownHome Solutions | Remote
   > Headquarters: Seattle, WA URL: https://downhomesolutions.com Ready to make a real difference in the world helping not for profits make loans to community based projects and people 
+
+
+## Scan — 2026-04-07 15:52  (4 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-miter-4398540132)** — Miter | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Clinical Implementation Specialist](https://www.linkedin.com/jobs/view/clinical-implementation-specialist-at-photonicare-inc-4398089905)** — PhotoniCare, Inc. | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-dosespot-4398333267)** — DoseSpot | Boston, MA
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-double-4332901431)** — Double | New York, NY
 
