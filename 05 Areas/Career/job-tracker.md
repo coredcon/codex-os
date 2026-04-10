@@ -17,6 +17,7 @@
 | 2026-04-06 | [Developer Success Engineer](https://to.indeed.com/aakgzpywwqj2) | WorkOS | $135K | Applied | Remote. Auth SaaS for devs. SE + CS hybrid. |
 | 2026-04-07 | [Solutions Engineer](https://to.indeed.com/aasnmjzzkyqm) | Miter | $140K–$160K | Applied | Remote. Construction HR/payroll SaaS. Posted Apr 7. |
 | 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
+| 2026-04-09 | [Technical Account Manager](https://to.indeed.com/aawtnq82gqcj) | Planet Technologies | $110K–$190K | Applied | Remote. Microsoft partner. |
 
 
 ---
@@ -25,13 +26,30 @@
 
 | Role | Company | Pay | Link | Notes |
 |---|---|---|---|---|
-| — | — | — | — | — |
 
 ---
 
 ## 📋 Scan Archive
 
 > Raw job search results — newest first. Source: Indeed MCP + RemoteOK + WWR.
+
+---
+
+### Scan — 2026-04-09 (Indeed + Dice MCP)
+
+**Solutions Engineer**
+- [Solutions Engineer](https://to.indeed.com/aayzqsrldshh) — NinjaOne | Remote | $100K–$105K | Mar 20
+- [Senior Solutions Engineer](https://to.indeed.com/aar79td8yhzh) — Indeed (company) | Remote | $84K–$175K | Apr 3
+
+**Technical Account Manager**
+- [Associate TAM](https://to.indeed.com/aa69jf9s24mm) — Nerdio | Remote | $90K–$110K | Apr 7 ← **On Deck**
+- [Technical Account Manager](https://to.indeed.com/aalwrdf6xmfg) — Planet Technologies | $110K–$190K | ✅ Applied 2026-04-09
+
+**Implementation Specialist**
+- [HubSpot Implementation Specialist](https://to.indeed.com/aajzvdb6ypnm) — KLA Group | Remote | $85K–$100K | Mar 29
+
+**Technical Support**
+- [Technical Support Manager – Product Support Engineer](https://to.indeed.com/aapjh8rfjwm2) — Bruker | Remote | $108K–$173K | Apr 8 ← **On Deck**
 
 ---
 
@@ -563,4 +581,66 @@
 - **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-dosespot-4398333267)** — DoseSpot | Boston, MA
 
 - **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-double-4332901431)** — Double | New York, NY
+
+
+## Scan — 2026-04-09 09:17  (11 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Senior Partner Solutions Engineer - Americas](https://www.linkedin.com/jobs/view/senior-partner-solutions-engineer-americas-at-talkdesk-4398535485)** — Talkdesk | United States
+
+- **[Solutions Engineer - Enterprise (Central)](https://www.linkedin.com/jobs/view/solutions-engineer-enterprise-central-at-talkdesk-4398547150)** — Talkdesk | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-block-4398632647)** — Block | United States
+
+- **[Senior Solutions Engineer - Healthcare & Life Sciences](https://www.linkedin.com/jobs/view/senior-solutions-engineer-healthcare-life-sciences-at-talkdesk-4398543332)** — Talkdesk | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-higharc-4399451831)** — Higharc | United States
+
+- **[Senior Solutions Engineer - Healthcare & Life Sciences](https://www.linkedin.com/jobs/view/senior-solutions-engineer-healthcare-life-sciences-at-talkdesk-4398529953)** — Talkdesk | United States
+
+- **[Senior Solutions Engineer - Healthcare & Life Sciences](https://www.linkedin.com/jobs/view/senior-solutions-engineer-healthcare-life-sciences-at-talkdesk-4398533750)** — Talkdesk | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Senior Technical Account Manager](https://www.linkedin.com/jobs/view/senior-technical-account-manager-at-ping-identity-4398575910)** — Ping Identity | United States
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-ranger-ai-4390796449)** — Ranger AI | Denver, CO
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-hussmann-4396362199)** — Hussmann | United States
+
+- **[Technical Implementation Specialist](https://www.linkedin.com/jobs/view/technical-implementation-specialist-at-crowded-4398601085)** — Crowded | Florida, United States
+
+## Scan — 2026-04-09 (Indeed MCP)
+
+**Solutions Engineer**
+- **[Solutions Engineer](https://to.indeed.com/aavzwy6ddkw6)** — NinjaOne | Remote | $100K–$105K | Mar 20
+- **[Solutions Consultant - West](https://to.indeed.com/aaftkcydlbkx)** — Granicus | Remote | $100K–$110K | Mar 28
+
+**Technical Account Manager**
+- **[Technical Account Manager](https://to.indeed.com/aawtnq82gqcj)** — Planet Technologies | Remote | $110K–$190K | Mar 31 ⭐ *(on deck)*
+- **[Technical Customer Solutions Manager](https://to.indeed.com/aanbztwcwk9f)** — Cotiviti | Remote | $119K–$161K | Apr 3 ⭐ *(on deck)*
+- **[Technical Account Manager](https://to.indeed.com/aacy7wvrvddr)** — Conversica | Remote | $75K–$100K | Apr 2 *(already logged Apr 6)*
+- **[Associate Technical Account Manager](https://to.indeed.com/aac4f7y79spf)** — Nerdio | Remote | $90K–$110K | Apr 7
+- **[Enterprise Customer Success Manager](https://to.indeed.com/aahpyp8p4zwl)** — Bonterra | Remote | $90.5K–$120K | Mar 31
+
+**Implementation / PS**
+- **[HubSpot Implementation Specialist](https://to.indeed.com/aahmbh7722kf)** — KLA Group | Remote | $85K–$100K | Mar 29
+- **[Professional Services Consultant](https://to.indeed.com/aabsm46v2vzk)** — MindTickle | Remote | $124K–$138K | Mar 18 *(already logged Mar 27)*
+
+**Technical Support**
+- **[Senior Technical Support Specialist](https://to.indeed.com/aamhdkqmkbxl)** — Versapay | Remote | $75K–$85K | Apr 8
+
+
+## Scan — 2026-04-09 12:59  (1 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-crewai-4400227711)** — CrewAI | United States
 

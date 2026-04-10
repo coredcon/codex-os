@@ -1,9 +1,12 @@
 # Vox Ambient Context
-> Updated: 2026-04-05 22:34 ET
+> Updated: 2026-04-09 09:12 ET
 
 ## Now Playing
 - (nothing detected)
 
 ## Active App
-- vivaldi (private)
+- vivaldi: Making Rocky from Project Hail Mary - YouTube - Vivaldi
+
+## Also Open
+- BambuStudio: Untitled - BambuStudio
 

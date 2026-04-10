@@ -1,6 +1,6 @@
 # Vault Index — Codex.os
 > Vox reads this at the start of every session. Keep it current.
-> Last updated: 2026-03-30
+> Last updated: 2026-04-09
 > Launcher: `Codex_os.bat` (desktop shortcut)
 
 ---
@@ -15,7 +15,10 @@ Clear NEEDS RESPONSE tickets + Stripe TAM application
 ## Active Projects
 | Project | Status | Next Action |
 |---|---|---|
-| Canonex (GM Screen app) | Beta — shipped 2026-03-06 | Collect feedback from PF2e party Discord |
+| HookSnap (webhook proxy + inspector) | Launched 2026-04-05 — monitoring | EAS prod build → Play Store ($25 dev fee); Coming Soon page on PH |
+| Canonex (GM Screen app) | Beta — shipped 2026-03-06 | itch.io + r/Pathfinder2e when ready to share |
+| EotFG Campaign | Prep — launch ~2026-04-27 | Encounter builds (Anharzet, Nyshari, Oracanys); Batch 2+ tables |
+| Vox Workspace (Electron app) | Active — HookSnap mode live | Discord /reload-plugins; Rabbit Holes panel UX pass |
 | Foundry Combat Lights | Idea / queued | Build Foundry→Govee automation: red on combat start |
 | Desktop Familiar (Pi + Llama) | In progress | — |
 | Replace Backyard Fence | Planning | Measure footage, find help for physical work |
@@ -40,7 +43,7 @@ Clear NEEDS RESPONSE tickets + Stripe TAM application
 | Ritual | Last Done | Next |
 |---|---|---|
 | Morning Check-In | 2026-03-03 | Tomorrow |
-| Weekly Review | 2026-03-30 (W13) | Sunday 2026-04-05 |
+| Weekly Review | 2026-03-30 (W13) | Sunday 2026-04-12 (W15) |
 | QMD re-index | 2026-03-06 | ✅ Done — 5 new, 6 updated, 37 chunks |
 
 ## Active Areas

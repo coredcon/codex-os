@@ -148,9 +148,11 @@ Run this synthesis before or during the weekly review:
 ## Active Context
 > Update this section at the end of each weekly review.
 
-- **ONE Big Thing this week:** Clear NEEDS RESPONSE tickets + Stripe TAM application (Raising Canes discovery call completed 2026-03-23, handed off)
-- **Current work focus:** Work stability + EotFG prep momentum
-- **Last weekly review:** 2026-03-30 (W13)
+- **ONE Big Thing this week:** Clear NEEDS RESPONSE tickets + job applications
+- **Current work focus:** Job search active (9 apps out) + EotFG prep (~2.5 weeks to launch ~2026-04-27)
+- **Last weekly review:** 2026-03-30 (W13) — next: 2026-04-12 (W15)
 - **Inbox status:** Empty
+- **HookSnap:** Launched 2026-04-05. Next: EAS prod build → Play Store → Product Hunt Coming Soon page
+- **Ping Identity follow-up:** 2026-04-10 — no response yet
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)
 - **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`). MCP daemon runs on port **8182** (`qmd mcp --http --daemon`) — port 8181 conflicts with Tautulli.
