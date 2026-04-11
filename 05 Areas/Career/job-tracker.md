@@ -10,7 +10,6 @@
 | Date | Role | Company | Pay | Status | Notes |
 |---|---|---|---|---|---|
 | 2026-03-29 | [Technical Support Engineer](https://to.indeed.com/aabhgbzwggvb) | Cursor | — | Applied | Remote. AI code editor. Tier 3 + debugging + automation. |
-| 2026-03-29 | [Technical Client Specialist](https://www.indeed.com/viewjob?jk=dce7430a5b75846f) | MacroHealth | $110K–$120K | Applied | Remote. Health plan intelligence platform. |
 | 2026-03-23 | [Technical Account Manager](https://remoteOK.com/remote-jobs/remote-technical-account-manager-ping-identity-1130801) | Ping Identity | — | Applied | Via Greenhouse. Cover letter included. |
 | 2026-04-02 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598) | SmartSimple Software | $120K | Applied | Remote. Grants/nonprofit SaaS. Easy Apply. |
 | 2026-04-06 | [Solutions Engineer, Expansion](https://to.indeed.com/aaxnkdg9wk6g) | Vanta | $165K–$194K | Applied | Remote. Compliance SaaS. Expansion SE role. |
@@ -18,6 +17,7 @@
 | 2026-04-07 | [Solutions Engineer](https://to.indeed.com/aasnmjzzkyqm) | Miter | $140K–$160K | Applied | Remote. Construction HR/payroll SaaS. Posted Apr 7. |
 | 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
 | 2026-04-09 | [Technical Account Manager](https://to.indeed.com/aawtnq82gqcj) | Planet Technologies | $110K–$190K | Applied | Remote. Microsoft partner. |
+| 2026-03-29 | Technical Client Specialist | MacroHealth | $110K–$120K | Rejected | Health plan intelligence platform. |
 
 
 ---
@@ -32,6 +32,16 @@
 ## 📋 Scan Archive
 
 > Raw job search results — newest first. Source: Indeed MCP + RemoteOK + WWR.
+
+---
+
+### Scan — 2026-04-10 (Indeed + Dice MCP)
+
+**Solutions Engineer**
+- [Associate Solutions Engineer - Enterprise](https://to.indeed.com/aajpj6bpznkv) — SHI International | Remote | $100K–$150K | Apr 9
+
+**Solutions Consultant**
+- [Solutions Consultant - Growth](https://to.indeed.com/aah2ty8vrmmf) — Remote (company) | Remote | $150K–$170K | Mar 31 ← **On Deck** (global HR/workforce SaaS, pre-sales fit)
 
 ---
 
@@ -643,4 +653,25 @@
 ### LinkedIn — Solutions Engineer
 
 - **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-crewai-4400227711)** — CrewAI | United States
+
+
+## Scan — 2026-04-10 09:37  (4 new)
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-samsara-4398859814)** — Samsara | United States
+
+- **[Sr. Technical Account Manager (Remote)](https://www.linkedin.com/jobs/view/sr-technical-account-manager-remote-at-jobgether-4397610390)** — Jobgether | Colorado, United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Product Implementation Specialist](https://www.linkedin.com/jobs/view/product-implementation-specialist-at-aditi-consulting-4400243092)** — Aditi Consulting | Rochester, NY
+
+
+### WWR — Customer/Technical Support
+
+- **[Principal Solutions Engineer, Product Partnerships](https://weworkremotely.com/remote-jobs/engine-principal-solutions-engineer-product-partnerships)** — Engine | Remote
+  > Headquarters: Remote - USA About EngineAt Engine, we’re transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has
 
