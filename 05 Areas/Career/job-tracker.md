@@ -14,10 +14,8 @@
 | 2026-04-02 | [Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-smartsimple-software-4393021598) | SmartSimple Software | $120K | Applied | Remote. Grants/nonprofit SaaS. Easy Apply. |
 | 2026-04-06 | [Solutions Engineer, Expansion](https://to.indeed.com/aaxnkdg9wk6g) | Vanta | $165K–$194K | Applied | Remote. Compliance SaaS. Expansion SE role. |
 | 2026-04-06 | [Developer Success Engineer](https://to.indeed.com/aakgzpywwqj2) | WorkOS | $135K | Applied | Remote. Auth SaaS for devs. SE + CS hybrid. |
-| 2026-04-07 | [Solutions Engineer](https://to.indeed.com/aasnmjzzkyqm) | Miter | $140K–$160K | Applied | Remote. Construction HR/payroll SaaS. Posted Apr 7. |
 | 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
 | 2026-04-09 | [Technical Account Manager](https://to.indeed.com/aawtnq82gqcj) | Planet Technologies | $110K–$190K | Applied | Remote. Microsoft partner. |
-| 2026-03-29 | Technical Client Specialist | MacroHealth | $110K–$120K | Rejected | Health plan intelligence platform. |
 
 
 ---
@@ -674,4 +672,52 @@
 
 - **[Principal Solutions Engineer, Product Partnerships](https://weworkremotely.com/remote-jobs/engine-principal-solutions-engineer-product-partnerships)** — Engine | Remote
   > Headquarters: Remote - USA About EngineAt Engine, we’re transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has
+
+
+## Scan — 2026-04-14 10:40  (11 new)
+
+
+### RemoteOK — Technical Roles
+
+- **[Implementation Specialist Poland](https://remoteOK.com/remote-jobs/remote-implementation-specialist-poland-wemolo-1131073)** — Wemolo | Wroclaw
+  > Wemolo is no ordinary company â weâre revolutionizing conservative parking management with cutting-edge technology ðWeâre product-focused: what you start, you finish. We f
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-included-health-4398190655)** — Included Health | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-limitless-4390390878)** — limitless | United States
+
+- **[Solutions Engineer - U.S. Based](https://www.linkedin.com/jobs/view/solutions-engineer-u-s-based-at-authzed-4398067469)** — AuthZed | United States
+
+- **[Support Solutions Engineer (L5) Data Platform, Big Data / Analytics](https://www.linkedin.com/jobs/view/support-solutions-engineer-l5-data-platform-big-data-analytics-at-netflix-4356435346)** — Netflix | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-netradyne-4385537674)** — Netradyne | United States
+
+- **[Strategic Solutions Engineer, East](https://www.linkedin.com/jobs/view/strategic-solutions-engineer-east-at-decagon-4385537687)** — Decagon | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist - Health-tech (US)](https://www.linkedin.com/jobs/view/implementation-specialist-health-tech-us-at-adoreal-4401369138)** — Adoreal | Pennsylvania, United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-wellright-4400587935)** — WellRight | United States
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-keeper-security-inc-4399079073)** — Keeper Security, Inc. | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[Systems Support Engineer (Night Shift)](https://www.linkedin.com/jobs/view/systems-support-engineer-night-shift-at-keeper-security-inc-4399539712)** — Keeper Security, Inc. | United States
+
+---
+
+### Scan — 2026-04-14 (Dice MCP)
+
+**Solutions Engineer**
+- **[Senior Solutions Engineer, Media & Entertainment](https://www.dice.com/job-detail/38d03a63-2aa6-4b7e-b38a-3cd0ef46b2e7?utm_source=claude-user&utm_medium=mcp)** — Snowflake Inc. | Remote | $165K–$216K | Apr 13 *(passed — M&E vertical stretch)*
+- **[Support Solutions Engineer (L5)](https://www.linkedin.com/jobs/view/support-solutions-engineer-l5-data-platform-big-data-analytics-at-netflix-4356435346)** — Netflix | $270K–$410K | Apr 13 *(passed — deep infra/big data engineering, not the right fit)*
+
+*(TAM: 0 results on Dice. Implementation Specialist: EHR/ServiceNow devs — filtered out. Technical Support: HVACR/building controls — not a fit.)*
 

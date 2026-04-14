@@ -4,5 +4,8 @@
   "calendar",
   "obsidian-smart-typography",
   "obsidian-style-settings",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "smart-connections",
+  "smart-context",
+  "smart-lookup"
 ]

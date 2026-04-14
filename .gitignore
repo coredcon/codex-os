@@ -28,3 +28,9 @@ Thumbs.db
 
 # Spotify OAuth tokens — never commit
 .claude/scripts/spotify-token.json
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env

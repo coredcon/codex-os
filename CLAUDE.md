@@ -64,16 +64,22 @@ time, never a list. Proactively surface connections between ideas the user might
    - Surface anything today or in the next 2 days
 10. Verify QMD is available — try a test query; if it fails, alert Corey (daemon may need restart: `qmd mcp --http --daemon`)
 11. Surface the ONE Big Thing for the week
-12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5` and prompt `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/freshdesk-check.py"`, recurring.
+12. **Start Freshdesk loop** (work hours only: 9am–6pm Mon–Fri) — `CronCreate` with `*/20 9-17 * * 1-5`, recurring. Prompt must be silent — run the script, surface only if there are updates, never respond conversationally. See session start for exact prompt wording.
 13. **Start Vox Watcher** — first kill any existing instances (stacking causes 30+ ghost processes), then launch via `Start-Process -WindowStyle Hidden` (confirmed working 2026-03-29). Note: `.NET ProcessStartInfo` returns exit code 4294967295 — do NOT use it. Use this exact PowerShell command:
     ```powershell
     powershell -Command "Get-CimInstance Win32_Process | Where-Object { \$_.CommandLine -like '*vox-watcher*' } | ForEach-Object { Stop-Process -Id \$_.ProcessId -Force -ErrorAction SilentlyContinue }; Start-Process -WindowStyle Hidden 'C:\Users\aspor\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe' -ArgumentList '\"F:\My Drive\Obsidian\Codex.os\.claude\scripts\vox-watcher.py\"'"
     ```
     Note: Run via Bash tool. The `$_` in the Where-Object block will be mangled by bash variable expansion — if using a heredoc or Bash tool, write the PS1 to a temp file first or escape carefully.
     Polls every 60s, writes `.claude/ambient-context.md`. Read passively — weave context in naturally, don't announce it every message.
-14. **Run job search** (work days only, Mon–Fri):
-    - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR)
-    - Run `mcp__claude_ai_Indeed__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: location="remote", country_code="US", job_type="fulltime")
+14. **Start QMD Watcher** — kill any existing instances, then launch hidden. Same pattern as Vox Watcher. Script: `.claude/scripts/qmd-watcher.py`. Watches vault for `.md` changes, debounces 8s, runs `qmd update && qmd embed` automatically. Skips `07 Archive`, `.claude`, `.obsidian`, `Templates`. Logs to `.claude/scripts/qmd-watcher.log`.
+    ```powershell
+    # Write to temp PS1 first (same $_ mangling issue)
+    # Kill existing: Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*qmd-watcher*' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }
+    # Launch: Start-Process -WindowStyle Hidden <python> -ArgumentList '<script path>'
+    ```
+15. **Run job search** (work days only, Mon–Fri):
+    - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR + LinkedIn)
+    - ~~Indeed MCP — permanently dropped 2026-04-02, do not attempt~~
     - Run `mcp__claude_ai_Dice__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: workplace_types=["Remote"], employment_types=["FULLTIME"], posted_date="SEVEN")
     - Filter results: keep titles matching solutions engineer, TAM, implementation specialist, support engineer, technical consultant, automation specialist, customer success engineer. Exclude: director, VP, staffing, recruiter, software engineer, frontend, backend, devops, data scientist, designer, marketing.
     - Deduplicate against existing `05 Areas/Career/job-tracker.md` entries. Append new finds as a dated scan section.
@@ -81,6 +87,7 @@ time, never a list. Proactively surface connections between ideas the user might
 15. Get to work
 
 ### Mid-Session
+- **Auto context inject:** At the start of each response, check `.claude/context-inject.md` — if it has content (non-empty, has a `<!-- context-inject -->` marker), read it and weave relevant results into your answer. Treat it like ambient context: use it, don't announce it. Clear it from working memory after reading (don't re-read the same inject twice).
 - **Proactive retrieval:** When any topic shifts (project, campaign, health, career, family), immediately pull the relevant vault file or run a QMD query — do not wait to be asked
 - **Proactive saving:** Write every new stable fact (name, date, preference, decision) to memory/vault the moment it's stated — do not accumulate for later
 - **WORKING.md is mandatory, not optional:** After every exchange where a decision is made, a fact is learned, or a file is changed — append a brief bullet to `.vox-working.md`. This is crash insurance AND the trigger for the auto-memory Stop hook. If WORKING.md is empty at session end, recovery is impossible.
@@ -148,11 +155,12 @@ Run this synthesis before or during the weekly review:
 ## Active Context
 > Update this section at the end of each weekly review.
 
-- **ONE Big Thing this week:** Clear NEEDS RESPONSE tickets + job applications
-- **Current work focus:** Job search active (9 apps out) + EotFG prep (~2.5 weeks to launch ~2026-04-27)
-- **Last weekly review:** 2026-03-30 (W13) — next: 2026-04-12 (W15)
+- **ONE Big Thing this week:** EotFG encounter gaps (Vysu, Anharzet, Oracanys) before ~2026-04-27 launch
+- **Current work focus:** EotFG prep (~2 weeks to launch) + job search ongoing
+- **Last weekly review:** 2026-03-30 (W13) — overdue, run W15 review
 - **Inbox status:** Empty
-- **HookSnap:** Launched 2026-04-05. Next: EAS prod build → Play Store → Product Hunt Coming Soon page
-- **Ping Identity follow-up:** 2026-04-10 — no response yet
+- **HookSnap:** Launched 2026-04-05. Next: EAS prod build → Play Store → Resend domain
+- **Ping Identity:** Likely ghosted — no response past flag date
+- **Foundry → Moltenhost:** World migrated. Large modules (~70) need install via Foundry admin. See `moltenhost.md`.
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)
 - **QMD status:** Fully operational — GPU (Vulkan/GTX 1060), `qmd query` is the correct command. 3 patches applied to `dist/llm.js`; repair script at `.claude/scripts/fix-qmd-vulkan.sh` (re-run after `npm update -g @tobilu/qmd`). MCP daemon runs on port **8182** (`qmd mcp --http --daemon`) — port 8181 conflicts with Tautulli.
