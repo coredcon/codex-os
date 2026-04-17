@@ -522,7 +522,15 @@ def main():
     except Exception as e:
         log(f"Bambu price check error: {e}")
 
-    # 4. Git backup
+    # 4. Memory extraction (Haiku pass on WORKING.md)
+    try:
+        memory_script = VAULT_ROOT / ".claude" / "scripts" / "vox-memory-writer.py"
+        subprocess.run(["python", str(memory_script)], timeout=60, capture_output=True)
+        log("Memory writer complete")
+    except Exception as e:
+        log(f"Memory writer error: {e}")
+
+    # 5. Git backup
     git_backup()
 
 

@@ -2,6 +2,7 @@
 .claude/config/govee.env
 .claude/config/freshdesk.env
 .claude/config/familiar.env
+.claude/config/anthropic.env
 
 # Vox / Claude transient state — regenerates each session
 .claude/WORKING.md

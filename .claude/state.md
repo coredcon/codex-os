@@ -2,35 +2,36 @@
 > Dynamic file — updated at session end. Included in session-brief.md.
 > User-stated or session-confirmed only. No inferences.
 
-## Last updated: 2026-04-14
+## Last updated: 2026-04-17
 
 ## Current Pressures
 - Post-merger job uncertainty — actively job searching (automation live, 9+ apps in)
 - EotFG prep window (~2 weeks to launch ~2026-04-27)
 
 ## Current Momentum
-- **HookSnap:** Launched 2026-04-05, monitoring phase. Stripe live, SEO done. Next: EAS prod build, Resend domain.
-- **Job search:** $100K floor set. Applied: Cursor, Ping Identity, SmartSimple, Vanta, WorkOS, Zimperium, Planet Technologies. Miter + MacroHealth rejected and removed. Today's scan: nothing worth applying to.
-- **EotFG:** Vault audit complete — gaps are Vysu final encounter, Anharzet Layer 3 + Echo Vision, Oracanys (no file at all).
-- **Vox infra:** QMD upgraded to v2.1.0 (AST chunking), qmd-watcher.py live (auto-embed), Smart Connections installed, work calendar ICS refreshed.
-- **Freshdesk:** Mellow Mushroom LB #453260 resolved (working as designed, order-grouping explanation sent). TXRH #449545 + #452101 active.
+- **HookSnap:** AAB submitted to Play Store Internal Testing (2026-04-17). Waiting 24-48hr approval. Next: Resend domain verify, remove "coming soon" UI labels after approval.
+- **Job search:** Active. Trinity Technology + LangChain both passed (travel/TZ). Indeed MCP re-enabled.
+- **EotFG Night Attack:** All three creatures built in Foundry (Resonance Shades L9, Shattered Hounds L11, Broken Warden L14). Tokens done. Battle map staged. Halofall NPC knowledge web built. IPAS HQ + Cup's Pub updated in Campaign Codex. Open: Dessa/crater map destination, balance test.
+- **EotFG Cradles:** Still open — Vysu final encounter staging, Anharzet Layer 3 + Echo Vision, Oracanys (Layers 2-3 + stat block).
+- **Vox infra:** QMD solid, memory writer cost-optimized (~95% reduction), API spend stable.
 
 ## Open Loops
-- **EotFG — Vysu final encounter** (Cradle 1)
-- **EotFG — Anharzet Layer 3 + Echo Vision** (Cradle 2)
-- **EotFG — Oracanys guardian file + Layer 2/3 + Echo Vision** (Cradle 3)
+- **EotFG — Dessa Orun fate** (water-bearer, missing) — candidate Resonance Shade; decide if she's named/recognizable during Night Attack
+- **EotFG — Jaffi crater map destination** — needs something worth finding in the Wound; open design
+- **EotFG — Night Attack balance test** — simulate all 3 waves vs L11 party; confirm Fex reachable at 30% HP
+- **EotFG — Vysu final encounter staging** (Cradle 1 — stat block ✅, room description placeholder)
+- **EotFG — Anharzet Layer 3 + Echo Vision + stat block** (Cradle 2 — Citadel of the Alchemist)
+- **EotFG — Oracanys Layers 2–3 + Echo Vision + full stat block** (Cradle 3 — Scion of Stars)
 - **Foundry Moltenhost:** 70 large modules still need install via Foundry admin UI
-- **HookSnap EAS prod build:** `eas build --platform android --profile production` → Play Store ($25 dev fee)
+- **HookSnap Play Store:** Internal Testing submitted — waiting 24-48hr approval. After: remove "coming soon" UI labels, push to production.
 - **HookSnap Resend domain:** verify hooksnap.app, swap RESEND_FROM_EMAIL
 - **Discord push:** `/reload-plugins` to confirm client.token fix
-- **TXRH call Thursday** — verify #449545 resolved, pull Open Items sheet before call
-- **Wingstop UK Discovery Call Friday 9:30am** — prep Thursday afternoon
-- **Leslie's anniversary April 18** — this Saturday
+- **Wingstop UK Discovery Call 2026-04-17 9:30am** — prep this morning
+- **Leslie's anniversary April 18** — tomorrow
 - **Ping Identity TAM** — likely ghosted, consider closed
 - **Chipped front tooth** — appointment not booked (noted 2026-03-05)
 - **Vox Workspace:** Rabbit Holes panel UX pass
 - **Kitchen Builder User's Guide** — Corey will provide; ingest into QMD when received
-- TXRH #449545: verify resolved before Thursday call
 
 ## Current Mode
 - Clear (2 pressures). EotFG crunch building + job search running.

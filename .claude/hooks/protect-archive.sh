@@ -3,7 +3,7 @@
 # Blocks any write/edit to files inside 07 Archive/
 # Uses grep on raw JSON — no python3 dependency, fast startup
 
-INPUT=$(cat)
+INPUT=$(cat 2>/dev/null || true)
 
 # Only enforce for vault files
 if ! echo "$INPUT" | grep -q "Obsidian/Codex.os\|Obsidian\\\\Codex.os"; then

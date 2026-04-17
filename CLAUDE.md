@@ -46,6 +46,7 @@ time, never a list. Proactively surface connections between ideas the user might
    - `momentum` entries → update state.md Current Momentum if relevant
    - `decision` entries → append to WORKING.md for context
    - Clear the queue after processing (rewrite to header-only state)
+3. Check `.claude/pending-contradictions.md` — if it has entries, surface them to Corey **before anything else**: read each conflict, ask Corey which fact is correct (one at a time), then update the relevant memory file and clear the resolved entry. Do not proceed with startup until resolved (or Corey says "skip for now").
 3. Check `.claude/pending-reflection.md` — if it has entries, process them:
    - For any new/modified file under `C:/Users/aspor/Documents/Vox Arcanum`: **read the file and act on its contents** (this is Corey's async instruction drop folder — treat it as a task or note to process, then delete the file after acting)
    - For all other entries: update memory/cross-references as needed
@@ -79,7 +80,7 @@ time, never a list. Proactively surface connections between ideas the user might
     ```
 15. **Run job search** (work days only, Mon–Fri):
     - Run `python "F:/My Drive/Obsidian/Codex.os/.claude/scripts/job-search.py"` (RemoteOK + WWR + LinkedIn)
-    - ~~Indeed MCP — permanently dropped 2026-04-02, do not attempt~~
+    - Indeed MCP (`mcp__claude_ai_Indeed__search_jobs`) — re-confirmed working 2026-04-16 via claude.ai connector. Run 4 keyword searches (same as Dice). Note: `location=remote` filter is fuzzy — filter manually for truly remote postings.
     - Run `mcp__claude_ai_Dice__search_jobs` for: "solutions engineer", "technical account manager", "implementation specialist", "technical support engineer" (all: workplace_types=["Remote"], employment_types=["FULLTIME"], posted_date="SEVEN")
     - Filter results: keep titles matching solutions engineer, TAM, implementation specialist, support engineer, technical consultant, automation specialist, customer success engineer. Exclude: director, VP, staffing, recruiter, software engineer, frontend, backend, devops, data scientist, designer, marketing.
     - Deduplicate against existing `05 Areas/Career/job-tracker.md` entries. Append new finds as a dated scan section.

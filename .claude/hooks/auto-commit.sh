@@ -18,7 +18,7 @@ if [ ! -d ".git" ]; then
 fi
 
 # Stage and commit
-git add -A
+git add -A 2>/dev/null
 CHANGED=$(git diff --cached --name-only 2>/dev/null)
 
 if [ -n "$CHANGED" ]; then

@@ -721,3 +721,56 @@
 
 *(TAM: 0 results on Dice. Implementation Specialist: EHR/ServiceNow devs — filtered out. Technical Support: HVACR/building controls — not a fit.)*
 
+
+## Scan — 2026-04-16 09:34  (11 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Senior Solutions Engineer](https://www.linkedin.com/jobs/view/senior-solutions-engineer-at-netcraft-4401740236)** — Netcraft | Washington, DC
+
+- **[Solutions Engineer, Alliances](https://www.linkedin.com/jobs/view/solutions-engineer-alliances-at-okta-4399796462)** — Okta | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-turnkey-4401783849)** — Turnkey | United States
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-intezer-4401074565)** — Intezer | United States
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist](https://www.linkedin.com/jobs/view/implementation-specialist-at-suno-4401456645)** — Suno | United States
+
+- **[Associate Implementation Specialist - Americas](https://www.linkedin.com/jobs/view/associate-implementation-specialist-americas-at-ashby-4401814415)** — Ashby | United States
+
+- **[Associate Implementation Specialist - EMEA](https://www.linkedin.com/jobs/view/associate-implementation-specialist-emea-at-ashby-4401826159)** — Ashby | European Union
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[IT Support Engineer](https://www.linkedin.com/jobs/view/it-support-engineer-at-thinc-forward-4392946861)** — Thinc Forward | Florida, United States
+
+- **[IT Support Engineer](https://www.linkedin.com/jobs/view/it-support-engineer-at-thinc-forward-4392951747)** — Thinc Forward | Georgia, United States
+
+- **[IT Support Engineer](https://www.linkedin.com/jobs/view/it-support-engineer-at-thinc-forward-4378795736)** — Thinc Forward | Nevada, United States
+
+
+### WWR — Customer/Technical Support
+
+- **[Solutions Engineer, GovCon](https://weworkremotely.com/remote-jobs/unanet-solutions-engineer-govcon)** — Unanet | Remote
+  > Headquarters: Anywhere in the United States URL: http://unanet.com As a Solution Engineer, you will play a critical role in driving the growth and success of our GovCon solutions a
+
+### Dice MCP — 2026-04-16 (new finds)
+
+**Solutions Engineer**
+- **[Solutions Engineer](https://www.dice.com/job-detail/11594ebc-3bd8-48d4-9001-a38b1ca096c2?utm_source=claude-user&utm_medium=mcp)** — Trinity Technology Solutions LLC | Remote | $150K–$170K | Apr 15 ~~passed — 25% travel for gov clients, B2G domain~~
+
+*(TAM: 0 results. Implementation Specialist: EHR/ServiceNow devs — filtered. Technical Support: HVACR not a fit.)*
+
+### Indeed MCP — 2026-04-16 (re-enabled; new finds)
+
+**Technical Support Engineer**
+- **[Senior Technical Support Engineer](https://to.indeed.com/aaltppb6vzm8)** — LangChain | $130K–$195K | Mar 31 ~~passed — remote requires Central/Pacific TZ; Corey is Eastern~~
+- **[Enterprise Support Engineer](https://to.indeed.com/aanpkfmt6czt)** — BlueCat | Remote | no salary listed | Apr 15 *(DNS/networking SaaS — worth checking pay)*
+
+*(TAM search returned CSM results — filtered. Implementation Specialist: logistics/LMS/low-pay — filtered.)*
+
