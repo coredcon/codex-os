@@ -41,7 +41,7 @@ CONTRADICTIONS_MD = VAULT / ".claude" / "pending-contradictions.md"
 
 MODEL             = "claude-haiku-4-5-20251001"
 MAX_NEW_CHARS     = 12000   # cap on transcript text sent to Haiku
-MIN_MEANINGFUL_CHARS = 300  # skip Haiku call if less than this after filtering
+MIN_MEANINGFUL_CHARS = 2000  # skip Haiku call if less than this after filtering
 
 # Prefixes that indicate silent/cron prompts — skip these exchanges entirely
 SILENT_PROMPT_PREFIXES = (

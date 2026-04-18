@@ -19,7 +19,7 @@ Centralizes GM reference material, rules lookup, and session tools in one place 
 ## Links
 - Repo:
 - Live:
-- Working dir: `C:\Users\aspor\Documents\CanonexV3_Antigrav`
+- Working dir: `C:\Users\aspor\Documents\Canonex`
 
 ---
 

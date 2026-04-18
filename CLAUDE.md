@@ -160,7 +160,7 @@ Run this synthesis before or during the weekly review:
 - **Current work focus:** EotFG prep (~2 weeks to launch) + job search ongoing
 - **Last weekly review:** 2026-03-30 (W13) — overdue, run W15 review
 - **Inbox status:** Empty
-- **HookSnap:** Launched 2026-04-05. Next: EAS prod build → Play Store → Resend domain
+- **HookSnap:** Launched 2026-04-05. v5 AAB built 2026-04-17 (OTA fixed). Next: upload v5 to Play Store → Resend domain → remove "coming soon" labels
 - **Ping Identity:** Likely ghosted — no response past flag date
 - **Foundry → Moltenhost:** World migrated. Large modules (~70) need install via Foundry admin. See `moltenhost.md`.
 - **Launcher:** `Codex_os.bat` (desktop shortcut → vault root → claude)

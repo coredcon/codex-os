@@ -16,7 +16,16 @@
 | 2026-04-06 | [Developer Success Engineer](https://to.indeed.com/aakgzpywwqj2) | WorkOS | $135K | Applied | Remote. Auth SaaS for devs. SE + CS hybrid. |
 | 2026-04-06 | [Sr. Customer Support Engineer](https://to.indeed.com/aa4dl4y6ggd7) | Zimperium | $113K–$115K | Applied | Remote. Mobile security. |
 | 2026-04-09 | [Technical Account Manager](https://to.indeed.com/aawtnq82gqcj) | Planet Technologies | $110K–$190K | Applied | Remote. Microsoft partner. |
+| 2026-04-17 | [Technical CSM - Integrations](https://to.indeed.com/aamd6xls27mh) | Agiloft | ~$120K ask | Applied | Remote. TCSM + integrations role. |
 
+
+---
+
+## ❌ Rejected / Closed
+
+| Date | Role | Company | Notes |
+|---|---|---|---|
+| 2026-04-17 | Implementation Specialist | Keeper Security | Rejected |
 
 ---
 
@@ -773,4 +782,29 @@
 - **[Enterprise Support Engineer](https://to.indeed.com/aanpkfmt6czt)** — BlueCat | Remote | no salary listed | Apr 15 *(DNS/networking SaaS — worth checking pay)*
 
 *(TAM search returned CSM results — filtered. Implementation Specialist: logistics/LMS/low-pay — filtered.)*
+
+
+## Scan — 2026-04-17 09:59  (5 new)
+
+
+### LinkedIn — Solutions Engineer
+
+- **[Solutions Engineer](https://www.linkedin.com/jobs/view/solutions-engineer-at-oraion-4400184791)** — Oraion | United States
+
+
+### LinkedIn — Technical Account Manager
+
+- **[Technical Account Manager](https://www.linkedin.com/jobs/view/technical-account-manager-at-mind-4401405183)** — MIND | Seattle, WA
+
+
+### LinkedIn — Implementation Specialist
+
+- **[Implementation Specialist (JARVISS)](https://www.linkedin.com/jobs/view/implementation-specialist-jarviss-at-everbridge-4400431713)** — Everbridge | United States
+
+
+### LinkedIn — Technical Support Engineer
+
+- **[IT Support Engineer](https://www.linkedin.com/jobs/view/it-support-engineer-at-thinc-forward-4379003082)** — Thinc Forward | Arizona, United States
+
+- **[IT Support Engineer](https://www.linkedin.com/jobs/view/it-support-engineer-at-thinc-forward-4392945830)** — Thinc Forward | New Jersey, United States
 

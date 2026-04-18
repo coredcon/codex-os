@@ -9,7 +9,7 @@
 - EotFG prep window (~2 weeks to launch ~2026-04-27)
 
 ## Current Momentum
-- **HookSnap:** AAB submitted to Play Store Internal Testing (2026-04-17). Waiting 24-48hr approval. Next: Resend domain verify, remove "coming soon" UI labels after approval.
+- **HookSnap:** v5 AAB built (2026-04-17) — OTA channel fix included. Core flow tested and working. Next: upload v5 to Play Store, Resend domain, remove "coming soon" labels.
 - **Job search:** Active. Trinity Technology + LangChain both passed (travel/TZ). Indeed MCP re-enabled.
 - **EotFG Night Attack:** All three creatures built in Foundry (Resonance Shades L9, Shattered Hounds L11, Broken Warden L14). Tokens done. Battle map staged. Halofall NPC knowledge web built. IPAS HQ + Cup's Pub updated in Campaign Codex. Open: Dessa/crater map destination, balance test.
 - **EotFG Cradles:** Still open — Vysu final encounter staging, Anharzet Layer 3 + Echo Vision, Oracanys (Layers 2-3 + stat block).
@@ -23,7 +23,7 @@
 - **EotFG — Anharzet Layer 3 + Echo Vision + stat block** (Cradle 2 — Citadel of the Alchemist)
 - **EotFG — Oracanys Layers 2–3 + Echo Vision + full stat block** (Cradle 3 — Scion of Stars)
 - **Foundry Moltenhost:** 70 large modules still need install via Foundry admin UI
-- **HookSnap Play Store:** Internal Testing submitted — waiting 24-48hr approval. After: remove "coming soon" UI labels, push to production.
+- **HookSnap Play Store:** v5 AAB ready (`tJckGmmPNRnr88Uo7JC6Fn.aab`) — upload to internal testing next session. Core flow validated. OTA now properly wired (channel fix). After install: remove "coming soon" UI labels, push to production.
 - **HookSnap Resend domain:** verify hooksnap.app, swap RESEND_FROM_EMAIL
 - **Discord push:** `/reload-plugins` to confirm client.token fix
 - **Wingstop UK Discovery Call 2026-04-17 9:30am** — prep this morning
